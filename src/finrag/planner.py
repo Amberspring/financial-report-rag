@@ -16,8 +16,19 @@ class ModelPlanner:
         for h in hits:
             if h["chunk"]["kind"] == "table":
                 allowed[h["chunk"]["doc_id"]].update(h["chunk"]["evidence_keys"])
-        tables = [{"doc_id": d["doc_id"], "company": d["company"], "report_year": d["report_year"], "page": d["page"],
-                   "table": d["table"]} for d in docs if d["doc_id"] in allowed]
+        by_id = {d["doc_id"]: d for d in docs}
+        tables, used = [], 0
+        for doc_id in allowed:
+            d = by_id.get(doc_id)
+            if d is None:
+                continue
+            table = {k: d[k] for k in ("doc_id", "company", "report_year", "page", "table")}
+            size = len(json.dumps(table))
+            if used + size > 6000 or len(tables) >= 3:
+                continue
+            tables.append(table)
+            used += size
+        allowed = {d["doc_id"]: allowed[d["doc_id"]] for d in tables}
         result = {"refused": True, "answer": "No supported evidence-bound plan.", "citations": [], "hits": hits}
         if not tables:
             return result
@@ -41,6 +52,7 @@ class ModelPlanner:
                 response.raise_for_status()
                 raw = response.json()
             result["model_trace"] = {"model": self.model, "request": prompt, "response": raw,
+                                     "table_budget": {"max_tables": 3, "max_json_characters": 6000},
                                      "latency_ms": (time.perf_counter() - start) * 1000}
             choice = raw["choices"][0]
             if choice["finish_reason"] == "length":
