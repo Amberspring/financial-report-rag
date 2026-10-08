@@ -1,0 +1,232 @@
+{
+  "status": "measured_pdf_ingestion_and_retrieval",
+  "source": "https://www.annualreports.com/HostedData/AnnualReportArchive/h/NASDAQ_HOLX_2008.pdf",
+  "pdf_sha256": "a343d372120945caf7f6d8d9809d0bc89d6eaff026d096b3ec79bd4a82976fc3",
+  "blocks_sha256": "7d120c42f811be9a047ff7891d8d4751eb41c79a38a00dd6120bef7c65f2c7d4",
+  "pages_with_extracted_blocks": 174,
+  "blocks_by_kind": {
+    "table": 12,
+    "text": 180
+  },
+  "chunks": 1493,
+  "query": "Hologic contractual obligations and commitments 2008",
+  "experiments": {
+    "dense": [
+      {
+        "chunk": {
+          "id": "80084c1e72487f68",
+          "doc_id": "HOLX-2008",
+          "page": 136,
+          "text": "Hologic, Inc.\nNotes to Consolidated Financial Statements (continued)\n(In thousands, except per share data)\nliability of approximately $2,800 in accordance with EITF Issue No. 95-3 (“EITF 95-3”), Recognition of\nLiabilities in Connection with a Purchase Business Combination, primarily related to the termination of certain\nemployees, minimum inventory purchase commitments and other contractual obligations for which the related\nbusiness activities have been discontinued.\nBook value of net assets acquired as of ",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.529204249382019,
+        "cosine": 0.529204249382019,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "dbdb12562990a33e",
+          "doc_id": "HOLX-2008",
+          "page": 152,
+          "text": "Hologic, Inc.\nNotes to Consolidated Financial Statements (continued)\n(In thousands, except per share data)\nthe Company will deliver cash in an amount as provided in the Indenture. If the Company elects to satisfy its\nconversion obligation in a combination of cash and shares of the Company’s common stock, the Company will\ndeliver up to a specified dollar amount of cash per $1,000 original principal amount of Convertible Notes, and\nwill settle the remainder of its conversion obligation in shares of its common",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.5147600173950195,
+        "cosine": 0.5147600173950195,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "ed4e061e9a129464",
+          "doc_id": "HOLX-2008",
+          "page": 111,
+          "text": "Hologic, Inc.\nNotes to Consolidated Financial Statements\n(In thousands, except per share data)\n1. Operations\nHologic, Inc. (the “Company” or “Hologic”) develops, manufactures and distributes medical imaging\nsystems and diagnostic and surgical products focused on the healthcare needs of women.\nIn October 2007, the Company completed its business combination with Cytyc Corporation (“Cytyc”), a\ncompany that develops, manufactures and markets complementary products covering a range of cancer and\nwomen’s health a",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.5093894600868225,
+        "cosine": 0.5093894600868225,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "ef009719eed4d8ff",
+          "doc_id": "HOLX-2008",
+          "page": 4,
+          "text": "crease to $800 million in the next few years. This\nimportant acquisition will broaden Hologic’s range of\nHologic was founded on and remains committed to the\ndiagnostics products and establish a platform for future\nprinciple of applying superior technology to healthcare\nmolecular diagnostics while enhancing our revenue and\nchallenges facing women. During fiscal 2008, we expanded\nearnings potential.\nand diversified our business through strategic acquisitions.\nIn October 2007, Hologic completed the acquisition",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.5076782703399658,
+        "cosine": 0.5076782703399658,
+        "lexical_overlap": 0.5
+      },
+      {
+        "chunk": {
+          "id": "251ffb99b9fdcb45",
+          "doc_id": "HOLX-2008",
+          "page": 91,
+          "text": "Report of Independent Registered Public Accounting Firm\nThe Board of Directors and Shareholders of Hologic, Inc.:\nWe have audited Hologic Inc.’s (the “Company”) internal control over financial reporting as of\nSeptember 27, 2008, based on criteria established in Internal Control—Integrated Framework issued by the\nCommittee of Sponsoring Organizations of the Treadway Commission (the COSO criteria). The Company’s\nmanagement is responsible for maintaining effective internal control over financial reporting, and",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.501636803150177,
+        "cosine": 0.501636803150177,
+        "lexical_overlap": 0.5
+      }
+    ],
+    "bm25": [
+      {
+        "chunk": {
+          "id": "5f6049c9797c15e2",
+          "doc_id": "HOLX-2008",
+          "page": 84,
+          "text": "nd future payments under these license agreements are approximately $7.0 million as of\nSeptember 27, 2008.\nContractual Obligations. The following table summarizes our contractual obligations and commitments as\nof September 27, 2008:\nPayments Due by Period\nLess than More than\nContractual Obligations 1 year 1-3 years 3-5 years 5 years Total\nLong-Term Debt Obligations . . . . . . . . . . . . . . . . . $ 38,480 $109,436 $327,400 $1,725,584 $2,200,900\nInterest on Long-Term Debt Obligations . . . . . . . . 58,734",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 21.013733411916494,
+        "cosine": 0,
+        "lexical_overlap": 0.8333333333333334
+      },
+      {
+        "chunk": {
+          "id": "80084c1e72487f68",
+          "doc_id": "HOLX-2008",
+          "page": 136,
+          "text": "Hologic, Inc.\nNotes to Consolidated Financial Statements (continued)\n(In thousands, except per share data)\nliability of approximately $2,800 in accordance with EITF Issue No. 95-3 (“EITF 95-3”), Recognition of\nLiabilities in Connection with a Purchase Business Combination, primarily related to the termination of certain\nemployees, minimum inventory purchase commitments and other contractual obligations for which the related\nbusiness activities have been discontinued.\nBook value of net assets acquired as of ",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 15.424579903951155,
+        "cosine": 0,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "5831163e7bc8d0f4",
+          "doc_id": "HOLX-2008",
+          "page": 128,
+          "text": "F 95-3 as\ndetailed below, primarily related to the termination of certain employees as well as minimum inventory purchase\ncommitments and other contractual obligations for which business activities have been discontinued.\nDuring the twelve months ended September 27, 2008 the Company incurred approximately $6.4 million of\nexpense related to the resignation of the Chairman of the Board of Directors, which is not included in the table\nbelow (See Note 12).\nChanges in the restructuring accrual for the twelve mon",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 13.710628040576244,
+        "cosine": 0,
+        "lexical_overlap": 0.8333333333333334
+      },
+      {
+        "chunk": {
+          "id": "3f1fefddd5cc14c0",
+          "doc_id": "HOLX-2008",
+          "page": 106,
+          "text": ". . . . . . . 1,725,000 —\nDeferred income tax liabilities, net . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 920,838 54,866\nDeferred service obligations—long-term . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10,777 10,135\nOther long-term liabilities (Note 15) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57,453 7,791\nCommitments and co",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 11.206693627808432,
+        "cosine": 0,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "42ee32c591961d35",
+          "doc_id": "HOLX-2008",
+          "page": 84,
+          "text": "Private Equity Investment (3) . . . . . . . . . . . . . . . . 1,874 — — — 1,874\nTotal Contractual Obligations . . . . . . . . . . . . . . . . $156,571 $280,309 $454,115 $1,811,692 $2,702,687\n(1) Approximately $6.4 million of the purchase obligations relates to an exclusive distribution and service\nagreement in the United States under which we will sell and service a line of extremity MRI systems.\nPursuant to the terms of this contract, we have certain minimum inventory purchase obligations for the\ninitial t",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 10.902858766067224,
+        "cosine": 0,
+        "lexical_overlap": 0.0
+      }
+    ],
+    "hybrid": [
+      {
+        "chunk": {
+          "id": "80084c1e72487f68",
+          "doc_id": "HOLX-2008",
+          "page": 136,
+          "text": "Hologic, Inc.\nNotes to Consolidated Financial Statements (continued)\n(In thousands, except per share data)\nliability of approximately $2,800 in accordance with EITF Issue No. 95-3 (“EITF 95-3”), Recognition of\nLiabilities in Connection with a Purchase Business Combination, primarily related to the termination of certain\nemployees, minimum inventory purchase commitments and other contractual obligations for which the related\nbusiness activities have been discontinued.\nBook value of net assets acquired as of ",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.03252247488101534,
+        "cosine": 0.529204249382019,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "5831163e7bc8d0f4",
+          "doc_id": "HOLX-2008",
+          "page": 128,
+          "text": "F 95-3 as\ndetailed below, primarily related to the termination of certain employees as well as minimum inventory purchase\ncommitments and other contractual obligations for which business activities have been discontinued.\nDuring the twelve months ended September 27, 2008 the Company incurred approximately $6.4 million of\nexpense related to the resignation of the Chairman of the Board of Directors, which is not included in the table\nbelow (See Note 12).\nChanges in the restructuring accrual for the twelve mon",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.030158730158730156,
+        "cosine": 0.49153780937194824,
+        "lexical_overlap": 0.8333333333333334
+      },
+      {
+        "chunk": {
+          "id": "5f6049c9797c15e2",
+          "doc_id": "HOLX-2008",
+          "page": 84,
+          "text": "nd future payments under these license agreements are approximately $7.0 million as of\nSeptember 27, 2008.\nContractual Obligations. The following table summarizes our contractual obligations and commitments as\nof September 27, 2008:\nPayments Due by Period\nLess than More than\nContractual Obligations 1 year 1-3 years 3-5 years 5 years Total\nLong-Term Debt Obligations . . . . . . . . . . . . . . . . . $ 38,480 $109,436 $327,400 $1,725,584 $2,200,900\nInterest on Long-Term Debt Obligations . . . . . . . . 58,734",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.029906956136464335,
+        "cosine": 0.4879313111305237,
+        "lexical_overlap": 0.8333333333333334
+      },
+      {
+        "chunk": {
+          "id": "388ac01fe7f6e58f",
+          "doc_id": "HOLX-2008",
+          "page": 115,
+          "text": "and equipment on its\nconsolidated balance sheet, with an offsetting increase to accrued expenses and other non-current liabilities.\nPlease refer to Note 13, “Commitments and Contingencies”, for further discussion regarding the Company’s\nobligations under these lease agreements.\nValuation of Business Combinations and Acquisition of Intangible Assets\nThe Company records tangible and intangible assets acquired in business combinations and acquisitions of\nintangible assets under the purchase method of accountin",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.029857397504456328,
+        "cosine": 0.4951273202896118,
+        "lexical_overlap": 0.0
+      },
+      {
+        "chunk": {
+          "id": "e0a7c8ef31a19bef",
+          "doc_id": "HOLX-2008",
+          "page": 114,
+          "text": "s in the\naccompanying Consolidated Statements of Operations, respectively for excess inventory related to certain of its\nMRI finished goods on hand. Please refer to Note 13, “Commitments and Contingencies”, for additional\ninformation related to the Company’s purchase commitments for its MRI product line.\nProperty and Equipment\nThe Company provides for depreciation and amortization by charges to operations, using the straight-line\nmethod, which allocates the cost of property and equipment over the following ",
+          "kind": "text",
+          "bbox": null,
+          "evidence_keys": []
+        },
+        "score": 0.029418126757516764,
+        "cosine": 0.49670249223709106,
+        "lexical_overlap": 0.0
+      }
+    ]
+  },
+  "limitations": "Physical PDF page numbers; printed page labels may differ. TF-IDF dense baseline. Extracted evidence is not an answer accuracy score. No claim that automatic PDF tables are fully correct; visually verify quoted pages."
+}

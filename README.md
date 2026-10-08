@@ -87,3 +87,9 @@ finrag.cli 保存 vectors.faiss、metadata.json 和 TF-IDF encoder.joblib；程�
 源码位于 src/finrag/；测试覆盖表格完整性、PDF 提取、召回、引用、拒答、索引变体和保存恢复。结果位于 results/，说明见 [docs/EXPERIMENTS.md](docs/EXPERIMENTS.md) 与 [docs/BADCASES.md](docs/BADCASES.md)。
 
 上传方式见 [docs/GITHUB.md](docs/GITHUB.md)，技术依据见 [docs/SOURCES.md](docs/SOURCES.md)。
+
+## 2026-10-08 全链路验收与失败结果
+
+在已审计的官方 FinQA 100 题子集上，全局 BM25 检索 → Qwen3-8B 表格计划 → 证据数值校验 → Decimal 单运算执行的覆盖率为 29%，原始执行答案准确率仅 2%，证据 Recall@5 为 63.83%。预测器没有接收金标 doc_id、答案或程序，原始预测、提示与拒绝原因保存在 `results/finqa-model-20261008*`。这份公开测试此前已检查过，并非全新盲测；结果揭示错公司证据与运算选择问题，不能宣称金融问答已达到可用准确率。
+
+对 Hologic 2008 年报原始 PDF 的独立审计发现固定字符间距阈值会吞掉英文空格，现改用字宽比例，并加入真实 PDF 格式的回归测试。`scripts/audit_pdf.py` 可下载后解析并导出哈希、物理页码与检索轨迹；`results/pdf-audit-20261008.json` 记录来源和实际结果。合同义务查询在 BM25 排名第一、混合检索排名第三命中物理第 84 页（印刷页 76）；该页无边框表格仍以正文保留，不能把检测到的 12 个表格解释为完整表格识别能力，也不能将单份 PDF 验证扩展为全部 FinQA 原 PDF 验证。

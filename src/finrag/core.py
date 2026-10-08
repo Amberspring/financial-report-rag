@@ -87,7 +87,8 @@ def parse_pdf(path, doc_id=None):
     with pdfplumber.open(path) as pdf:
         for page in pdf.pages:
             tables = page.find_tables()
-            words = page.extract_words()
+            # Fixed 3pt spacing merged whole words in tightly set annual reports.
+            words = page.extract_words(x_tolerance_ratio=0.15)
             excluded = [t.bbox for t in tables]
 
             def in_table(w):
