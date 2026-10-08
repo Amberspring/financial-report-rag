@@ -1,0 +1,11 @@
+{
+  "status": "measured",
+  "date": "2026-10-05",
+  "python": "3.12.2",
+  "tests_passed": 18,
+  "total_suite_passed": 42,
+  "command": "python -m pytest -q",
+  "static_check": "ruff E9,F63,F7,F82,F401,F841",
+  "ci_status": "provided workflow; remote CI not yet run",
+  "warnings": "starlette anyio alias and faiss numpy.core deprecations"
+}

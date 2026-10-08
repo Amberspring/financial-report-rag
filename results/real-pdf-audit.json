@@ -1,0 +1,11 @@
+{
+  "status": "measured",
+  "source_url": "https://microsoft.gcs-web.com/static-files/1c864583-06f7-40cc-a94d-d11400c83cc8",
+  "sha256": "0627f4b836ec187868c4bc1b03c58a11cd35fa6815aa0b615be0ad96a5097408",
+  "pages": 168,
+  "blocks": 474,
+  "table_blocks": 301,
+  "chunks": 1436,
+  "seconds": 10580.6819509,
+  "warning": "Extraction counts do not establish OCR, reading-order, or table-cell accuracy; manual QA required. FinQA benchmark is a separate corpus."
+}

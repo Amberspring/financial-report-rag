@@ -1,0 +1,36 @@
+{
+  "query": "What is the percentage change in Net changes in purchases and sales of minerals in place from 2006 to 2007?",
+  "doc_id": "MRO/2007/page_149.pdf",
+  "plan": {
+    "operation": "growth",
+    "operands": [
+      {
+        "doc_id": "MRO/2007/page_149.pdf",
+        "row": 7,
+        "column": 1,
+        "expected_label": "Net changes in purchases and sales of minerals in place",
+        "expected_year": "2007"
+      },
+      {
+        "doc_id": "MRO/2007/page_149.pdf",
+        "row": 7,
+        "column": 2,
+        "expected_label": "Net changes in purchases and sales of minerals in place",
+        "expected_year": "2006"
+      }
+    ]
+  },
+  "source": "table cells only; no FinQA gold labels",
+  "table_header": [
+    "<i>(In millions)</i>",
+    "2007",
+    "2006",
+    "2005"
+  ],
+  "table_row": [
+    "Net changes in purchases and sales of minerals in place",
+    "23",
+    "30",
+    "4,557"
+  ]
+}

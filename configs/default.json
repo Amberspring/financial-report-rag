@@ -1,0 +1,8 @@
+{
+  "chunk_size": 512,
+  "overlap": 100,
+  "embedding": "tfidf",
+  "index": "flat",
+  "reranker": null,
+  "refusal_threshold": 0.2
+}

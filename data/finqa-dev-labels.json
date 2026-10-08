@@ -1,0 +1,386 @@
+[
+  {
+    "id": "HOLX/2008/page_84.pdf-2",
+    "gold_inds": {
+      "table_8": "contractual obligations the total contractual obligations of payments due by period less than 1 year is $ 156571 ; the total contractual obligations of payments due by period 1-3 years is $ 280309 ; the total contractual obligations of payments due by period 3-5 years is $ 454115 ; the total contractual obligations of payments due by period more than 5 years is $ 1811692 ; the total contractual obligations of payments due by period total is $ 2702687 ;"
+    },
+    "exe_ans": 0.05793,
+    "program": "divide(156571, 2702687)",
+    "answer": "5.8%"
+  },
+  {
+    "id": "MO/2012/page_44.pdf-4",
+    "gold_inds": {
+      "table_5": "( cans and packs in millions ) the total smokeless products of shipment volumefor the years ended december 31 , 2012 is 763.3 ; the total smokeless products of shipment volumefor the years ended december 31 , 2011 is 734.6 ; the total smokeless products of shipment volumefor the years ended december 31 , 2010 is 724.4 ;"
+    },
+    "exe_ans": 0.01408,
+    "program": "subtract(734.6, 724.4), divide(#0, 724.4)",
+    "answer": "1.4%"
+  },
+  {
+    "id": "MSI/2006/page_61.pdf-4",
+    "gold_inds": {
+      "text_12": "rental expense , net of sublease income , was $ 241 million in 2006 , $ 250 million in 2005 and $ 205 million in 2004 ."
+    },
+    "exe_ans": 349.5,
+    "program": "add(241, 250), add(#0, 205), add(#1, const_3), divide(#2, const_2)",
+    "answer": "232"
+  },
+  {
+    "id": "MRO/2007/page_149.pdf-2",
+    "gold_inds": {
+      "table_4": "( in millions ) the development costs incurred during the period of 2007 is 1654 ; the development costs incurred during the period of 2006 is 1251 ; the development costs incurred during the period of 2005 is 1030 ;"
+    },
+    "exe_ans": 2057.0,
+    "program": "subtract(1654, 1251), add(#0, 1654)",
+    "answer": "2057"
+  },
+  {
+    "id": "ETR/2016/page_418.pdf-4",
+    "gold_inds": {
+      "table_1": "the 2015 net revenue of amount ( in millions ) is $ 637.2 ;",
+      "table_8": "the 2016 net revenue of amount ( in millions ) is $ 644.2 ;"
+    },
+    "exe_ans": 0.01099,
+    "program": "subtract(644.2, 637.2), divide(#0, 637.2)",
+    "answer": "1.1%"
+  },
+  {
+    "id": "UNP/2014/page_75.pdf-1",
+    "gold_inds": {
+      "table_9": "millions the total accounts payable and othercurrent liabilities of dec . 31 2014 is $ 3303 ; the total accounts payable and othercurrent liabilities of dec . 312013 is $ 3086 ;"
+    },
+    "exe_ans": 0.07032,
+    "program": "subtract(3303, 3086), divide(#0, 3086)",
+    "answer": "7.03%"
+  },
+  {
+    "id": "ETFC/2011/page_82.pdf-3",
+    "gold_inds": {
+      "table_2": "reporting unit the capital markets of december 31 2011 is 142.4 ;",
+      "table_4": "reporting unit the total goodwill of december 31 2011 is $ 1934.2 ;"
+    },
+    "exe_ans": 0.07362,
+    "program": "divide(142.4, 1934.2)",
+    "answer": "7.4%"
+  },
+  {
+    "id": "BKR/2017/page_103.pdf-2",
+    "gold_inds": {
+      "table_2": "the risk-free interest rate of 2017 is 2.1% ( 2.1 % ) ;",
+      "text_12": "stock based compensation expense was $ 37 million in 2017 ."
+    },
+    "exe_ans": 777000.0,
+    "program": "multiply(37, const_1000000), multiply(2.1%, #0)",
+    "answer": "777000"
+  },
+  {
+    "id": "UA/2009/page_50.pdf-2",
+    "gold_inds": {
+      "text_3": "since 2007 , we have used foreign currency forward contracts to reduce the risk from exchange rate fluctuations on inter-company transactions and projected inventory purchases for our canadian subsidiary .",
+      "text_9": "the fair value of our foreign currency forward contracts was $ 0.3 million and $ 1.2 million as of december 31 , 2009 and 2008 , respectively ."
+    },
+    "exe_ans": -0.75,
+    "program": "subtract(0.3, 1.2), divide(#0, 1.2)",
+    "answer": "-75%"
+  },
+  {
+    "id": "AMT/2008/page_32.pdf-1",
+    "gold_inds": {
+      "text_3": "as of february 13 , 2009 , we had 397097677 outstanding shares of common stock and 499 registered holders ."
+    },
+    "exe_ans": 795786.92786,
+    "program": "divide(397097677, 499)",
+    "answer": "795786.9"
+  },
+  {
+    "id": "DRE/2007/page_59.pdf-2",
+    "gold_inds": {
+      "table_5": "operating rental properties the goodwill of $ 602011 is 14722 ;",
+      "table_6": "operating rental properties the total assets acquired of $ 602011 is 867558 ;",
+      "text_10": "the initial consideration paid to the sellers totaled $ 47.1 million , and the sellers may be eligible for further contingent payments over the next three years ."
+    },
+    "exe_ans": 1.69695,
+    "program": "divide(14722, 867558), multiply(#0, const_100)",
+    "answer": "1.70%"
+  },
+  {
+    "id": "ETR/2008/page_321.pdf-1",
+    "gold_inds": {
+      "text_14": "in august 2008 , entergy louisiana issued $ 300 million of 6.50% ( 6.50 % ) series first mortgage bonds due september 2018 ."
+    },
+    "exe_ans": 19.5,
+    "program": "multiply(300, 6.50%)",
+    "answer": "19.5"
+  },
+  {
+    "id": "APD/2016/page_39.pdf-2",
+    "gold_inds": {
+      "table_1": "the interest incurred of 2016 is $ 148.4 ; the interest incurred of 2015 is $ 152.6 ; the interest incurred of 2014 is $ 158.1 ;"
+    },
+    "exe_ans": 148.4,
+    "program": "table_min(interest incurred, none)",
+    "answer": "148.4"
+  },
+  {
+    "id": "DRE/2009/page_72.pdf-1",
+    "gold_inds": {
+      "table_2": "restricted stock units the granted of number of rsus is 1583616 ; the granted of weighted average grant date fair value is $ 9.32 ;"
+    },
+    "exe_ans": 14759301.12,
+    "program": "multiply(1583616, 9.32)",
+    "answer": "14759301.12"
+  },
+  {
+    "id": "UNP/2013/page_54.pdf-2",
+    "gold_inds": {
+      "table_9": "millions the total operatingrevenues of 2013 is $ 21963 ; the total operatingrevenues of 2012 is $ 20926 ; the total operatingrevenues of 2011 is $ 19557 ;",
+      "text_13": "included in the above table are revenues from our mexico business which amounted to $ 2.1 billion in 2013 , $ 1.9 billion in 2012 , and $ 1.8 billion in 2011 ."
+    },
+    "exe_ans": 0.0001,
+    "program": "divide(2.1, 21963)",
+    "answer": "9.6%"
+  },
+  {
+    "id": "JPM/2008/page_85.pdf-3",
+    "gold_inds": {
+      "table_1": "december 31 ( in millions ) the total tier 1capital ( a ) of 2008 is $ 136104 ; the total tier 1capital ( a ) of 2007 is $ 88746 ;",
+      "table_4": "december 31 ( in millions ) the risk-weighted assets of 2008 is $ 1244659 ; the risk-weighted assets of 2007 is $ 1051879 ;"
+    },
+    "exe_ans": 0.10935,
+    "program": "divide(136104, 1244659)",
+    "answer": "10.94%"
+  },
+  {
+    "id": "UPS/2006/page_32.pdf-3",
+    "gold_inds": {
+      "table_1": "the united parcel service inc . of 12/31/01 is $ 100.00 ; the united parcel service inc . of 12/31/02 is $ 117.19 ; the united parcel service inc . of 12/31/03 is $ 140.49 ; the united parcel service inc . of 12/31/04 is $ 163.54 ; the united parcel service inc . of 12/31/05 is $ 146.35 ; the united parcel service inc . of 12/31/06 is $ 148.92 ;",
+      "table_2": "the s&p 500 index of 12/31/01 is $ 100.00 ; the s&p 500 index of 12/31/02 is $ 77.90 ; the s&p 500 index of 12/31/03 is $ 100.24 ; the s&p 500 index of 12/31/04 is $ 111.15 ; the s&p 500 index of 12/31/05 is $ 116.61 ; the s&p 500 index of 12/31/06 is $ 135.02 ;"
+    },
+    "exe_ans": 13.9,
+    "program": "subtract(148.92, const_100), subtract(135.02, const_100), subtract(#0, #1)",
+    "answer": "13.9%"
+  },
+  {
+    "id": "TSCO/2017/page_31.pdf-2",
+    "gold_inds": {
+      "table_2": "the s&p 500 of 12/29/2012 is $ 100.00 ; the s&p 500 of 12/28/2013 is $ 134.11 ; the s&p 500 of 12/27/2014 is $ 155.24 ; the s&p 500 of 12/26/2015 is $ 156.43 ; the s&p 500 of 12/31/2016 is $ 173.74 ; the s&p 500 of 12/30/2017 is $ 211.67 ;",
+      "table_3": "the s&p retail index of 12/29/2012 is $ 100.00 ; the s&p retail index of 12/28/2013 is $ 147.73 ; the s&p retail index of 12/27/2014 is $ 164.24 ; the s&p retail index of 12/26/2015 is $ 207.15 ; the s&p retail index of 12/31/2016 is $ 219.43 ; the s&p retail index of 12/30/2017 is $ 286.13 ;",
+      "text_2": "the comparison assumes that $ 100 was invested on december 29 , 2012 , in our common stock and in each of the foregoing indices and in each case assumes reinvestment of dividends .",
+      "text_3": "the historical stock price performance shown on this graph is not indicative of future performance. ."
+    },
+    "exe_ans": 0.7446,
+    "program": "subtract(211.67, 100), divide(#0, 100), subtract(286.13, 100), divide(#2, 100), subtract(#3, #1)",
+    "answer": "73.4%"
+  },
+  {
+    "id": "ZBH/2003/page_40.pdf-2",
+    "gold_inds": {
+      "table_2": "year ended december 31 , the europe of 2003 is 26.3 ; the europe of 2002 is 24.4 ; the europe of 2001 is 19.5 ;"
+    },
+    "exe_ans": 6.8,
+    "program": "subtract(26.3, 19.5)",
+    "answer": "6.8%"
+  },
+  {
+    "id": "ILMN/2007/page_78.pdf-3",
+    "gold_inds": {
+      "table_1": "the revenue of year ended december 30 2007 is $ 366854 ; the revenue of year ended december 31 2006 is $ 187103 ;"
+    },
+    "exe_ans": 0.96071,
+    "program": "subtract(366854, 187103), divide(#0, 187103)",
+    "answer": "96%"
+  },
+  {
+    "id": "TSCO/2018/page_34.pdf-1",
+    "gold_inds": {
+      "table_1": "the tractor supply company of 12/28/2013 is $ 100.00 ; the tractor supply company of 12/27/2014 is $ 104.11 ; the tractor supply company of 12/26/2015 is $ 115.45 ; the tractor supply company of 12/31/2016 is $ 103.33 ; the tractor supply company of 12/30/2017 is $ 103.67 ; the tractor supply company of 12/29/2018 is $ 117.18 ;",
+      "table_3": "the s&p retail index of 12/28/2013 is $ 100.00 ; the s&p retail index of 12/27/2014 is $ 111.18 ; the s&p retail index of 12/26/2015 is $ 140.22 ; the s&p retail index of 12/31/2016 is $ 148.53 ; the s&p retail index of 12/30/2017 is $ 193.68 ; the s&p retail index of 12/29/2018 is $ 217.01 ;",
+      "text_2": "the comparison assumes that $ 100 was invested on december 28 , 2013 , in our common stock and in each of the foregoing indices and in each case assumes reinvestment of dividends .",
+      "text_3": "the historical stock price performance shown on this graph is not indicative of future performance. ."
+    },
+    "exe_ans": 0.9983,
+    "program": "subtract(217.01, 100.00), divide(#0, 100.00), subtract(117.18, 100), divide(#2, 100), subtract(#1, #3)",
+    "answer": "99.8%"
+  },
+  {
+    "id": "AON/2010/page_28.pdf-1",
+    "gold_inds": {
+      "table_2": "property : the 2601 research forest drive the woodlands texas of occupied square footage is 414000 ; the 2601 research forest drive the woodlands texas of lease expiration dates is 2020 ;",
+      "table_3": "property : the 2300 discovery drive orlando florida of occupied square footage is 364000 ; the 2300 discovery drive orlando florida of lease expiration dates is 2020 ;"
+    },
+    "exe_ans": 778000.0,
+    "program": "add(414000, 364000)",
+    "answer": "778000"
+  },
+  {
+    "id": "PM/2018/page_24.pdf-2",
+    "gold_inds": {
+      "table_1": "date the december 31 2013 of pmi is $ 100.00 ; the december 31 2013 of pmi peer group ( 1 ) is $ 100.00 ; the december 31 2013 of s&p 500 index is $ 100.00 ;",
+      "table_6": "date the december 31 2018 of pmi is $ 96.50 ; the december 31 2018 of pmi peer group ( 1 ) is $ 127.70 ; the december 31 2018 of s&p 500 index is $ 150.30 ;"
+    },
+    "exe_ans": 0.538,
+    "program": "subtract(96.50, const_100), divide(#0, const_100), subtract(150.30, const_100), divide(#2, const_100), subtract(#3, #1)",
+    "answer": "53.8%"
+  },
+  {
+    "id": "ZBH/2003/page_58.pdf-1",
+    "gold_inds": {
+      "table_4": "the inventories net of 2003 is $ 527.7 ; the inventories net of 2002 is $ 257.6 ;"
+    },
+    "exe_ans": 1.04852,
+    "program": "divide(527.7, 257.6), subtract(#0, const_1)",
+    "answer": "104.85%"
+  },
+  {
+    "id": "FBHS/2017/page_76.pdf-1",
+    "gold_inds": {
+      "table_3": "( in millions ) the $ 1250 million revolving credit agreement due june 2021 of 2017 is 615.0 ; the $ 1250 million revolving credit agreement due june 2021 of 2016 is 540.0 ;",
+      "table_6": "( in millions ) the total long-term debt of 2017 is $ 1507.6 ; the total long-term debt of 2016 is $ 1431.1 ;"
+    },
+    "exe_ans": 0.40793,
+    "program": "divide(615.0, 1507.6)",
+    "answer": "41%"
+  },
+  {
+    "id": "EW/2016/page_79.pdf-4",
+    "gold_inds": {
+      "table_3": "current assets the ipr&d of $ 28.1 is 190.0 ;",
+      "table_9": "current assets the total cash purchase price net of cash acquired of $ 28.1 is $ 320.1 ;"
+    },
+    "exe_ans": 0.59356,
+    "program": "divide(190.0, 320.1)",
+    "answer": "59%"
+  },
+  {
+    "id": "DISH/2013/page_138.pdf-3",
+    "gold_inds": {
+      "text_12": "during the years ended december 31 , 2013 , 2012 and 2011 , the revenue from our discontinued operations was $ 503 million , $ 1.085 billion and $ 974 million , respectively ."
+    },
+    "exe_ans": 738.5,
+    "program": "add(503, 974), divide(#0, const_2)",
+    "answer": "738.5"
+  },
+  {
+    "id": "INTC/2013/page_33.pdf-1",
+    "gold_inds": {
+      "table_1": "( dollars in millions except per share amounts ) the net revenue of three months ended dec . 282013 is $ 13834 ; the net revenue of three months ended sept . 282013 is $ 13483 ; the net revenue of three months ended change is $ 351 ; the net revenue of three months ended dec . 282013 is $ 52708 ; the net revenue of three months ended dec . 292012 is $ 53341 ; the net revenue of change is $ -633 ( 633 ) ;"
+    },
+    "exe_ans": -0.01187,
+    "program": "subtract(52708, 53341), divide(#0, 53341)",
+    "answer": "-1.2%"
+  },
+  {
+    "id": "GS/2017/page_106.pdf-2",
+    "gold_inds": {
+      "table_1": "$ in millions the equity of as of december 2017 is $ 2096 ; the equity of as of december 2016 is $ 2085 ; the equity of as of december 2015 is $ 2157 ;",
+      "table_3": "$ in millions the total of as of december 2017 is $ 3702 ; the total of as of december 2016 is $ 3787 ; the total of as of december 2015 is $ 3636 ;"
+    },
+    "exe_ans": 0.56618,
+    "program": "divide(2096, 3702)",
+    "answer": "57%"
+  },
+  {
+    "id": "LMT/2006/page_90.pdf-4",
+    "gold_inds": {
+      "text_9": "future minimum lease commitments at december 31 , 2006 for all operating leases that have a remaining term of more than one year were $ 1.1 billion ( $ 288 million in 2007 , $ 254 million in 2008 , $ 211 million in 2009 , $ 153 million in 2010 , $ 118 million in 2011 and $ 121 million in later years ) ."
+    },
+    "exe_ans": 0.23091,
+    "program": "multiply(1.1, const_1000), divide(254, #0)",
+    "answer": "23%"
+  },
+  {
+    "id": "AAPL/2008/page_78.pdf-2",
+    "gold_inds": {
+      "table_3": "the change in unrealized gains on derivative instruments of 2008 is $ 19 ; the change in unrealized gains on derivative instruments of 2007 is $ -3 ( 3 ) ; the change in unrealized gains on derivative instruments of 2006 is $ -1 ( 1 ) ;"
+    },
+    "exe_ans": 5.0,
+    "program": "table_average(change in unrealized gains on derivative instruments, none)",
+    "answer": "5"
+  },
+  {
+    "id": "TROW/2010/page_22.pdf-3",
+    "gold_inds": {
+      "text_19": "the 2009 provision for income taxes as a percentage of pretax income is 37.1% ( 37.1 % ) , down from 38.4% ( 38.4 % ) in 2008 ."
+    },
+    "exe_ans": 1.3,
+    "program": "subtract(38.4, 37.1)",
+    "answer": "1.2%"
+  },
+  {
+    "id": "SWKS/2006/page_81.pdf-2",
+    "gold_inds": {
+      "table_1": "the balance as of october 1 2004 of pension adjustments is $ -786 ( 786 ) ; the balance as of october 1 2004 of accumulated other comprehensive loss is $ -786 ( 786 ) ;",
+      "table_2": "the change in period of pension adjustments is -351 ( 351 ) ; the change in period of accumulated other comprehensive loss is -351 ( 351 ) ;"
+    },
+    "exe_ans": 0.44656,
+    "program": "divide(351, 786)",
+    "answer": "44.7%"
+  },
+  {
+    "id": "ETR/2002/page_24.pdf-4",
+    "gold_inds": {
+      "text_7": "following are key performance measures for non-utility nuclear: .",
+      "text_8": "2002 compared to 2001 the following fluctuations in the results of operations for non-utility nuclear in 2002 were primarily caused by the acquisitions of indian point 2 and vermont yankee ( except as otherwise noted ) : fffd operating revenues increased $ 411.0 million to $ 1.2 billion ; fffd other operation and maintenance expenses increased $ 201.8 million to $ 596.3 million ; fffd depreciation and amortization expenses increased $ 25.1 million to $ 42.8 million ; fffd fuel expenses increased $ 29.4 million to $ 105.2 million ; fffd nuclear refueling outage expenses increased $ 23.9 million to $ 46.8 million , which was due primarily to a ."
+    },
+    "exe_ans": 1.91971,
+    "program": "multiply(1.2, const_1000), subtract(#0, 411.0), divide(#1, 411.0)",
+    "answer": "192%"
+  },
+  {
+    "id": "MRO/2008/page_69.pdf-2",
+    "gold_inds": {
+      "table_0": "benchmark wti crude oil ( dollars per barrel ) the benchmark wti crude oil ( dollars per barrel ) of high $ 145.29 is high $ 145.29 ; the benchmark wti crude oil ( dollars per barrel ) of date july 3 is date july 3 ; the benchmark wti crude oil ( dollars per barrel ) of low $ 33.87 is low $ 33.87 ; the benchmark wti crude oil ( dollars per barrel ) of date december 19 is date december 19 ;"
+    },
+    "exe_ans": 111.42,
+    "program": "subtract(145.29, 33.87)",
+    "answer": "111.42"
+  },
+  {
+    "id": "BLK/2012/page_37.pdf-3",
+    "gold_inds": {
+      "table_2": "( dollar amounts in millions ) the fixed income of americas is 121640 ; the fixed income of emea is 11444 ; the fixed income of asia-pacific is 5341 ; the fixed income of total is 138425 ;"
+    },
+    "exe_ans": 0.87874,
+    "program": "divide(121640, 138425)",
+    "answer": "87.9%"
+  },
+  {
+    "id": "APTV/2014/page_49.pdf-1",
+    "gold_inds": {
+      "table_1": "company index the delphi automotive plc ( 1 ) of november 17 2011 is $ 100.00 ; the delphi automotive plc ( 1 ) of december 31 2011 is $ 100.98 ; the delphi automotive plc ( 1 ) of december 31 2012 is $ 179.33 ; the delphi automotive plc ( 1 ) of december 31 2013 is $ 285.81 ; the delphi automotive plc ( 1 ) of december 31 2014 is $ 350.82 ;",
+      "table_2": "company index the s&p 500 ( 2 ) of november 17 2011 is 100.00 ; the s&p 500 ( 2 ) of december 31 2011 is 100.80 ; the s&p 500 ( 2 ) of december 31 2012 is 116.93 ; the s&p 500 ( 2 ) of december 31 2013 is 154.80 ; the s&p 500 ( 2 ) of december 31 2014 is 175.99 ;",
+      "table_3": "company index the automotive supplier peer group ( 3 ) of november 17 2011 is 100.00 ; the automotive supplier peer group ( 3 ) of december 31 2011 is 89.27 ; the automotive supplier peer group ( 3 ) of december 31 2012 is 110.41 ; the automotive supplier peer group ( 3 ) of december 31 2013 is 166.46 ; the automotive supplier peer group ( 3 ) of december 31 2014 is 178.05 ;"
+    },
+    "exe_ans": -10.73,
+    "program": "subtract(89.27, const_100)",
+    "answer": "-10.73%"
+  },
+  {
+    "id": "MRO/2007/page_134.pdf-3",
+    "gold_inds": {
+      "table_3": "the expected life in years of 2007 is 5.0 ; the expected life in years of 2006 is 5.1 ; the expected life in years of 2005 is 5.5 ;"
+    },
+    "exe_ans": 5.2,
+    "program": "table_average(expected life in years, none)",
+    "answer": "5.2"
+  },
+  {
+    "id": "ABMD/2007/page_52.pdf-2",
+    "gold_inds": {
+      "table_3": "contractual obligations the total obligations of payments due by fiscal year total is $ 14090 ; the total obligations of payments due by fiscal year less than 1 year is $ 8381 ; the total obligations of payments due by fiscal year 1-3 years is $ 3441 ; the total obligations of payments due by fiscal year 3-5 years is $ 1652 ; the total obligations of payments due by fiscal year more than 5 years is $ 616 ;"
+    },
+    "exe_ans": 0.59482,
+    "program": "divide(8381, 14090)",
+    "answer": "59.5%"
+  },
+  {
+    "id": "AON/2009/page_48.pdf-1",
+    "gold_inds": {
+      "table_1": "years ended december 31 , the segment revenue of 2009 is $ 1267 ; the segment revenue of 2008 is $ 1356 ; the segment revenue of 2007 is $ 1345 ;"
+    },
+    "exe_ans": -0.06563,
+    "program": "subtract(1267, 1356), divide(#0, 1356)",
+    "answer": "-6.6%"
+  }
+]

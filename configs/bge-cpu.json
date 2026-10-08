@@ -1,0 +1,8 @@
+{
+  "chunk_size": 512,
+  "overlap": 50,
+  "embedding": "sbert:BAAI/bge-small-en-v1.5",
+  "index": "flat",
+  "reranker": "ce:cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "refusal_threshold": 0.2
+}

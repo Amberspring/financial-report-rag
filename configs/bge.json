@@ -1,0 +1,9 @@
+{
+  "chunk_size": 512,
+  "overlap": 100,
+  "embedding": "BAAI/bge-large-zh-v1.5",
+  "index": "flat",
+  "reranker": "BAAI/bge-reranker-v2-m3",
+  "refusal_threshold": 0.2,
+  "status": "not_run"
+}

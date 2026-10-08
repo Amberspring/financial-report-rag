@@ -1,0 +1,960 @@
+[
+  {
+    "id": "ABMD/2007/page_78.pdf-3",
+    "gold_inds": {
+      "text_22": "the weighted average grant-date fair value for options granted during fiscal years 2005 , 2006 , and 2007 was $ 8.05 , $ 6.91 , and $ 8.75 per share , respectively ."
+    },
+    "exe_ans": -0.21029,
+    "program": "subtract(6.91, 8.75), divide(#0, 8.75)",
+    "answer": "-21.0%"
+  },
+  {
+    "id": "AAL/2014/page_15.pdf-4",
+    "gold_inds": {
+      "table_2": "the flight attendants of american is 15900 ; the flight attendants of us airways is 7700 ; the flight attendants of wholly-owned regional carriers is 1800 ; the flight attendants of total is 25400 ;",
+      "table_1": "the pilots of american is 8600 ; the pilots of us airways is 4400 ; the pilots of wholly-owned regional carriers is 3200 ; the pilots of total is 16200 ;"
+    },
+    "exe_ans": 1.5679,
+    "program": "divide(25400, 16200)",
+    "answer": "1.57"
+  },
+  {
+    "id": "NCLH/2018/page_64.pdf-4",
+    "gold_inds": {
+      "table_5": "the interest ( 5 ) of total is 974444 ; the interest ( 5 ) of less than1 year is 222427 ; the interest ( 5 ) of 1-3 years is 404380 ; the interest ( 5 ) of 3-5 years is 165172 ; the interest ( 5 ) of more than5 years is 182465 ;",
+      "text_16": "off-balance sheet transactions contractual obligations as of december 31 , 2018 , our contractual obligations with initial or remaining terms in excess of one year , including interest payments on long-term debt obligations , were as follows ( in thousands ) : less than 1 year 1-3 years 3-5 years more than 5 years ."
+    },
+    "exe_ans": -0.25741,
+    "program": "subtract(165172, 222427), divide(#0, 222427)",
+    "answer": "the interest decreased 25.7% from year 1 to years 3-5"
+  },
+  {
+    "id": "SNA/2012/page_110.pdf-2",
+    "gold_inds": {
+      "table_2": "the granted of shares ( in thousands ) is 203 ; the granted of fair valueprice pershare* is 60.00 ;",
+      "table_3": "the vested of shares ( in thousands ) is -379 ( 379 ) ; the vested of fair valueprice pershare* is 41.01 ;",
+      "table_4": "the cancellations and other of shares ( in thousands ) is -22 ( 22 ) ; the cancellations and other of fair valueprice pershare* is 44.93 ;"
+    },
+    "exe_ans": -198.0,
+    "program": "add(203, -379), add(#0, -22)",
+    "answer": "-198"
+  },
+  {
+    "id": "PM/2017/page_32.pdf-2",
+    "gold_inds": {
+      "table_2": "the postretirement plans of 2017 is 3.79% ( 3.79 % ) ; the postretirement plans of 2016 is 3.68% ( 3.68 % ) ;"
+    },
+    "exe_ans": -99.89,
+    "program": "subtract(3.79, 3.68), subtract(#0, const_100)",
+    "answer": "11"
+  },
+  {
+    "id": "JPM/2008/page_117.pdf-2",
+    "gold_inds": {
+      "table_1": "( in millions ) the december 31 2008 of 1 basis point increase in jpmorgan chase credit spread is $ 32 ;",
+      "table_2": "( in millions ) the december 31 2007 of 1 basis point increase in jpmorgan chase credit spread is $ 38 ;"
+    },
+    "exe_ans": 70000000.0,
+    "program": "add(32, 38), multiply(#0, const_1000000)",
+    "answer": "70000000"
+  },
+  {
+    "id": "CE/2013/page_16.pdf-1",
+    "gold_inds": {
+      "text_2": "in 2013 , 2012 and 2011 , we received cash dividends of $ 92 million , $ 83 million and $ 78 million , respectively ."
+    },
+    "exe_ans": 0.10843,
+    "program": "subtract(92, 83), divide(#0, 83)",
+    "answer": "10.8%"
+  },
+  {
+    "id": "PNC/2012/page_174.pdf-5",
+    "gold_inds": {
+      "table_2": "in millions the total commercial lending of dec . 312012 is 541 ; the total commercial lending of dec . 312011 is 405 ;",
+      "table_3": "in millions the total tdrs of dec . 312012 is $ 2859 ; the total tdrs of dec . 312011 is $ 2203 ;"
+    },
+    "exe_ans": 0.18923,
+    "program": "divide(541, 2859)",
+    "answer": "18.9%"
+  },
+  {
+    "id": "CE/2016/page_19.pdf-2",
+    "gold_inds": {
+      "text_5": "research and development expense was $ 78 million , $ 119 million and $ 86 million for the years ended december 31 , 2016 , 2015 and 2014 , respectively ."
+    },
+    "exe_ans": 33.0,
+    "program": "subtract(119, 86)",
+    "answer": "33"
+  },
+  {
+    "id": "AWK/2012/page_117.pdf-1",
+    "gold_inds": {
+      "text_10": "the liability balance includes amounts reflected as other long-term liabilities in the accompanying consolidated balance sheets totaling $ 74360 and $ 46961 as of december 31 , 2012 and 2011 , respectively .",
+      "table_1": "balance at january 1 2011 the increases in current period tax positions of $ 118314 is 46961 ;"
+    },
+    "exe_ans": 121321.0,
+    "program": "add(74360, 46961)",
+    "answer": "121321"
+  },
+  {
+    "id": "AMT/2005/page_102.pdf-1",
+    "gold_inds": {
+      "text_5": "2022 construction-in-progress impairment charges 2014for the year ended december 31 , 2005 , 2004 and 2003 , the company wrote-off approximately $ 2.3 million , $ 4.6 million and $ 9.2 million , respectively , of construction-in-progress costs , primarily associated with sites that it no longer planned to build ."
+    },
+    "exe_ans": 5.36667,
+    "program": "add(2.3, 4.6), add(#0, 9.2), divide(#1, const_3)",
+    "answer": "5.4"
+  },
+  {
+    "id": "AON/2015/page_96.pdf-1",
+    "gold_inds": {
+      "text_5": "in 2015 , 2014 , and 2013 , 411636 shares , 439000 shares and 556000 shares , respectively , were issued to employees under the plan ."
+    },
+    "exe_ans": 850636.0,
+    "program": "add(411636, 439000)",
+    "answer": "[6] : in 2015 , 2014 , and 2013 , shares , respectively , were issued to employees under the plan ."
+  },
+  {
+    "id": "JPM/2010/page_273.pdf-2",
+    "gold_inds": {
+      "text_20": "regulators , as of december 31 , 2010 and 2009 , cash in the amount of $ 25.0 billion and $ 24.0 billion , respectively , and securities with a fair value of $ 9.7 billion and $ 10.2 billion , respec- tively , were segregated in special bank accounts for the benefit of securities and futures brokerage customers ."
+    },
+    "exe_ans": 68.9,
+    "program": "add(25.0, 24.0), add(9.7, 10.2), add(#1, #0)",
+    "answer": "68.9"
+  },
+  {
+    "id": "GS/2013/page_149.pdf-2",
+    "gold_inds": {
+      "table_2": "in millions the collateral posted of as of december 2013 is 18178 ; the collateral posted of as of december 2012 is 24296 ;"
+    },
+    "exe_ans": -0.25181,
+    "program": "subtract(18178, 24296), divide(#0, 24296)",
+    "answer": "-25%"
+  },
+  {
+    "id": "DVN/2012/page_77.pdf-3",
+    "gold_inds": {
+      "table_1": "2013 the 2014 of $ 3189 is 500 ;"
+    },
+    "exe_ans": 6.378,
+    "program": "divide(3189, 500)",
+    "answer": "6.4"
+  },
+  {
+    "id": "JPM/2003/page_106.pdf-4",
+    "gold_inds": {
+      "text_7": "commercial paper issued by conduits for which the firm acts as administrator aggregated $ 11.7 billion at december 31 , 2003 , and $ 17.5 billion at december 31 , 2002 ."
+    },
+    "exe_ans": 5.8,
+    "program": "subtract(17.5, 11.7)",
+    "answer": "5.8"
+  },
+  {
+    "id": "SNA/2007/page_49.pdf-4",
+    "gold_inds": {
+      "table_1": "the cash dividends paid per common share of 2007 is $ 1.11 ; the cash dividends paid per common share of 2006 is $ 1.08 ; the cash dividends paid per common share of 2005 is $ 1.00 ;"
+    },
+    "exe_ans": 2.02778,
+    "program": "add(1.11, 1.08), divide(#0, 1.08)",
+    "answer": "2.7%"
+  },
+  {
+    "id": "MSI/2012/page_87.pdf-2",
+    "gold_inds": {
+      "text_5": "the company 2019s expenses for material defined contribution plans for the years ended december 31 , 2012 , 2011 and 2010 were $ 42 million , $ 48 million and $ 23 million , respectively .",
+      "text_19": "the weighted-average estimated fair value of employee stock options granted during 2012 , 2011 and 2010 was $ 9.60 , $ 13.25 and $ 21.43 , respectively , using the following weighted-average assumptions: ."
+    },
+    "exe_ans": -0.27547,
+    "program": "subtract(9.60, 13.25), divide(#0, 13.25)",
+    "answer": "-28%"
+  },
+  {
+    "id": "UNP/2010/page_21.pdf-2",
+    "gold_inds": {
+      "table_4": "period the total of total number ofsharespurchased [a] is 3063816 ; the total of averageprice paidper share is $ 89.66 ; the total of total number of sharespurchased as part of apublicly announced planor program [b] is 2500596 ; the total of maximum number ofshares that may yetbe purchased under the planor program [b] is n/a ;",
+      "text_5": "[b] on may 1 , 2008 , our board of directors authorized us to repurchase up to 40 million shares of our common stock through march 31 , 2011 .",
+      "text_4": "[a] total number of shares purchased during the quarter includes approximately 563220 shares delivered or attested to upc by employees to pay stock option exercise prices , satisfy excess tax withholding obligations for stock option exercises or vesting of retention units , and pay withholding obligations for vesting of retention shares ."
+    },
+    "exe_ans": 0.18383,
+    "program": "divide(563220, 3063816)",
+    "answer": "18.4%"
+  },
+  {
+    "id": "FIS/2016/page_45.pdf-3",
+    "gold_inds": {
+      "text_10": "cash flows from operations cash flows from operations were $ 1925 million , $ 1131 million and $ 1165 million in 2016 , 2015 and 2014 respectively ."
+    },
+    "exe_ans": 0.70203,
+    "program": "subtract(1925, 1131), divide(#0, 1131)",
+    "answer": "70%"
+  },
+  {
+    "id": "MS/2013/page_132.pdf-1",
+    "gold_inds": {
+      "table_4": "industry the consumer discretionary of corporate lending exposure ( dollars in millions ) is 9981 ;",
+      "table_7": "industry the consumer staples of corporate lending exposure ( dollars in millions ) is 6788 ;",
+      "table_13": "industry the total of corporate lending exposure ( dollars in millions ) is $ 93033 ;"
+    },
+    "exe_ans": 0.18025,
+    "program": "add(9981, 6788), divide(#0, 93033)",
+    "answer": "18%"
+  },
+  {
+    "id": "UNP/2009/page_42.pdf-3",
+    "gold_inds": {
+      "table_2": "contractual obligations millions of dollars the operating leases of total is 5312 ; the operating leases of payments due by december 31 2010 is 576 ; the operating leases of payments due by december 31 2011 is 570 ; the operating leases of payments due by december 31 2012 is 488 ; the operating leases of payments due by december 31 2013 is 425 ; the operating leases of payments due by december 31 2014 is 352 ; the operating leases of payments due by december 31 after 2014 is 2901 ; the operating leases of payments due by december 31 other is - ;",
+      "table_7": "contractual obligations millions of dollars the total contractual obligations of total is $ 24166 ; the total contractual obligations of payments due by december 31 2010 is $ 2140 ; the total contractual obligations of payments due by december 31 2011 is $ 2117 ; the total contractual obligations of payments due by december 31 2012 is $ 2124 ; the total contractual obligations of payments due by december 31 2013 is $ 1958 ; the total contractual obligations of payments due by december 31 2014 is $ 1842 ; the total contractual obligations of payments due by december 31 after 2014 is $ 13893 ; the total contractual obligations of payments due by december 31 other is $ 92 ;"
+    },
+    "exe_ans": 0.21981,
+    "program": "divide(5312, 24166)",
+    "answer": "22%"
+  },
+  {
+    "id": "AMT/2012/page_50.pdf-3",
+    "gold_inds": {
+      "table_3": "period the december 2012 of total number of shares purchased ( 1 ) is 102400 ; the december 2012 of average price paid per share ( 2 ) is $ 74.83 ; the december 2012 of total number of shares purchased as part of publicly announced plans orprograms is 102400 ; the december 2012 of approximate dollar value of shares that may yet be purchased under the plans orprograms ( in millions ) is $ 1256.1 ;",
+      "text_7": "between january 1 , 2013 and january 21 , 2013 , we repurchased an additional 15790 shares of our common stock for an aggregate of $ 1.2 million , including commissions and fees , pursuant to the 2011 buyback ."
+    },
+    "exe_ans": 6.48512,
+    "program": "divide(102400, 15790)",
+    "answer": "6.5"
+  },
+  {
+    "id": "ABMD/2012/page_41.pdf-1",
+    "gold_inds": {
+      "table_1": "the abiomed inc of 3/31/2007 is 100 ; the abiomed inc of 3/31/2008 is 96.19 ; the abiomed inc of 3/31/2009 is 35.87 ; the abiomed inc of 3/31/2010 is 75.55 ; the abiomed inc of 3/31/2011 is 106.37 ; the abiomed inc of 3/31/2012 is 162.45 ;",
+      "table_2": "the nasdaq composite index of 3/31/2007 is 100 ; the nasdaq composite index of 3/31/2008 is 94.11 ; the nasdaq composite index of 3/31/2009 is 63.12 ; the nasdaq composite index of 3/31/2010 is 99.02 ; the nasdaq composite index of 3/31/2011 is 114.84 ; the nasdaq composite index of 3/31/2012 is 127.66 ;"
+    },
+    "exe_ans": "yes",
+    "program": "greater(162.45, 127.66)",
+    "answer": "yes"
+  },
+  {
+    "id": "GS/2018/page_78.pdf-2",
+    "gold_inds": {
+      "text_14": "net revenues in investment management were $ 7.02 billion for 2018 , 13% ( 13 % ) higher than 2017 , primarily due to significantly higher incentive fees , as a result of harvesting .",
+      "text_25": "net revenues in investment management were $ 6.22 billion for 2017 , 7% ( 7 % ) higher than 2016 , due to higher management and other fees , reflecting higher average assets under supervision , and higher transaction revenues ."
+    },
+    "exe_ans": 5.81308,
+    "program": "add(const_1, 7%), divide(6.22, #0)",
+    "answer": "5.8"
+  },
+  {
+    "id": "HUM/2014/page_44.pdf-1",
+    "gold_inds": {
+      "table_1": "the hum of 12/31/2009 is $ 100 ; the hum of 12/31/2010 is $ 125 ; the hum of 12/31/2011 is $ 201 ; the hum of 12/31/2012 is $ 160 ; the hum of 12/31/2013 is $ 244 ; the hum of 12/31/2014 is $ 342 ;"
+    },
+    "exe_ans": 0.608,
+    "program": "subtract(201, 125), divide(#0, 125)",
+    "answer": "60.8%"
+  },
+  {
+    "id": "AMT/2007/page_29.pdf-2",
+    "gold_inds": {
+      "table_3": "location the woburn ma of function is us tower division lease administration site leasing management and broadcast division headquarters ; the woburn ma of size ( square feet ) is 57800 ; the woburn ma of property interest is owned ( 1 ) ;",
+      "text_3": "( 1 ) the facility in woburn contains a total of 163000 square feet of space ."
+    },
+    "exe_ans": 2e-05,
+    "program": "divide(163000, 57800), divide(#0, 163000)",
+    "answer": "64.5%"
+  },
+  {
+    "id": "UPS/2016/page_114.pdf-1",
+    "gold_inds": {
+      "table_1": "the vehicles of 2016 is $ 68 ; the vehicles of 2015 is $ 74 ;"
+    },
+    "exe_ans": -6.0,
+    "program": "subtract(68, 74)",
+    "answer": "-6"
+  },
+  {
+    "id": "HII/2015/page_121.pdf-4",
+    "gold_inds": {
+      "table_3": "( $ in millions except per share amounts ) the earnings ( loss ) before income taxes of year ended december 31 2014 1st qtr is 132 ; the earnings ( loss ) before income taxes of year ended december 31 2014 2nd qtr is 152 ; the earnings ( loss ) before income taxes of year ended december 31 2014 3rd qtr is 144 ; the earnings ( loss ) before income taxes of year ended december 31 2014 4th qtr ( 3 ) is 79 ;",
+      "table_1": "( $ in millions except per share amounts ) the sales and service revenues of year ended december 31 2014 1st qtr is $ 1594 ; the sales and service revenues of year ended december 31 2014 2nd qtr is $ 1719 ; the sales and service revenues of year ended december 31 2014 3rd qtr is $ 1717 ; the sales and service revenues of year ended december 31 2014 4th qtr ( 3 ) is $ 1927 ;"
+    },
+    "exe_ans": 0.07473,
+    "program": "divide(144, 1927)",
+    "answer": "7.5%"
+  },
+  {
+    "id": "MRO/2003/page_45.pdf-3",
+    "gold_inds": {
+      "table_1": "( thousands of barrels per day ) the gasoline of 2003 is 776 ; the gasoline of 2002 is 773 ; the gasoline of 2001 is 748 ;"
+    },
+    "exe_ans": 0.03743,
+    "program": "subtract(776, 748), divide(#0, 748)",
+    "answer": "3.7%"
+  },
+  {
+    "id": "STT/2014/page_54.pdf-2",
+    "gold_inds": {
+      "table_1": "the state street corporation of 2009 is $ 100 ; the state street corporation of 2010 is $ 107 ; the state street corporation of 2011 is $ 114 ; the state street corporation of 2012 is $ 101 ; the state street corporation of 2013 is $ 120 ; the state street corporation of 2014 is $ 190 ;"
+    },
+    "exe_ans": -0.11404,
+    "program": "subtract(101, 114), divide(#0, 114)",
+    "answer": "-11.4%"
+  },
+  {
+    "id": "DVN/2018/page_35.pdf-2",
+    "gold_inds": {
+      "table_3": "the total expense of 2018 is $ 156 ; the total expense of 2017 is $ 15 ;",
+      "text_2": "income taxes ."
+    },
+    "exe_ans": 940.0,
+    "program": "subtract(156, 15), divide(#0, 15), multiply(#1, const_100)",
+    "answer": "940%"
+  },
+  {
+    "id": "BKNG/2016/page_33.pdf-4",
+    "gold_inds": {
+      "table_1": "measurement pointdecember 31 the 2011 of the priceline group inc . is 100.00 ; the 2011 of nasdaqcomposite index is 100.00 ; the 2011 of s&p 500index is 100.00 ; the 2011 of rdg internetcomposite is 100.00 ;",
+      "table_6": "measurement pointdecember 31 the 2016 of the priceline group inc . is 313.45 ; the 2016 of nasdaqcomposite index is 216.54 ; the 2016 of s&p 500index is 198.18 ; the 2016 of rdg internetcomposite is 277.56 ;"
+    },
+    "exe_ans": 2.1345,
+    "program": "subtract(313.45, const_100), divide(#0, const_100)",
+    "answer": "213.45%"
+  },
+  {
+    "id": "AMT/2007/page_127.pdf-2",
+    "gold_inds": {
+      "table_2": "the weighted average risk-free interest rate of 2007 is 5.02% ( 5.02 % ) ; the weighted average risk-free interest rate of 2006 is 5.08% ( 5.08 % ) ; the weighted average risk-free interest rate of 2005 is 3.72% ( 3.72 % ) ;"
+    },
+    "exe_ans": 0.34946,
+    "program": "subtract(5.02, 3.72), divide(#0, 3.72)",
+    "answer": "34.9%"
+  },
+  {
+    "id": "GS/2018/page_78.pdf-4",
+    "gold_inds": {
+      "text_1": "and subsidiaries management 2019s discussion and analysis in the table above , total aus net inflows/ ( outflows ) for 2017 included $ 23 billion of inflows ( $ 20 billion in long- term aus and $ 3 billion in liquidity products ) in connection with the acquisition of a portion of verus investors 2019 outsourced chief investment officer business ( verus acquisition ) and $ 5 billion of equity asset outflows in connection with the divestiture of our local australian- focused investment capabilities and fund platform ( australian divestiture ) ."
+    },
+    "exe_ans": 0.86957,
+    "program": "divide(20, 23)",
+    "answer": "87%"
+  },
+  {
+    "id": "MRO/2013/page_39.pdf-2",
+    "gold_inds": {
+      "table_1": "benchmark the wti crude oil ( dollars per bbl ) of 2013 is $ 98.05 ; the wti crude oil ( dollars per bbl ) of 2012 is $ 94.15 ; the wti crude oil ( dollars per bbl ) of 2011 is $ 95.11 ;"
+    },
+    "exe_ans": 0.03091,
+    "program": "subtract(98.05, 95.11), divide(#0, 95.11)",
+    "answer": "3.1%"
+  },
+  {
+    "id": "MAS/2017/page_27.pdf-2",
+    "gold_inds": {
+      "table_1": "the masco of 2013 is $ 138.48 ; the masco of 2014 is $ 155.26 ; the masco of 2015 is $ 200.79 ; the masco of 2016 is $ 227.08 ; the masco of 2017 is $ 318.46 ;",
+      "table_2": "the s&p 500 index of 2013 is $ 132.04 ; the s&p 500 index of 2014 is $ 149.89 ; the s&p 500 index of 2015 is $ 151.94 ; the s&p 500 index of 2016 is $ 169.82 ; the s&p 500 index of 2017 is $ 206.49 ;"
+    },
+    "exe_ans": 1.1197,
+    "program": "subtract(318.46, const_100), divide(#0, const_100), subtract(206.49, const_100), divide(#2, const_100), subtract(#1, #3)",
+    "answer": ""
+  },
+  {
+    "id": "GS/2012/page_189.pdf-4",
+    "gold_inds": {
+      "table_4": "$ in millions the risk-weighted assets of as of december 2012 is $ 109669 ; the risk-weighted assets of as of december 2011 is $ 112824 ;"
+    },
+    "exe_ans": -0.02796,
+    "program": "subtract(109669, 112824), divide(#0, 112824)",
+    "answer": "-3%"
+  },
+  {
+    "id": "SLG/2001/page_48.pdf-2",
+    "gold_inds": {
+      "text_30": "at december 31 , 2001 and 2000 , of the total assets of $ 1371577 and $ 1161154 , $ 1182939 and $ 1109861 repre- sented real estate assets and $ 188638 and $ 51293 represented structured finance investments , respectively .",
+      "text_31": "for the years ended december 31 , 2001 , 2000 and 1999 , of the total revenues of $ 257685 , $ 230323 and $ 206017 , $ 240316 , $ 217052 and $ 200751 represented total revenues from real estate assets and $ 17369 , $ 13271 and $ 5266 represented total revenues from structured finance investments ."
+    },
+    "exe_ans": 231341.66667,
+    "program": "add(257685, 230323), add(#0, 206017), divide(#1, const_3)",
+    "answer": "231341.7"
+  },
+  {
+    "id": "TFX/2015/page_89.pdf-2",
+    "gold_inds": {
+      "table_1": "( dollars in thousands ) the 2015 restructuring programs of 2015 termination benefits is $ 5009 ; the 2015 restructuring programs of 2015 facility closure costs is $ 231 ; the 2015 restructuring programs of 2015 contract termination costs is $ 1000 ; the 2015 restructuring programs of 2015 other exit costs is $ 64 ; the 2015 restructuring programs of 2015 total is $ 6304 ;"
+    },
+    "exe_ans": 0.03664,
+    "program": "divide(231, 6304)",
+    "answer": "3.7%"
+  },
+  {
+    "id": "AES/2010/page_227.pdf-2",
+    "gold_inds": {
+      "table_5": "december 31 , the 2015 of annual maturities ( in millions ) is 500 ;",
+      "table_7": "december 31 , the total recourse debt of annual maturities ( in millions ) is $ 4612 ;"
+    },
+    "exe_ans": 0.10841,
+    "program": "divide(500, 4612)",
+    "answer": "11%"
+  },
+  {
+    "id": "IPG/2017/page_92.pdf-3",
+    "gold_inds": {
+      "table_3": "the total contingent acquisition payments of 2018 is $ 79.0 ; the total contingent acquisition payments of 2019 is $ 53.9 ; the total contingent acquisition payments of 2020 is $ 79.0 ; the total contingent acquisition payments of 2021 is $ 34.7 ; the total contingent acquisition payments of 2022 is $ 11.4 ; the total contingent acquisition payments of thereafter is $ 10.4 ; the total contingent acquisition payments of total is $ 268.4 ;"
+    },
+    "exe_ans": 0.29434,
+    "program": "divide(79.0, 268.4)",
+    "answer": "29.4%"
+  },
+  {
+    "id": "HII/2015/page_121.pdf-3",
+    "gold_inds": {
+      "table_1": "( $ in millions except per share amounts ) the sales and service revenues of year ended december 31 2014 1st qtr is $ 1594 ; the sales and service revenues of year ended december 31 2014 2nd qtr is $ 1719 ; the sales and service revenues of year ended december 31 2014 3rd qtr is $ 1717 ; the sales and service revenues of year ended december 31 2014 4th qtr ( 3 ) is $ 1927 ;"
+    },
+    "exe_ans": 6957.0,
+    "program": "add(1594, 1719), add(#0, 1717), add(#1, 1927)",
+    "answer": "6957"
+  },
+  {
+    "id": "JPM/2010/page_281.pdf-3",
+    "gold_inds": {
+      "text_6": "collateral at december 31 , 2010 and 2009 , the firm had accepted assets as collateral that it could sell or repledge , deliver or otherwise use with a fair value of approximately $ 655.0 billion and $ 635.6 billion , respectively .",
+      "text_8": "of the collateral received , approximately $ 521.3 billion and $ 472.7 billion were sold or repledged , generally as collateral under repurchase agreements , securities lending agreements or to cover short sales and to collat- eralize deposits and derivative agreements ."
+    },
+    "exe_ans": 0.79588,
+    "program": "divide(521.3, 655.0)",
+    "answer": "79.6"
+  },
+  {
+    "id": "UPS/2007/page_49.pdf-3",
+    "gold_inds": {
+      "table_1": "year the 2008 of capital leases is $ 108 ; the 2008 of operating leases is $ 378 ; the 2008 of debt principal is $ 3426 ; the 2008 of debt interest is $ 329 ; the 2008 of purchase commitments is $ 1306 ; the 2008 of pension fundings is $ 101 ; the 2008 of other liabilities is $ 78 ;",
+      "table_7": "year the total of capital leases is $ 619 ; the total of operating leases is $ 1782 ; the total of debt principal is $ 10527 ; the total of debt interest is $ 8026 ; the total of purchase commitments is $ 3828 ; the total of pension fundings is $ 3465 ; the total of other liabilities is $ 562 ;"
+    },
+    "exe_ans": 0.21212,
+    "program": "divide(378, 1782)",
+    "answer": "21.2%"
+  },
+  {
+    "id": "BLL/2012/page_31.pdf-1",
+    "gold_inds": {
+      "table_1": "the ball corporation of 12/31/2007 is $ 100.00 ; the ball corporation of 12/31/2008 is $ 93.28 ; the ball corporation of 12/31/2009 is $ 117.01 ; the ball corporation of 12/31/2010 is $ 155.14 ; the ball corporation of 12/31/2011 is $ 164.09 ; the ball corporation of 12/31/2012 is $ 207.62 ;"
+    },
+    "exe_ans": 1.0762,
+    "program": "subtract(207.62, const_100), divide(#0, const_100)",
+    "answer": "107.6%"
+  },
+  {
+    "id": "GS/2017/page_86.pdf-1",
+    "gold_inds": {
+      "text_5": "this deduction was not subject to a transition period ."
+    },
+    "exe_ans": 0.4,
+    "program": "divide(const_2, const_5)",
+    "answer": "40%"
+  },
+  {
+    "id": "RCL/2016/page_6.pdf-1",
+    "gold_inds": {
+      "text_9": "we estimate that the global cruise fleet was served by approximately 503000 berths on approximately 298 ships at the end of 2016 ."
+    },
+    "exe_ans": 1687.91946,
+    "program": "divide(503000, 298)",
+    "answer": "1687.92"
+  },
+  {
+    "id": "ETR/2004/page_212.pdf-3",
+    "gold_inds": {
+      "table_1": "the 2003 net revenue of ( in millions ) is $ 973.7 ;",
+      "table_8": "the 2004 net revenue of ( in millions ) is $ 931.3 ;"
+    },
+    "exe_ans": -42.4,
+    "program": "subtract(931.3, 973.7)",
+    "answer": "-42.4"
+  },
+  {
+    "id": "PNC/2012/page_247.pdf-1",
+    "gold_inds": {
+      "text_1": "pursuant to their bylaws , pnc and its subsidiaries provide indemnification to directors , officers and , in some cases , employees and agents against certain liabilities incurred as a result of their service on behalf of or at the request of pnc and its subsidiaries .",
+      "text_2": "pnc and its subsidiaries also advance on behalf of covered individuals costs incurred in connection with certain claims or proceedings , subject to written undertakings by each such individual to repay all amounts advanced if it is ultimately determined that the individual is not entitled to indemnification .",
+      "text_24": "the potential maximum exposure under the loss share arrangements was $ 3.9 billion at december 31 , 2012 and $ 4.0 billion at december 31 , 2011 .",
+      "text_23": "at december 31 , 2012 and december 31 , 2011 , the unpaid principal balance outstanding of loans sold as a participant in these programs was $ 12.8 billion and $ 13.0 billion , respectively ."
+    },
+    "exe_ans": 0.30469,
+    "program": "divide(3.9, 12.8)",
+    "answer": "30.4%"
+  },
+  {
+    "id": "CDNS/2015/page_30.pdf-3",
+    "gold_inds": {
+      "table_1": "the cadence design systems inc . of 1/2/2010 is 100.00 ; the cadence design systems inc . of 1/1/2011 is 137.90 ; the cadence design systems inc . of 12/31/2011 is 173.62 ; the cadence design systems inc . of 12/29/2012 is 224.37 ; the cadence design systems inc . of 12/28/2013 is 232.55 ; the cadence design systems inc . of 1/3/2015 is 314.36 ;",
+      "table_2": "the nasdaq composite of 1/2/2010 is 100.00 ; the nasdaq composite of 1/1/2011 is 117.61 ; the nasdaq composite of 12/31/2011 is 118.70 ; the nasdaq composite of 12/29/2012 is 139.00 ; the nasdaq composite of 12/28/2013 is 196.83 ; the nasdaq composite of 1/3/2015 is 223.74 ;"
+    },
+    "exe_ans": 0.9062,
+    "program": "subtract(314.36, const_100), divide(#0, const_100), subtract(223.74, const_100), divide(#2, const_100), subtract(#1, #3)",
+    "answer": "90.62%"
+  },
+  {
+    "id": "AON/2015/page_96.pdf-3",
+    "gold_inds": {
+      "text_11": "in 2015 , 2014 , and 2013 , 2779 shares , 642 shares , and 172110 shares , respectively , were issued under the plan .",
+      "text_12": "compensation expense of $ 2 million was recognized in 2015 and 2014 , as compared to $ 1 million of compensation expense in 2013 ."
+    },
+    "exe_ans": 719.68334,
+    "program": "multiply(2, const_1000000), divide(#0, 2779)",
+    "answer": "719.7"
+  },
+  {
+    "id": "MRO/2003/page_84.pdf-2",
+    "gold_inds": {
+      "table_2": "strategy ( in millions ) the protect carrying values of excess inventories of 2003 is -57 ( 57 ) ; the protect carrying values of excess inventories of 2002 is -41 ( 41 ) ;"
+    },
+    "exe_ans": 0.39024,
+    "program": "subtract(-57, -41), divide(#0, -41)",
+    "answer": "39.0%"
+  },
+  {
+    "id": "CDNS/2018/page_66.pdf-2",
+    "gold_inds": {
+      "table_1": "the balance december 30 2017 as previously reported of retained earnings ( in thousands ) is $ 341003 ;",
+      "table_6": "the balance december 30 2017 as adjusted of retained earnings ( in thousands ) is 426932 ;"
+    },
+    "exe_ans": 0.25199,
+    "program": "subtract(426932, 341003), divide(#0, 341003)",
+    "answer": "25%"
+  },
+  {
+    "id": "LMT/2014/page_50.pdf-3",
+    "gold_inds": {
+      "table_3": "the operating margins of 2014 is 12.9% ( 12.9 % ) ; the operating margins of 2013 is 13.1% ( 13.1 % ) ; the operating margins of 2012 is 13.0% ( 13.0 % ) ;"
+    },
+    "exe_ans": 0.001,
+    "program": "subtract(13.1%, 13.0%)",
+    "answer": ".1%"
+  },
+  {
+    "id": "DISCA/2014/page_64.pdf-1",
+    "gold_inds": {
+      "table_1": "the disca of december 312009 is $ 100.00 ; the disca of december 312010 is $ 135.96 ; the disca of december 312011 is $ 133.58 ; the disca of december 312012 is $ 206.98 ; the disca of december 312013 is $ 294.82 ; the disca of december 312014 is $ 224.65 ;"
+    },
+    "exe_ans": 1.2465,
+    "program": "subtract(224.65, const_100), divide(#0, const_100)",
+    "answer": "124.65%"
+  },
+  {
+    "id": "FBHS/2017/page_22.pdf-1",
+    "gold_inds": {
+      "table_1": "segment the cabinets of 2017net sales ( in millions ) is $ 2467.1 ; the cabinets of percentage of total 2017 net sales is 47% ( 47 % ) ; the cabinets of key brands is aristokraft diamondmid-continentkitchen craft schrock homecrest omega thomasville ( a ) kemper starmark ultracraft ;",
+      "table_3": "segment the doors of 2017net sales ( in millions ) is 502.9 ; the doors of percentage of total 2017 net sales is 9% ( 9 % ) ; the doors of key brands is therma-trufypon ;"
+    },
+    "exe_ans": 4.90575,
+    "program": "divide(2467.1, 502.9)",
+    "answer": "4.9"
+  },
+  {
+    "id": "STT/2007/page_111.pdf-1",
+    "gold_inds": {
+      "text_12": "government securities totaling $ 572.93 billion and $ 527.37 billion as collateral for indemnified securities on loan at december 31 , 2007 and 2006 , respectively ."
+    },
+    "exe_ans": 0.08639,
+    "program": "subtract(572.93, 527.37), divide(#0, 527.37)",
+    "answer": "8.6%"
+  },
+  {
+    "id": "AMT/2007/page_29.pdf-3",
+    "gold_inds": {
+      "text_19": "monopoles typically have heights ranging from 50 to 200 feet ."
+    },
+    "exe_ans": 150.0,
+    "program": "subtract(200, 50)",
+    "answer": "150"
+  },
+  {
+    "id": "ALXN/2016/page_153.pdf-4",
+    "gold_inds": {
+      "text_16": "at december 31 , 2016 , we had $ 3081 outstanding on the term loan and zero outstanding on the revolving facility .",
+      "text_20": "based upon our intent and ability to make payments during 2017 , we included $ 175 within current liabilities on our consolidated balance sheet as of december 31 , 2016 , net of current deferred financing costs ."
+    },
+    "exe_ans": 0.0568,
+    "program": "divide(175, 3081)",
+    "answer": "5.7%"
+  },
+  {
+    "id": "CMCSA/2015/page_67.pdf-3",
+    "gold_inds": {
+      "table_2": "year ended december 31 ( in millions ) the customer premise equipment of 2015 is 3698 ; the customer premise equipment of 2014 is 3397 ; the customer premise equipment of 2013 is 2990 ;",
+      "table_5": "year ended december 31 ( in millions ) the total of 2015 is $ 7034 ; the total of 2014 is $ 6154 ; the total of 2013 is $ 5403 ;"
+    },
+    "exe_ans": 0.52573,
+    "program": "divide(3698, 7034)",
+    "answer": "52.6%"
+  },
+  {
+    "id": "GS/2013/page_63.pdf-1",
+    "gold_inds": {
+      "table_1": "$ in millions the total assets of as of december 2013 is $ 911507 ; the total assets of as of december 2012 is $ 938555 ;"
+    },
+    "exe_ans": 925031.0,
+    "program": "table_average(total assets, none)",
+    "answer": "925031"
+  },
+  {
+    "id": "BDX/2018/page_106.pdf-2",
+    "gold_inds": {
+      "table_4": "( millions of dollars ) the losses on undesignated foreign exchange derivatives net of 2018 is -14 ( 14 ) ; the losses on undesignated foreign exchange derivatives net of 2017 is -11 ( 11 ) ; the losses on undesignated foreign exchange derivatives net of 2016 is -3 ( 3 ) ;",
+      "text_9": "note 18 2014 supplemental financial information other income ( expense ) , net ."
+    },
+    "exe_ans": 11.0,
+    "program": "subtract(14, 3)",
+    "answer": "11"
+  },
+  {
+    "id": "INTC/2013/page_31.pdf-1",
+    "gold_inds": {
+      "table_1": "the intel corporation of 2008 is $ 100 ; the intel corporation of 2009 is $ 148 ; the intel corporation of 2010 is $ 157 ; the intel corporation of 2011 is $ 191 ; the intel corporation of 2012 is $ 163 ; the intel corporation of 2013 is $ 214 ;",
+      "table_2": "the dow jones u.s . technology index of 2008 is $ 100 ; the dow jones u.s . technology index of 2009 is $ 170 ; the dow jones u.s . technology index of 2010 is $ 191 ; the dow jones u.s . technology index of 2011 is $ 191 ; the dow jones u.s . technology index of 2012 is $ 209 ; the dow jones u.s . technology index of 2013 is $ 270 ;"
+    },
+    "exe_ans": 0.82199,
+    "program": "divide(157, 191)",
+    "answer": "0.82"
+  },
+  {
+    "id": "CME/2010/page_69.pdf-4",
+    "gold_inds": {
+      "table_1": "( in millions ) the term loan due 2011 interest equal to 3-month libor plus 1.00% ( 1.00 % ) ( 1 ) of par value is $ 420.5 ;",
+      "table_3": "( in millions ) the fixed rate notes due february 2014 interest equal to 5.75% ( 5.75 % ) of par value is 750.0 ;"
+    },
+    "exe_ans": 0.56067,
+    "program": "divide(420.5, 750.0)",
+    "answer": "3.2"
+  },
+  {
+    "id": "JPM/2009/page_175.pdf-1",
+    "gold_inds": {
+      "table_1": "year ended december 31 ( in millions ) the trading assets 2013 debt and equity instruments of 2009 is $ 318063 ; the trading assets 2013 debt and equity instruments of 2008 is $ 384102 ; the trading assets 2013 debt and equity instruments of 2007 is $ 381415 ;",
+      "table_3": "year ended december 31 ( in millions ) the trading liabilities 2013 debt and equityinstruments ( a ) of 2009 is $ 60224 ; the trading liabilities 2013 debt and equityinstruments ( a ) of 2008 is $ 78841 ; the trading liabilities 2013 debt and equityinstruments ( a ) of 2007 is $ 94737 ;"
+    },
+    "exe_ans": 257839.0,
+    "program": "subtract(318063, 60224)",
+    "answer": "257839"
+  },
+  {
+    "id": "AAL/2016/page_8.pdf-4",
+    "gold_inds": {
+      "table_2": "the flight attendants of mainline operations is 24700 ; the flight attendants of wholly-owned regional carriers is 2200 ; the flight attendants of total is 26900 ;",
+      "table_3": "the maintenance personnel of mainline operations is 14900 ; the maintenance personnel of wholly-owned regional carriers is 2000 ; the maintenance personnel of total is 16900 ;"
+    },
+    "exe_ans": 1.59172,
+    "program": "divide(26900, 16900)",
+    "answer": "1.6"
+  },
+  {
+    "id": "D/2002/page_87.pdf-3",
+    "gold_inds": {
+      "text_23": "rental expense included in other operations and maintenance expense was $ 84 million , $ 75 million and $ 107 million for 2002 , 2001 , and 2000 , respectively ."
+    },
+    "exe_ans": 0.12,
+    "program": "subtract(84, 75), divide(#0, 75)",
+    "answer": "12.0%"
+  },
+  {
+    "id": "DG/2007/page_67.pdf-2",
+    "gold_inds": {
+      "text_10": "the company recorded impairment charges included in sg&a expense of approximately $ 0.2 million in the 2007 predecessor period , $ 9.4 million in 2006 and $ 0.6 million in 2005 to reduce the carrying value of certain of its stores 2019 assets as deemed necessary due to negative sales trends and cash flows at these locations ."
+    },
+    "exe_ans": 10.2,
+    "program": "add(0.2, 9.4), add(#0, 0.6)",
+    "answer": ""
+  },
+  {
+    "id": "AAPL/2006/page_131.pdf-1",
+    "gold_inds": {
+      "table_9": "name of beneficial owner fidelity investments the peter oppenheimer of name of beneficial owner 57162311 is 149768 ; the peter oppenheimer of -2 ( 2 ) is -11 ( 11 ) ; the peter oppenheimer of 6.65% ( 6.65 % ) is * ;",
+      "text_63": "( 11 ) excludes 450000 unvested restricted stock units ."
+    },
+    "exe_ans": 599768.0,
+    "program": "add(149768, 450000)",
+    "answer": "599768"
+  },
+  {
+    "id": "AMT/2006/page_104.pdf-2",
+    "gold_inds": {
+      "text_2": "as of december 31 , 2006 and 2005 , the company had $ 325.1 million and $ 400.0 million outstanding under the ati 7.25% ( 7.25 % ) notes , respectively ."
+    },
+    "exe_ans": -0.18725,
+    "program": "subtract(325.1, 400.0), divide(#0, 400.0)",
+    "answer": "-18.7%"
+  },
+  {
+    "id": "TFX/2017/page_78.pdf-1",
+    "gold_inds": {
+      "table_1": "plan category the equity compensation plans approved by security holders of number of securitiesto be issued uponexercise ofoutstanding options warrants and rights ( a ) ( b ) is 1708928 ; the equity compensation plans approved by security holders of weighted-averageexercise price ofoutstanding options warrants and rights is $ 113.49 ; the equity compensation plans approved by security holders of number of securitiesremaining available forfuture issuance underequity compensationplans ( excludingsecurities reflected in column ( a ) ) ( c ) is 3629455 ;"
+    },
+    "exe_ans": 0.32012,
+    "program": "add(1708928, 3629455), divide(1708928, #0)",
+    "answer": "32.0%"
+  },
+  {
+    "id": "MO/2016/page_19.pdf-3",
+    "gold_inds": {
+      "table_1": "date the december 2011 of altria group inc . is $ 100.00 ; the december 2011 of altria group inc . peer group is $ 100.00 ; the december 2011 of s&p 500 is $ 100.00 ;",
+      "table_2": "date the december 2012 of altria group inc . is $ 111.77 ; the december 2012 of altria group inc . peer group is $ 108.78 ; the december 2012 of s&p 500 is $ 115.99 ;",
+      "table_3": "date the december 2013 of altria group inc . is $ 143.69 ; the december 2013 of altria group inc . peer group is $ 135.61 ; the december 2013 of s&p 500 is $ 153.55 ;"
+    },
+    "exe_ans": 0.4369,
+    "program": "subtract(143.69, const_100), divide(#0, const_100)",
+    "answer": "43.7%"
+  },
+  {
+    "id": "PKG/2005/page_74.pdf-1",
+    "gold_inds": {
+      "table_2": "2006 the total of $ 2408 is $ 3772 ;"
+    },
+    "exe_ans": 0.63839,
+    "program": "divide(2408, 3772)",
+    "answer": "64%"
+  },
+  {
+    "id": "AWK/2017/page_148.pdf-3",
+    "gold_inds": {
+      "table_2": "the maximum borrowings outstanding of 2017 is 1135 ; the maximum borrowings outstanding of 2016 is 1016 ;"
+    },
+    "exe_ans": 0.11713,
+    "program": "subtract(1135, 1016), divide(#0, 1016)",
+    "answer": "11.7%"
+  },
+  {
+    "id": "JKHY/2017/page_26.pdf-2",
+    "gold_inds": {
+      "table_1": "the jkhy of 2012 is 100.00 ; the jkhy of 2013 is 138.34 ; the jkhy of 2014 is 177.10 ; the jkhy of 2015 is 195.72 ; the jkhy of 2016 is 267.64 ; the jkhy of 2017 is 322.60 ;",
+      "table_2": "the peer group of 2012 is 100.00 ; the peer group of 2013 is 117.87 ; the peer group of 2014 is 161.90 ; the peer group of 2015 is 203.87 ; the peer group of 2016 is 233.39 ; the peer group of 2017 is 271.10 ;"
+    },
+    "exe_ans": 1.18997,
+    "program": "divide(322.60, 271.10)",
+    "answer": "119%"
+  },
+  {
+    "id": "MSI/2008/page_69.pdf-1",
+    "gold_inds": {
+      "text_13": "in 2008 , the segment 2019s net sales represented 40% ( 40 % ) of the company 2019s consolidated net sales , compared to 52% ( 52 % ) in 2007 and 66% ( 66 % ) in 2006 .",
+      "table_1": "( dollars in millions ) the segment net sales of years ended december 31 2008 is $ 12099 ; the segment net sales of years ended december 31 2007 is $ 18988 ; the segment net sales of years ended december 31 2006 is $ 28383 ; the segment net sales of years ended december 31 2008 20142007 is ( 36 ) % ( % ) ; the segment net sales of 2007 20142006 is ( 33 ) % ( % ) ;"
+    },
+    "exe_ans": 2.87073,
+    "program": "multiply(66%, 28383), multiply(40%, 12099), subtract(#0, #1), divide(#2, #1)",
+    "answer": "-287%"
+  },
+  {
+    "id": "GPN/2010/page_89.pdf-4",
+    "gold_inds": {
+      "table_5": "the non-vested at may 31 2009 of shares is 762 ; the non-vested at may 31 2009 of weighted average grant-date fair value is 42 ;",
+      "table_9": "the non-vested at may 31 2010 of shares is 713 ; the non-vested at may 31 2010 of weighted average grant-date fair value is 42 ;",
+      "table_7": "the vested of shares is -302 ( 302 ) ; the vested of weighted average grant-date fair value is 41 ;"
+    },
+    "exe_ans": -0.04148,
+    "program": "multiply(762, 41), multiply(713, 42), subtract(#1, #0), divide(#2, #0)",
+    "answer": "-4.1%"
+  },
+  {
+    "id": "ABMD/2007/page_78.pdf-2",
+    "gold_inds": {
+      "text_22": "the weighted average grant-date fair value for options granted during fiscal years 2005 , 2006 , and 2007 was $ 8.05 , $ 6.91 , and $ 8.75 per share , respectively ."
+    },
+    "exe_ans": 11.07996,
+    "program": "divide(8.75, 6.91), multiply(#0, 8.75)",
+    "answer": "11.08"
+  },
+  {
+    "id": "SNA/2013/page_84.pdf-3",
+    "gold_inds": {
+      "table_1": "( amounts in millions ) the trade and other accounts receivable of 2013 is $ 546.5 ; the trade and other accounts receivable of 2012 is $ 516.9 ;",
+      "table_2": "( amounts in millions ) the allowances for doubtful accounts of 2013 is -14.9 ( 14.9 ) ; the allowances for doubtful accounts of 2012 is -19.0 ( 19.0 ) ;"
+    },
+    "exe_ans": 0.02726,
+    "program": "divide(14.9, 546.5)",
+    "answer": "2.9%"
+  },
+  {
+    "id": "UA/2007/page_70.pdf-2",
+    "gold_inds": {
+      "text_12": "the company received proceeds of $ 112.7 million net of $ 10.8 million in stock issue costs , which it used to repay the $ 25.0 million term note , the balance outstanding under the revolving credit facility of $ 12.2 million , and the series a preferred stock of $ 12.0 million ."
+    },
+    "exe_ans": 0.09583,
+    "program": "divide(10.8, 112.7)",
+    "answer": "9.6%"
+  },
+  {
+    "id": "HWM/2015/page_173.pdf-1",
+    "gold_inds": {
+      "text_11": "in 2015 , 2014 , and 2013 , alcoa recognized $ 8 , $ 1 , and $ 2 , respectively , in interest and penalties .",
+      "text_12": "due to the expiration of the statute of limitations , settlements with tax authorities , and refunded overpayments , alcoa also recognized interest income of $ 2 , $ 5 , and $ 12 in 2015 , 2014 , and 2013 , respectively ."
+    },
+    "exe_ans": 3.0,
+    "program": "divide(8, 2), subtract(#0, 1)",
+    "answer": "300%"
+  },
+  {
+    "id": "AOS/2010/page_18.pdf-2",
+    "gold_inds": {
+      "table_1": "company/index the a o smith corp of baseperiod 12/31/05 is 100.0 ; the a o smith corp of baseperiod 12/31/06 is 108.7 ; the a o smith corp of baseperiod 12/31/07 is 103.3 ; the a o smith corp of baseperiod 12/31/08 is 88.8 ; the a o smith corp of baseperiod 12/31/09 is 133.6 ; the a o smith corp of 12/31/10 is 178.8 ;",
+      "table_3": "company/index the russell 1000 index of baseperiod 12/31/05 is 100.0 ; the russell 1000 index of baseperiod 12/31/06 is 115.5 ; the russell 1000 index of baseperiod 12/31/07 is 122.1 ; the russell 1000 index of baseperiod 12/31/08 is 76.2 ; the russell 1000 index of baseperiod 12/31/09 is 97.9 ; the russell 1000 index of 12/31/10 is 113.6 ;"
+    },
+    "exe_ans": 0.652,
+    "program": "subtract(178.8, const_100), divide(#0, const_100), subtract(113.6, const_100), divide(#2, const_100), subtract(#1, #3)",
+    "answer": "65.2%"
+  },
+  {
+    "id": "MS/2013/page_132.pdf-2",
+    "gold_inds": {
+      "text_3": "included in the total corporate lending exposure amounts in the table above at december 31 , 2013 were 201cevent- driven 201d exposures of $ 9.5 billion composed of funded loans of $ 2.0 billion and lending commitments of $ 7.5 billion .",
+      "text_5": "the maturity profile of the 201cevent-driven 201d loans and lending commitments at december 31 , 2013 was as follows : 33% ( 33 % ) will mature in less than 1 year , 17% ( 17 % ) will mature within 1 to 3 years , 32% ( 32 % ) will mature within 3 to 5 years and 18% ( 18 % ) will mature in over 5 years ."
+    },
+    "exe_ans": 3.135,
+    "program": "multiply(9.5, 33%)",
+    "answer": "3.1"
+  },
+  {
+    "id": "BLL/2011/page_32.pdf-3",
+    "gold_inds": {
+      "text_12": "the contracted backlog at december 31 , 2011 , of approximately $ 897 million consisted of approximately 50 percent fixed price contracts indicating a continuing trend towards more fixed price business ."
+    },
+    "exe_ans": 448.5,
+    "program": "divide(50, const_100), multiply(897, #0)",
+    "answer": "448.5"
+  },
+  {
+    "id": "ECL/2016/page_52.pdf-2",
+    "gold_inds": {
+      "table_3": "( millions ) the long-term debt of total is 6652 ; the long-term debt of payments due by period less than 1 year is 510 ; the long-term debt of payments due by period 2-3 years is 967 ; the long-term debt of payments due by period 4-5 years is 1567 ; the long-term debt of payments due by period more than 5 years is 3608 ;"
+    },
+    "exe_ans": 0.07667,
+    "program": "divide(510, 6652)",
+    "answer": "7.7%"
+  },
+  {
+    "id": "BLL/2012/page_31.pdf-2",
+    "gold_inds": {
+      "table_2": "the dj us containers & packaging of 12/31/2007 is $ 100.00 ; the dj us containers & packaging of 12/31/2008 is $ 61.55 ; the dj us containers & packaging of 12/31/2009 is $ 84.76 ; the dj us containers & packaging of 12/31/2010 is $ 97.78 ; the dj us containers & packaging of 12/31/2011 is $ 96.27 ; the dj us containers & packaging of 12/31/2012 is $ 107.76 ;"
+    },
+    "exe_ans": 0.0776,
+    "program": "subtract(107.76, const_100), divide(#0, const_100)",
+    "answer": "7.8%"
+  },
+  {
+    "id": "GPN/2018/page_94.pdf-2",
+    "gold_inds": {
+      "table_17": "the unvested at december 31 2018 of shares ( in thousands ) is 1084 ; the unvested at december 31 2018 of weighted-averagegrant-datefair value is $ 108.51 ;"
+    },
+    "exe_ans": 117624.84,
+    "program": "multiply(1084, 108.51)",
+    "answer": "117624.84"
+  },
+  {
+    "id": "PNC/2012/page_247.pdf-3",
+    "gold_inds": {
+      "text_24": "the potential maximum exposure under the loss share arrangements was $ 3.9 billion at december 31 , 2012 and $ 4.0 billion at december 31 , 2011 ."
+    },
+    "exe_ans": 2.5,
+    "program": "subtract(const_4, 3.9), divide(#0, const_4), multiply(#1, const_100)",
+    "answer": "2.5%"
+  },
+  {
+    "id": "ETR/2011/page_301.pdf-2",
+    "gold_inds": {
+      "table_2": "2011 the $ 23596 of 2010 is $ 63003 ; the $ 23596 of 2009 is $ 50131 ; the $ 23596 of 2008 is $ 11589 ;"
+    },
+    "exe_ans": 12872.0,
+    "program": "subtract(63003, 50131)",
+    "answer": "12872"
+  },
+  {
+    "id": "AAL/2010/page_72.pdf-4",
+    "gold_inds": {
+      "text_9": "intangible assets the company has recorded international slot and route authorities of $ 708 million and $ 736 million as of december 31 , 2010 and 2009 , respectively ."
+    },
+    "exe_ans": -0.03804,
+    "program": "subtract(708, 736), divide(#0, 736)",
+    "answer": "-3.8%"
+  },
+  {
+    "id": "AES/2002/page_128.pdf-2",
+    "gold_inds": {
+      "table_1": "the 2003 of total is $ 30 ; the 2003 of discontinued operations is $ 4 ;",
+      "text_10": "rental expense for operating leases , excluding amounts related to the sale/leaseback discussed below , was $ 31 million $ 32 million and $ 13 million in the years ended december 31 , 2002 , 2001and 2000 , respectively , including commitments of businesses classified as discontinued amounting to $ 6 million in 2002 , $ 16 million in 2001 and $ 6 million in 2000 ."
+    },
+    "exe_ans": 1.0,
+    "program": "subtract(31, 30)",
+    "answer": ""
+  },
+  {
+    "id": "GS/2013/page_149.pdf-3",
+    "gold_inds": {
+      "table_1": "in millions the net derivative liabilities under bilateral agreements of as of december 2013 is $ 22176 ; the net derivative liabilities under bilateral agreements of as of december 2012 is $ 27885 ;"
+    },
+    "exe_ans": 27885.0,
+    "program": "table_max(net derivative liabilities under bilateral agreements, none)",
+    "answer": "27885"
+  },
+  {
+    "id": "BLK/2015/page_124.pdf-4",
+    "gold_inds": {
+      "text_12": "these notes were issued as three separate series of senior debt securities including $ 0.5 billion of 2.25% ( 2.25 % ) notes , which were repaid in december 2012 , $ 1.0 billion of 3.50% ( 3.50 % ) notes , which were repaid in december 2014 at maturity , and $ 1.0 billion of 5.0% ( 5.0 % ) notes maturing in december 2019 ( the 201c2019 notes 201d ) ."
+    },
+    "exe_ans": 50.0,
+    "program": "multiply(1.0, const_1000), multiply(#0, 5.0%)",
+    "answer": "50"
+  },
+  {
+    "id": "AAL/2013/page_172.pdf-3",
+    "gold_inds": {
+      "table_2": "aag series a preferred stock the labor-related deemed claim of $ 3329 is 849 ;",
+      "table_3": "aag series a preferred stock the total of $ 3329 is $ 5424 ;"
+    },
+    "exe_ans": 0.15653,
+    "program": "divide(849, 5424)",
+    "answer": "15.7%"
+  },
+  {
+    "id": "HOLX/2008/page_143.pdf-2",
+    "gold_inds": {
+      "table_8": "net tangible assets acquired as of july 13 2006 the final purchase price of $ 1200 is $ 220600 ;",
+      "text_6": "the aggregate purchase price for r2 of approximately $ 220600 consisted of approximately 8800 shares of hologic common stock valued at $ 205500 , cash paid of $ 6900 , debt assumed of $ 5700 and approximately $ 2500 for acquisition related fees and expenses ."
+    },
+    "exe_ans": 0.03128,
+    "program": "divide(6900, 220600)",
+    "answer": "3.1%"
+  },
+  {
+    "id": "MRO/2004/page_125.pdf-1",
+    "gold_inds": {
+      "table_14": "( in millions ) the end of year of 2004 is $ 6469 ; the end of year of 2003 is $ 6001 ; the end of year of 2002 is $ 5441 ;"
+    },
+    "exe_ans": 5970.33333,
+    "program": "table_average(end of year, none)",
+    "answer": "5970"
+  },
+  {
+    "id": "JPM/2014/page_122.pdf-1",
+    "gold_inds": {
+      "table_1": "december 31 , ( in millions ) the loans retained of december 31 , 2014 is $ 324502 ; the loans retained of december 31 , 2013 is $ 308263 ; the loans retained of 2014 is $ 599 ; the loans retained of 2013 is $ 821 ;"
+    },
+    "exe_ans": 0.05268,
+    "program": "subtract(324502, 308263), divide(#0, 308263)",
+    "answer": "5%"
+  },
+  {
+    "id": "PNC/2012/page_68.pdf-5",
+    "gold_inds": {
+      "table_8": "in millions the total of december 312012 is $ 3693 ; the total of december 312011 is $ 2936 ;",
+      "text_8": "the fair value of sub-investment grade investment securities for which we have not recorded an otti credit loss as of december 31 , 2012 totaled $ 1.9 billion , with unrealized net gains of $ 114 million .",
+      "table_1": "in millions the commercial mortgages at fair value of december 312012 is $ 772 ; the commercial mortgages at fair value of december 312011 is $ 843 ;"
+    },
+    "exe_ans": 0.20904,
+    "program": "divide(772, 3693)",
+    "answer": "20.9%"
+  },
+  {
+    "id": "PPG/2008/page_52.pdf-1",
+    "gold_inds": {
+      "table_9": "( millions ) the balance at december 31 of 2008 is $ 99 ; the balance at december 31 of 2007 is $ 110 ;",
+      "text_1": "balance at december 31 $ 99 $ 110 the amount of unrecognized tax benefits was $ 99 million and $ 110 million as of december 31 , 2008 and 2007 , respectively .",
+      "table_7": "( millions ) the settlements of 2008 is -21 ( 21 ) ; the settlements of 2007 is -1 ( 1 ) ;"
+    },
+    "exe_ans": 120.0,
+    "program": "add(21, 99)",
+    "answer": "120"
+  }
+]

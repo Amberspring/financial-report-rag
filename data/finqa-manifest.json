@@ -1,0 +1,44 @@
+{
+  "selection": "lowest SHA256(example_id); 40 development +100 test; official split retained",
+  "source_files": [
+    {
+      "split": "train.json",
+      "rows": 6251,
+      "sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6",
+      "source": "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/train.json"
+    },
+    {
+      "split": "dev.json",
+      "rows": 883,
+      "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51",
+      "source": "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/dev.json"
+    },
+    {
+      "split": "test.json",
+      "rows": 1147,
+      "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+      "source": "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/test.json"
+    }
+  ],
+  "documents": 131,
+  "queries": {
+    "dev": 40,
+    "test": 100
+  },
+  "no_label_inputs": [
+    "documents",
+    "questions",
+    "tables",
+    "pre_text",
+    "post_text"
+  ],
+  "excluded_from_inference": [
+    "program",
+    "exe_ans",
+    "answer",
+    "gold_inds",
+    "model_input",
+    "table_retrieved",
+    "text_retrieved"
+  ]
+}

@@ -1,0 +1,287 @@
+[
+  {
+    "query": "星河科技2025年营业收入是多少？",
+    "doc_ids": [
+      "synthetic-0"
+    ],
+    "answer": "100亿元",
+    "kind": "fact",
+    "evidence": [
+      {
+        "doc_id": "synthetic-0",
+        "contains": "营业收入为100亿元"
+      }
+    ]
+  },
+  {
+    "query": "星河科技毛利率数据在哪一页？",
+    "doc_ids": [
+      "synthetic-0"
+    ],
+    "answer": "2",
+    "kind": "table",
+    "evidence": [
+      {
+        "doc_id": "synthetic-0",
+        "contains": "毛利率 |"
+      }
+    ]
+  },
+  {
+    "query": "星河科技有哪些风险？",
+    "doc_ids": [
+      "synthetic-0"
+    ],
+    "answer": "原材料价格波动",
+    "kind": "summary",
+    "evidence": [
+      {
+        "doc_id": "synthetic-0",
+        "contains": "原材料价格波动"
+      }
+    ]
+  },
+  {
+    "query": "海风能源2025年营业收入是多少？",
+    "doc_ids": [
+      "synthetic-1"
+    ],
+    "answer": "130亿元",
+    "kind": "fact",
+    "evidence": [
+      {
+        "doc_id": "synthetic-1",
+        "contains": "营业收入为130亿元"
+      }
+    ]
+  },
+  {
+    "query": "海风能源毛利率数据在哪一页？",
+    "doc_ids": [
+      "synthetic-1"
+    ],
+    "answer": "2",
+    "kind": "table",
+    "evidence": [
+      {
+        "doc_id": "synthetic-1",
+        "contains": "毛利率 |"
+      }
+    ]
+  },
+  {
+    "query": "海风能源有哪些风险？",
+    "doc_ids": [
+      "synthetic-1"
+    ],
+    "answer": "原材料价格波动",
+    "kind": "summary",
+    "evidence": [
+      {
+        "doc_id": "synthetic-1",
+        "contains": "原材料价格波动"
+      }
+    ]
+  },
+  {
+    "query": "晨光消费2025年营业收入是多少？",
+    "doc_ids": [
+      "synthetic-2"
+    ],
+    "answer": "160亿元",
+    "kind": "fact",
+    "evidence": [
+      {
+        "doc_id": "synthetic-2",
+        "contains": "营业收入为160亿元"
+      }
+    ]
+  },
+  {
+    "query": "晨光消费毛利率数据在哪一页？",
+    "doc_ids": [
+      "synthetic-2"
+    ],
+    "answer": "2",
+    "kind": "table",
+    "evidence": [
+      {
+        "doc_id": "synthetic-2",
+        "contains": "毛利率 |"
+      }
+    ]
+  },
+  {
+    "query": "晨光消费有哪些风险？",
+    "doc_ids": [
+      "synthetic-2"
+    ],
+    "answer": "原材料价格波动",
+    "kind": "summary",
+    "evidence": [
+      {
+        "doc_id": "synthetic-2",
+        "contains": "原材料价格波动"
+      }
+    ]
+  },
+  {
+    "query": "青山半导体2025年营业收入是多少？",
+    "doc_ids": [
+      "synthetic-3"
+    ],
+    "answer": "190亿元",
+    "kind": "fact",
+    "evidence": [
+      {
+        "doc_id": "synthetic-3",
+        "contains": "营业收入为190亿元"
+      }
+    ]
+  },
+  {
+    "query": "青山半导体毛利率数据在哪一页？",
+    "doc_ids": [
+      "synthetic-3"
+    ],
+    "answer": "2",
+    "kind": "table",
+    "evidence": [
+      {
+        "doc_id": "synthetic-3",
+        "contains": "毛利率 |"
+      }
+    ]
+  },
+  {
+    "query": "青山半导体有哪些风险？",
+    "doc_ids": [
+      "synthetic-3"
+    ],
+    "answer": "原材料价格波动",
+    "kind": "summary",
+    "evidence": [
+      {
+        "doc_id": "synthetic-3",
+        "contains": "原材料价格波动"
+      }
+    ]
+  },
+  {
+    "query": "远航制造2025年营业收入是多少？",
+    "doc_ids": [
+      "synthetic-4"
+    ],
+    "answer": "220亿元",
+    "kind": "fact",
+    "evidence": [
+      {
+        "doc_id": "synthetic-4",
+        "contains": "营业收入为220亿元"
+      }
+    ]
+  },
+  {
+    "query": "远航制造毛利率数据在哪一页？",
+    "doc_ids": [
+      "synthetic-4"
+    ],
+    "answer": "2",
+    "kind": "table",
+    "evidence": [
+      {
+        "doc_id": "synthetic-4",
+        "contains": "毛利率 |"
+      }
+    ]
+  },
+  {
+    "query": "远航制造有哪些风险？",
+    "doc_ids": [
+      "synthetic-4"
+    ],
+    "answer": "原材料价格波动",
+    "kind": "summary",
+    "evidence": [
+      {
+        "doc_id": "synthetic-4",
+        "contains": "原材料价格波动"
+      }
+    ]
+  },
+  {
+    "query": "新叶医药2025年营业收入是多少？",
+    "doc_ids": [
+      "synthetic-5"
+    ],
+    "answer": "250亿元",
+    "kind": "fact",
+    "evidence": [
+      {
+        "doc_id": "synthetic-5",
+        "contains": "营业收入为250亿元"
+      }
+    ]
+  },
+  {
+    "query": "新叶医药毛利率数据在哪一页？",
+    "doc_ids": [
+      "synthetic-5"
+    ],
+    "answer": "2",
+    "kind": "table",
+    "evidence": [
+      {
+        "doc_id": "synthetic-5",
+        "contains": "毛利率 |"
+      }
+    ]
+  },
+  {
+    "query": "新叶医药有哪些风险？",
+    "doc_ids": [
+      "synthetic-5"
+    ],
+    "answer": "原材料价格波动",
+    "kind": "summary",
+    "evidence": [
+      {
+        "doc_id": "synthetic-5",
+        "contains": "原材料价格波动"
+      }
+    ]
+  },
+  {
+    "query": "星河科技和海风能源的收入对比",
+    "doc_ids": [
+      "synthetic-0",
+      "synthetic-1"
+    ],
+    "answer": "100与130亿元",
+    "kind": "comparison",
+    "evidence": [
+      {
+        "doc_id": "synthetic-0",
+        "contains": "营业收入为100亿元"
+      },
+      {
+        "doc_id": "synthetic-1",
+        "contains": "营业收入为130亿元"
+      }
+    ]
+  },
+  {
+    "query": "火星旅游气温预测",
+    "doc_ids": [],
+    "answer": null,
+    "kind": "unanswerable",
+    "evidence": []
+  },
+  {
+    "query": "量子纠缠实验室地址",
+    "doc_ids": [],
+    "answer": null,
+    "kind": "unanswerable",
+    "evidence": []
+  }
+]
