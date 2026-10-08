@@ -6,6 +6,8 @@ from pydantic import BaseModel, Field
 from .core import Block, chunk_blocks, Retriever, answer
 from .finqa import documents, blocks_from_documents
 from .calculator import execute, propose, CalculationError
+from .qa import numerical_answer
+from .planner import ModelPlanner
 
 root = Path(__file__).resolve().parents[2]
 retriever = None
@@ -106,6 +108,10 @@ def calculate(body: Calculation):
 def query(body: Query):
     r = get_retriever()
     if body.calculate:
+        if body.doc_id is None:
+            if os.getenv("RAG_MODEL_URL") and os.getenv("RAG_MODEL"):
+                return ModelPlanner(os.environ["RAG_MODEL_URL"], os.environ["RAG_MODEL"]).answer(r, docs, body.query, body.mode, bool(config.get("reranker")))
+            return numerical_answer(r, docs, body.query, body.mode, bool(config.get("reranker")))
         selected = [d for d in docs if d["doc_id"] == body.doc_id]
         if len(selected) != 1:
             return {
