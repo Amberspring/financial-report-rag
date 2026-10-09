@@ -1,0 +1,5453 @@
+{
+  "status": "measured",
+  "protocol": "global",
+  "scope": "Question-only global retrieval",
+  "embedding": "tfidf",
+  "corpus_sha256": "cca2249c6e09e90e0d40b995b28b3614b0e270f88fe30470b29c640897fd5653",
+  "model": null,
+  "planner": "symbol-gated rule plan",
+  "queries_sha256": "af956183b26f0ddb141ed15f2fb8f36e5a032f44ad8db923584b0e6a505730fc",
+  "labels_sha256": "4d960391f72d40cf7083de49373c62705ce4432e45a544d0be3698ed8476854f",
+  "predictions_sha256": "937438e47de6f0d8300677e5511fde16304c303f92beab2790b3b257b8a6e351",
+  "limitations": [
+    "Public previously examined test subset; not a fresh unseen test",
+    "Unsupported questions refused; single-operation table calculations only",
+    "Percent outputs converted to FinQA raw fraction units for scoring",
+    "No GraphRAG claim"
+  ],
+  "experiments": [
+    {
+      "mode": "dense",
+      "rerank": false,
+      "n": 200,
+      "coverage": 0.005,
+      "execution_accuracy": 0.0,
+      "recall_at_5": 0.30104166666666665,
+      "mean_e2e_ms": 65.12393349978083,
+      "cases": [
+        {
+          "id": "DG/2005/page_44.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 150.2565999981016,
+          "answered": false,
+          "gold_exe_ans": -0.07937
+        },
+        {
+          "id": "UNP/2011/page_33.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.5170999992406,
+          "answered": false,
+          "gold_exe_ans": 0.761
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.21389999962412,
+          "answered": false,
+          "gold_exe_ans": 0.02385
+        },
+        {
+          "id": "GPN/2014/page_92.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 62.28230000124313,
+          "answered": false,
+          "gold_exe_ans": 365.4316
+        },
+        {
+          "id": "UNP/2015/page_56.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.367800003499724,
+          "answered": false,
+          "gold_exe_ans": 0.19974
+        },
+        {
+          "id": "MO/2014/page_39.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.68590000097174,
+          "answered": false,
+          "gold_exe_ans": 0.56549
+        },
+        {
+          "id": "GIS/2017/page_31.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 71.83819999045227,
+          "answered": false,
+          "gold_exe_ans": 1.43836
+        },
+        {
+          "id": "MAS/2012/page_26.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.19669998972677,
+          "answered": false,
+          "gold_exe_ans": 0.25926
+        },
+        {
+          "id": "RSG/2010/page_57.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 53.56110000866465,
+          "answered": false,
+          "gold_exe_ans": 1.33488
+        },
+        {
+          "id": "LKQ/2016/page_87.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 66.0580999974627,
+          "answered": false,
+          "gold_exe_ans": 0.13401
+        },
+        {
+          "id": "PPG/2012/page_29.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.07779999868944,
+          "answered": false,
+          "gold_exe_ans": 92.0
+        },
+        {
+          "id": "V/2014/page_126.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.04559999180492,
+          "answered": false,
+          "gold_exe_ans": 5.08
+        },
+        {
+          "id": "C/2015/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.163700001779944,
+          "answered": false,
+          "gold_exe_ans": -0.05114
+        },
+        {
+          "id": "CB/2008/page_229.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.50509999739006,
+          "answered": false,
+          "gold_exe_ans": 0.0977
+        },
+        {
+          "id": "PNC/2014/page_111.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 71.75619999179617,
+          "answered": false,
+          "gold_exe_ans": -85.0
+        },
+        {
+          "id": "AMAT/2018/page_33.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.37130000733305,
+          "answered": false,
+          "gold_exe_ans": -0.0333
+        },
+        {
+          "id": "MKTX/2012/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.64570000267122,
+          "answered": false,
+          "gold_exe_ans": 0.19088
+        },
+        {
+          "id": "AMT/2016/page_125.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.24770000879653,
+          "answered": false,
+          "gold_exe_ans": 6.3
+        },
+        {
+          "id": "AMT/2016/page_49.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.84409999009222,
+          "answered": false,
+          "gold_exe_ans": 2792124.42484
+        },
+        {
+          "id": "HOLX/2009/page_127.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.52310000732541,
+          "answered": false,
+          "gold_exe_ans": 27.80639
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.507699995767325,
+          "answered": false,
+          "gold_exe_ans": 0.047
+        },
+        {
+          "id": "ZBH/2008/page_57.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.81540000659879,
+          "answered": false,
+          "gold_exe_ans": 0.14636
+        },
+        {
+          "id": "STT/2009/page_127.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 76.689699999406,
+          "answered": false,
+          "gold_exe_ans": 2.18154
+        },
+        {
+          "id": "INTC/2015/page_41.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.00029999529943,
+          "answered": false,
+          "gold_exe_ans": 0.14464
+        },
+        {
+          "id": "ECL/2017/page_94.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.41009999171365,
+          "answered": false,
+          "gold_exe_ans": 0.213
+        },
+        {
+          "id": "PPG/2006/page_42.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 61.80539999331813,
+          "answered": false,
+          "gold_exe_ans": 1.11111
+        },
+        {
+          "id": "HIG/2011/page_53.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 53.22640000667889,
+          "answered": false,
+          "gold_exe_ans": 0.22464
+        },
+        {
+          "id": "ETR/2017/page_143.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.94809999701101,
+          "answered": false,
+          "gold_exe_ans": 4781374.0
+        },
+        {
+          "id": "C/2008/page_65.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 72.77570001315325,
+          "answered": false,
+          "gold_exe_ans": 0.80473
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.87389999104198,
+          "answered": false,
+          "gold_exe_ans": 0.32068
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 66.84600000153296,
+          "answered": false,
+          "gold_exe_ans": -0.0777
+        },
+        {
+          "id": "AMT/2014/page_160.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 48.023199997260235,
+          "answered": false,
+          "gold_exe_ans": null
+        },
+        {
+          "id": "MAR/2004/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.62040000164416,
+          "answered": false,
+          "gold_exe_ans": 68.0
+        },
+        {
+          "id": "BLK/2017/page_121.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.86809999216348,
+          "answered": false,
+          "gold_exe_ans": 0.13621
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 67.40330001048278,
+          "answered": false,
+          "gold_exe_ans": 3.625
+        },
+        {
+          "id": "MRO/2006/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.5062000019243,
+          "answered": false,
+          "gold_exe_ans": null
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-5",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 49.541900007170625,
+          "answered": false,
+          "gold_exe_ans": 0.06593
+        },
+        {
+          "id": "GS/2014/page_165.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.45169999380596,
+          "answered": false,
+          "gold_exe_ans": 0.52056
+        },
+        {
+          "id": "MO/2014/page_39.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.07890000648331,
+          "answered": false,
+          "gold_exe_ans": 0.80583
+        },
+        {
+          "id": "PNC/2007/page_92.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.742399996030144,
+          "answered": false,
+          "gold_exe_ans": 7947.0
+        },
+        {
+          "id": "MMM/2007/page_84.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.12860001181252,
+          "answered": false,
+          "gold_exe_ans": 2.7438
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 96.03080000670161,
+          "answered": false,
+          "gold_exe_ans": 5.6
+        },
+        {
+          "id": "HWM/2018/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 65.47519999730866,
+          "answered": false,
+          "gold_exe_ans": 241.11
+        },
+        {
+          "id": "ANSS/2012/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 70.79389999853447,
+          "answered": false,
+          "gold_exe_ans": 9.3
+        },
+        {
+          "id": "CDW/2015/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 83.46850000089034,
+          "answered": false,
+          "gold_exe_ans": 1.26207
+        },
+        {
+          "id": "APD/2018/page_30.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.42289999802597,
+          "answered": false,
+          "gold_exe_ans": 0.14555
+        },
+        {
+          "id": "RSG/2018/page_135.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.04160000500269,
+          "answered": false,
+          "gold_exe_ans": 4.55556
+        },
+        {
+          "id": "GPN/2013/page_92.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 60.84769999142736,
+          "answered": false,
+          "gold_exe_ans": 0.19366
+        },
+        {
+          "id": "AMT/2003/page_102.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 80.6462000036845,
+          "answered": false,
+          "gold_exe_ans": 0.21838
+        },
+        {
+          "id": "UAA/2016/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.322099996265024,
+          "answered": false,
+          "gold_exe_ans": 0.17172
+        },
+        {
+          "id": "CMCSA/2008/page_36.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 75.39260000339709,
+          "answered": false,
+          "gold_exe_ans": 0.56754
+        },
+        {
+          "id": "AWK/2013/page_122.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.59400000795722,
+          "answered": false,
+          "gold_exe_ans": 22415.0
+        },
+        {
+          "id": "GS/2014/page_51.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 47.54769999999553,
+          "answered": false,
+          "gold_exe_ans": -0.06063
+        },
+        {
+          "id": "ETR/2013/page_21.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.67699999443721,
+          "answered": false,
+          "gold_exe_ans": -191.0
+        },
+        {
+          "id": "IP/2006/page_31.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.84449999069329,
+          "answered": false,
+          "gold_exe_ans": 0.19391
+        },
+        {
+          "id": "V/2008/page_180.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.28249999287073,
+          "answered": false,
+          "gold_exe_ans": 3138.0
+        },
+        {
+          "id": "PPG/2006/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.81890000111889,
+          "answered": false,
+          "gold_exe_ans": 1.5
+        },
+        {
+          "id": "UPS/2010/page_52.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 80.78069999464788,
+          "answered": false,
+          "gold_exe_ans": 0.14922
+        },
+        {
+          "id": "UNP/2006/page_15.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.23439999180846,
+          "answered": false,
+          "gold_exe_ans": 0.52946
+        },
+        {
+          "id": "HOLX/2006/page_100.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.43310000130441,
+          "answered": false,
+          "gold_exe_ans": 0.22045
+        },
+        {
+          "id": "ETR/2017/page_143.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.270000001764856,
+          "answered": false,
+          "gold_exe_ans": 0.12853
+        },
+        {
+          "id": "ILMN/2003/page_58.pdf-3",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 86.64839999983087,
+          "answered": true,
+          "gold_exe_ans": -30.76
+        },
+        {
+          "id": "IP/2009/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 97.45190000103321,
+          "answered": false,
+          "gold_exe_ans": 0.40796
+        },
+        {
+          "id": "UNP/2016/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 73.70360000641085,
+          "answered": false,
+          "gold_exe_ans": 0.81238
+        },
+        {
+          "id": "HWM/2017/page_42.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 60.64399999740999,
+          "answered": false,
+          "gold_exe_ans": -0.96929
+        },
+        {
+          "id": "AON/2007/page_171.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.6196999916574,
+          "answered": false,
+          "gold_exe_ans": 284.0
+        },
+        {
+          "id": "ABMD/2006/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.347400003578514,
+          "answered": false,
+          "gold_exe_ans": 0.88928
+        },
+        {
+          "id": "RSG/2012/page_93.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 47.449200006667525,
+          "answered": false,
+          "gold_exe_ans": -2.8
+        },
+        {
+          "id": "C/2009/page_197.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.40459999348968,
+          "answered": false,
+          "gold_exe_ans": 0.10345
+        },
+        {
+          "id": "MRO/2006/page_93.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 75.98570000845939,
+          "answered": false,
+          "gold_exe_ans": 0.62329
+        },
+        {
+          "id": "IP/2006/page_35.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.98090000462253,
+          "answered": false,
+          "gold_exe_ans": 0.12702
+        },
+        {
+          "id": "DRE/2008/page_46.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.144999995827675,
+          "answered": false,
+          "gold_exe_ans": -0.3142
+        },
+        {
+          "id": "TMUS/2017/page_29.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.272199998493306,
+          "answered": false,
+          "gold_exe_ans": 82352.94118
+        },
+        {
+          "id": "AWK/2013/page_122.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 76.68600000033621,
+          "answered": false,
+          "gold_exe_ans": 0.00136
+        },
+        {
+          "id": "INTC/2015/page_41.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.89260000328068,
+          "answered": false,
+          "gold_exe_ans": 0.35908
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.82199999096338,
+          "answered": false,
+          "gold_exe_ans": 0.08083
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.96559999685269,
+          "answered": false,
+          "gold_exe_ans": -0.07394
+        },
+        {
+          "id": "ILMN/2008/page_86.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 63.937700004316866,
+          "answered": false,
+          "gold_exe_ans": 1.2
+        },
+        {
+          "id": "AON/2007/page_171.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.959700000239536,
+          "answered": false,
+          "gold_exe_ans": 166.0
+        },
+        {
+          "id": "STT/2006/page_95.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.622200009878725,
+          "answered": false,
+          "gold_exe_ans": 0.86784
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 84.30950000183657,
+          "answered": false,
+          "gold_exe_ans": 0.91156
+        },
+        {
+          "id": "ZBH/2008/page_57.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 74.3674999976065,
+          "answered": false,
+          "gold_exe_ans": 0.45103
+        },
+        {
+          "id": "MSI/2007/page_70.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.46670000453014,
+          "answered": false,
+          "gold_exe_ans": 6055.66667
+        },
+        {
+          "id": "C/2009/page_243.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 84.28769999591168,
+          "answered": false,
+          "gold_exe_ans": 1.5625
+        },
+        {
+          "id": "FIS/2012/page_48.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.462099994765595,
+          "answered": false,
+          "gold_exe_ans": 0.02652
+        },
+        {
+          "id": "DISH/2011/page_122.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 76.15969999460503,
+          "answered": false,
+          "gold_exe_ans": 1375.0
+        },
+        {
+          "id": "HOLX/2007/page_126.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.35999999789055,
+          "answered": false,
+          "gold_exe_ans": 0.03825
+        },
+        {
+          "id": "MS/2007/page_179.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.27510000299662,
+          "answered": false,
+          "gold_exe_ans": 0.14737
+        },
+        {
+          "id": "AMT/2014/page_160.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.18449999403674,
+          "answered": false,
+          "gold_exe_ans": 0.18186
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 74.56189999356866,
+          "answered": false,
+          "gold_exe_ans": -19.3
+        },
+        {
+          "id": "RSG/2015/page_98.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 49.09710001084022,
+          "answered": false,
+          "gold_exe_ans": -31.1
+        },
+        {
+          "id": "CB/2010/page_83.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.32919999153819,
+          "answered": false,
+          "gold_exe_ans": -26.0
+        },
+        {
+          "id": "EMR/2017/page_78.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 75.09959999879356,
+          "answered": false,
+          "gold_exe_ans": 8.6168
+        },
+        {
+          "id": "AMT/2010/page_99.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 72.21499999286607,
+          "answered": false,
+          "gold_exe_ans": 0.0134
+        },
+        {
+          "id": "UNP/2007/page_25.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 46.32409999612719,
+          "answered": false,
+          "gold_exe_ans": 2688.88889
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 81.77129999967292,
+          "answered": false,
+          "gold_exe_ans": -0.30435
+        },
+        {
+          "id": "AAL/2015/page_114.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 66.49509999260772,
+          "answered": false,
+          "gold_exe_ans": 0.74953
+        },
+        {
+          "id": "IP/2006/page_38.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 101.44659999059513,
+          "answered": false,
+          "gold_exe_ans": 0.1822
+        },
+        {
+          "id": "HIG/2004/page_140.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 82.72270001180004,
+          "answered": false,
+          "gold_exe_ans": 9.8
+        },
+        {
+          "id": "MO/2014/page_39.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.3539000058081,
+          "answered": false,
+          "gold_exe_ans": 0.54108
+        },
+        {
+          "id": "RSG/2009/page_140.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 80.43739999993704,
+          "answered": false,
+          "gold_exe_ans": -0.3282
+        },
+        {
+          "id": "C/2009/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.356299989507534,
+          "answered": false,
+          "gold_exe_ans": 0.28238
+        },
+        {
+          "id": "BLL/2006/page_67.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.81409998761956,
+          "answered": false,
+          "gold_exe_ans": 0.29841
+        },
+        {
+          "id": "DISCA/2011/page_49.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 66.52900000335649,
+          "answered": false,
+          "gold_exe_ans": 1.9667
+        },
+        {
+          "id": "KHC/2018/page_132.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.08769999770448,
+          "answered": false,
+          "gold_exe_ans": 6.0
+        },
+        {
+          "id": "GRMN/2008/page_85.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.81789999513421,
+          "answered": false,
+          "gold_exe_ans": 0.10222
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.84349999018013,
+          "answered": false,
+          "gold_exe_ans": 0.0346
+        },
+        {
+          "id": "UPS/2010/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.59399998979643,
+          "answered": false,
+          "gold_exe_ans": 0.05663
+        },
+        {
+          "id": "CDW/2015/page_70.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.0714999929769,
+          "answered": false,
+          "gold_exe_ans": -6.3
+        },
+        {
+          "id": "C/2008/page_22.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 77.93450000463054,
+          "answered": false,
+          "gold_exe_ans": 445.0
+        },
+        {
+          "id": "L/2009/page_84.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 63.51439999707509,
+          "answered": false,
+          "gold_exe_ans": -0.37001
+        },
+        {
+          "id": "SYY/2006/page_71.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 77.04190000367817,
+          "answered": false,
+          "gold_exe_ans": 0.08607
+        },
+        {
+          "id": "CB/2008/page_229.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.73579999327194,
+          "answered": false,
+          "gold_exe_ans": 77.0
+        },
+        {
+          "id": "SLB/2012/page_56.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.92970000929199,
+          "answered": false,
+          "gold_exe_ans": 1152.0
+        },
+        {
+          "id": "HOLX/2003/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 71.97920000180602,
+          "answered": false,
+          "gold_exe_ans": 28597891.58
+        },
+        {
+          "id": "ABMD/2008/page_86.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 72.68689999182243,
+          "answered": false,
+          "gold_exe_ans": 11.16667
+        },
+        {
+          "id": "HIG/2011/page_53.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 50.322099996265024,
+          "answered": false,
+          "gold_exe_ans": 0.18081
+        },
+        {
+          "id": "DG/2010/page_136.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.24319999455474,
+          "answered": false,
+          "gold_exe_ans": 10.0
+        },
+        {
+          "id": "HST/2018/page_135.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.841400009347126,
+          "answered": false,
+          "gold_exe_ans": 0.0
+        },
+        {
+          "id": "KHC/2018/page_132.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.57930000254419,
+          "answered": false,
+          "gold_exe_ans": 10.0
+        },
+        {
+          "id": "AAPL/2004/page_68.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 65.63260000257287,
+          "answered": false,
+          "gold_exe_ans": 2.7
+        },
+        {
+          "id": "K/2013/page_23.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 45.556500001112,
+          "answered": false,
+          "gold_exe_ans": 0.00927
+        },
+        {
+          "id": "JPM/2012/page_140.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.25440000544768,
+          "answered": false,
+          "gold_exe_ans": 0.09996
+        },
+        {
+          "id": "ANET/2015/page_156.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.46010000316892,
+          "answered": false,
+          "gold_exe_ans": 0.0314
+        },
+        {
+          "id": "AMT/2016/page_49.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 76.93110000400338,
+          "answered": false,
+          "gold_exe_ans": 0.09302
+        },
+        {
+          "id": "STT/2009/page_127.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.913400011486374,
+          "answered": false,
+          "gold_exe_ans": 299999990.4
+        },
+        {
+          "id": "ADI/2019/page_29.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 79.23780000419356,
+          "answered": false,
+          "gold_exe_ans": 9015431.44
+        },
+        {
+          "id": "HOLX/2006/page_100.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.30849999398924,
+          "answered": false,
+          "gold_exe_ans": 0.0607
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 62.48039999627508,
+          "answered": false,
+          "gold_exe_ans": 0.04545
+        },
+        {
+          "id": "BLK/2014/page_120.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.98050000844523,
+          "answered": false,
+          "gold_exe_ans": 349.0
+        },
+        {
+          "id": "ADI/2010/page_60.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 67.37499999871943,
+          "answered": false,
+          "gold_exe_ans": 0.10789
+        },
+        {
+          "id": "FIS/2017/page_64.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.05050000001211,
+          "answered": false,
+          "gold_exe_ans": 0.26923
+        },
+        {
+          "id": "RSG/2010/page_98.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 91.7704000021331,
+          "answered": false,
+          "gold_exe_ans": 3.39489
+        },
+        {
+          "id": "IP/2009/page_84.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.85969999001827,
+          "answered": false,
+          "gold_exe_ans": 0.05366
+        },
+        {
+          "id": "HWM/2018/page_96.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 88.42559999902733,
+          "answered": false,
+          "gold_exe_ans": 16.43
+        },
+        {
+          "id": "SNA/2018/page_31.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.94350001087878,
+          "answered": false,
+          "gold_exe_ans": 13435200.0
+        },
+        {
+          "id": "AAPL/2005/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.16689999727532,
+          "answered": false,
+          "gold_exe_ans": 0.02421
+        },
+        {
+          "id": "DVN/2014/page_87.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 78.59209999151062,
+          "answered": false,
+          "gold_exe_ans": 1.63657
+        },
+        {
+          "id": "CMCSA/2008/page_36.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.31770000280812,
+          "answered": false,
+          "gold_exe_ans": 0.18467
+        },
+        {
+          "id": "ETFC/2012/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.60339999687858,
+          "answered": false,
+          "gold_exe_ans": 1.15217
+        },
+        {
+          "id": "CB/2010/page_83.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 91.64430000237189,
+          "answered": false,
+          "gold_exe_ans": -0.55319
+        },
+        {
+          "id": "DRE/2008/page_46.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 73.66989999718498,
+          "answered": false,
+          "gold_exe_ans": 209703.0
+        },
+        {
+          "id": "C/2009/page_63.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 63.82809999922756,
+          "answered": false,
+          "gold_exe_ans": 0.56374
+        },
+        {
+          "id": "GIS/2015/page_62.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 81.64289999695029,
+          "answered": false,
+          "gold_exe_ans": -4.74026
+        },
+        {
+          "id": "ZBH/2009/page_58.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.38909999572206,
+          "answered": false,
+          "gold_exe_ans": 0.41467
+        },
+        {
+          "id": "K/2006/page_52.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.22809999762103,
+          "answered": false,
+          "gold_exe_ans": -1047.5
+        },
+        {
+          "id": "UAA/2016/page_42.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.593800011090934,
+          "answered": false,
+          "gold_exe_ans": 0.25431
+        },
+        {
+          "id": "UNP/2011/page_24.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.14349998906255,
+          "answered": false,
+          "gold_exe_ans": 0.14252
+        },
+        {
+          "id": "RSG/2013/page_123.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.36079999082722,
+          "answered": false,
+          "gold_exe_ans": 0.03957
+        },
+        {
+          "id": "ZBH/2009/page_58.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.82709999545477,
+          "answered": false,
+          "gold_exe_ans": 0.41467
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.19129999913275,
+          "answered": false,
+          "gold_exe_ans": 0.44176
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 77.64900001347996,
+          "answered": false,
+          "gold_exe_ans": 0.09716
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.471699992078356,
+          "answered": false,
+          "gold_exe_ans": 0.01197
+        },
+        {
+          "id": "ETR/2015/page_17.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 62.11959999927785,
+          "answered": false,
+          "gold_exe_ans": 0.62121
+        },
+        {
+          "id": "JPM/2018/page_90.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 80.11310000438243,
+          "answered": false,
+          "gold_exe_ans": 14.0
+        },
+        {
+          "id": "FIS/2017/page_64.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.186400001635775,
+          "answered": false,
+          "gold_exe_ans": 0.42889
+        },
+        {
+          "id": "ILMN/2008/page_82.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.499600009061396,
+          "answered": false,
+          "gold_exe_ans": 1e-05
+        },
+        {
+          "id": "CME/2017/page_40.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.57090000063181,
+          "answered": false,
+          "gold_exe_ans": 1.77919
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 45.66040000645444,
+          "answered": false,
+          "gold_exe_ans": 17447.0
+        },
+        {
+          "id": "HOLX/2006/page_71.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 71.54360000276938,
+          "answered": false,
+          "gold_exe_ans": 65464368.8
+        },
+        {
+          "id": "TMUS/2017/page_29.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.882200006744824,
+          "answered": false,
+          "gold_exe_ans": 83333.33333
+        },
+        {
+          "id": "ADI/2010/page_80.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.66299999435432,
+          "answered": false,
+          "gold_exe_ans": 0.09405
+        },
+        {
+          "id": "CME/2017/page_40.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 60.11690000013914,
+          "answered": false,
+          "gold_exe_ans": 0.01577
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 74.25640001019929,
+          "answered": false,
+          "gold_exe_ans": -0.03383
+        },
+        {
+          "id": "PPG/2018/page_85.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 75.9195999999065,
+          "answered": false,
+          "gold_exe_ans": 0.5189
+        },
+        {
+          "id": "UPS/2012/page_32.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 106.23219999251887,
+          "answered": false,
+          "gold_exe_ans": -0.0561
+        },
+        {
+          "id": "APD/2018/page_121.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 67.61709999409504,
+          "answered": false,
+          "gold_exe_ans": -0.46341
+        },
+        {
+          "id": "PPG/2018/page_85.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.863500008243136,
+          "answered": false,
+          "gold_exe_ans": 0.11029
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.52000000292901,
+          "answered": false,
+          "gold_exe_ans": 0.0375
+        },
+        {
+          "id": "PNC/2007/page_92.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 96.49569999601226,
+          "answered": false,
+          "gold_exe_ans": 0.1875
+        },
+        {
+          "id": "AMT/2016/page_125.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.79060000006575,
+          "answered": false,
+          "gold_exe_ans": 79437.0
+        },
+        {
+          "id": "ADI/2010/page_80.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.31419999815989,
+          "answered": false,
+          "gold_exe_ans": 0.10253
+        },
+        {
+          "id": "CB/2008/page_229.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.62920000194572,
+          "answered": false,
+          "gold_exe_ans": 10.23538
+        },
+        {
+          "id": "STT/2011/page_69.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.518799999845214,
+          "answered": false,
+          "gold_exe_ans": 28000.0
+        },
+        {
+          "id": "ANSS/2012/page_93.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.99589999776799,
+          "answered": false,
+          "gold_exe_ans": 76787.0
+        },
+        {
+          "id": "ECL/2017/page_79.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.375,
+          "latency_ms": 49.681299991789274,
+          "answered": false,
+          "gold_exe_ans": 0.70481
+        },
+        {
+          "id": "C/2008/page_65.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.1366000007838,
+          "answered": false,
+          "gold_exe_ans": -0.06793
+        },
+        {
+          "id": "HUM/2017/page_118.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 47.378800009028055,
+          "answered": false,
+          "gold_exe_ans": 81.66667
+        },
+        {
+          "id": "STT/2011/page_69.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.70829999749549,
+          "answered": false,
+          "gold_exe_ans": 0.53979
+        },
+        {
+          "id": "ANSS/2016/page_47.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 78.09939999424387,
+          "answered": false,
+          "gold_exe_ans": 0.2941
+        },
+        {
+          "id": "V/2008/page_180.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.6712000076659,
+          "answered": false,
+          "gold_exe_ans": 0.22006
+        },
+        {
+          "id": "AAL/2015/page_114.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 76.9123999925796,
+          "answered": false,
+          "gold_exe_ans": 0.65273
+        },
+        {
+          "id": "DRE/2005/page_30.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.60080000315793,
+          "answered": false,
+          "gold_exe_ans": 10626.0
+        },
+        {
+          "id": "STT/2006/page_95.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.702900003874674,
+          "answered": false,
+          "gold_exe_ans": 6.15385
+        },
+        {
+          "id": "GS/2014/page_74.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.062300005578436,
+          "answered": false,
+          "gold_exe_ans": 0.25279
+        },
+        {
+          "id": "IP/2006/page_38.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 87.68959999724757,
+          "answered": false,
+          "gold_exe_ans": 0.21864
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 68.38369999604765,
+          "answered": false,
+          "gold_exe_ans": -0.44583
+        },
+        {
+          "id": "PNC/2008/page_122.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.45730000734329,
+          "answered": false,
+          "gold_exe_ans": 0.11743
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.672399998409674,
+          "answered": false,
+          "gold_exe_ans": 42500.0
+        },
+        {
+          "id": "ECL/2017/page_69.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.469299991382286,
+          "answered": false,
+          "gold_exe_ans": 0.12284
+        },
+        {
+          "id": "GIS/2019/page_68.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 63.24649999442045,
+          "answered": false,
+          "gold_exe_ans": 0.01696
+        },
+        {
+          "id": "DRE/2012/page_40.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 48.02100000961218,
+          "answered": false,
+          "gold_exe_ans": -0.46798
+        },
+        {
+          "id": "BLK/2017/page_121.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 62.67220000154339,
+          "answered": false,
+          "gold_exe_ans": 0.00536
+        },
+        {
+          "id": "IP/2006/page_75.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 88.3427000080701,
+          "answered": false,
+          "gold_exe_ans": 0.05823
+        },
+        {
+          "id": "UNP/2007/page_25.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.95380000502337,
+          "answered": false,
+          "gold_exe_ans": -29.0
+        },
+        {
+          "id": "ADBE/2008/page_89.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.71070000145119,
+          "answered": false,
+          "gold_exe_ans": -0.30851
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-6",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 50.64680000941735,
+          "answered": false,
+          "gold_exe_ans": 0.93677
+        },
+        {
+          "id": "MMM/2007/page_23.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 45.89520000445191,
+          "answered": false,
+          "gold_exe_ans": 1.59091
+        },
+        {
+          "id": "C/2009/page_45.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.324099991703406,
+          "answered": false,
+          "gold_exe_ans": 0.29652
+        },
+        {
+          "id": "ABC/2005/page_49.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 66.80559999949764,
+          "answered": false,
+          "gold_exe_ans": 0.9
+        }
+      ]
+    },
+    {
+      "mode": "bm25",
+      "rerank": false,
+      "n": 200,
+      "coverage": 0.085,
+      "execution_accuracy": 0.0,
+      "recall_at_5": 0.8170000000000001,
+      "mean_e2e_ms": 56.741982498861034,
+      "cases": [
+        {
+          "id": "DG/2005/page_44.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.50940000487026,
+          "answered": false,
+          "gold_exe_ans": -0.07937
+        },
+        {
+          "id": "UNP/2011/page_33.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 51.08889999974053,
+          "answered": false,
+          "gold_exe_ans": 0.761
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.605700008920394,
+          "answered": false,
+          "gold_exe_ans": 0.02385
+        },
+        {
+          "id": "GPN/2014/page_92.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.838500000187196,
+          "answered": false,
+          "gold_exe_ans": 365.4316
+        },
+        {
+          "id": "UNP/2015/page_56.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.66490000777412,
+          "answered": true,
+          "gold_exe_ans": 0.19974
+        },
+        {
+          "id": "MO/2014/page_39.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.477800003951415,
+          "answered": false,
+          "gold_exe_ans": 0.56549
+        },
+        {
+          "id": "GIS/2017/page_31.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.16580000100657,
+          "answered": false,
+          "gold_exe_ans": 1.43836
+        },
+        {
+          "id": "MAS/2012/page_26.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.07669999497011,
+          "answered": false,
+          "gold_exe_ans": 0.25926
+        },
+        {
+          "id": "RSG/2010/page_57.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.70250000304077,
+          "answered": false,
+          "gold_exe_ans": 1.33488
+        },
+        {
+          "id": "LKQ/2016/page_87.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.347699992125854,
+          "answered": false,
+          "gold_exe_ans": 0.13401
+        },
+        {
+          "id": "PPG/2012/page_29.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 35.797100004856475,
+          "answered": false,
+          "gold_exe_ans": 92.0
+        },
+        {
+          "id": "V/2014/page_126.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 47.5466000061715,
+          "answered": false,
+          "gold_exe_ans": 5.08
+        },
+        {
+          "id": "C/2015/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 45.297700009541586,
+          "answered": false,
+          "gold_exe_ans": -0.05114
+        },
+        {
+          "id": "CB/2008/page_229.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 45.51250000076834,
+          "answered": false,
+          "gold_exe_ans": 0.0977
+        },
+        {
+          "id": "PNC/2014/page_111.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 63.56560000858735,
+          "answered": false,
+          "gold_exe_ans": -85.0
+        },
+        {
+          "id": "AMAT/2018/page_33.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.958499998785555,
+          "answered": false,
+          "gold_exe_ans": -0.0333
+        },
+        {
+          "id": "MKTX/2012/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.41600000509061,
+          "answered": false,
+          "gold_exe_ans": 0.19088
+        },
+        {
+          "id": "AMT/2016/page_125.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 46.4633999945363,
+          "answered": false,
+          "gold_exe_ans": 6.3
+        },
+        {
+          "id": "AMT/2016/page_49.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.60889999126084,
+          "answered": false,
+          "gold_exe_ans": 2792124.42484
+        },
+        {
+          "id": "HOLX/2009/page_127.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.77459999907296,
+          "answered": false,
+          "gold_exe_ans": 27.80639
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.26420000428334,
+          "answered": false,
+          "gold_exe_ans": 0.047
+        },
+        {
+          "id": "ZBH/2008/page_57.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 46.00179998669773,
+          "answered": false,
+          "gold_exe_ans": 0.14636
+        },
+        {
+          "id": "STT/2009/page_127.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.267799991881475,
+          "answered": false,
+          "gold_exe_ans": 2.18154
+        },
+        {
+          "id": "INTC/2015/page_41.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 51.76930000016,
+          "answered": false,
+          "gold_exe_ans": 0.14464
+        },
+        {
+          "id": "ECL/2017/page_94.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.25660000683274,
+          "answered": false,
+          "gold_exe_ans": 0.213
+        },
+        {
+          "id": "PPG/2006/page_42.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.02179999893997,
+          "answered": false,
+          "gold_exe_ans": 1.11111
+        },
+        {
+          "id": "HIG/2011/page_53.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 46.24840000178665,
+          "answered": false,
+          "gold_exe_ans": 0.22464
+        },
+        {
+          "id": "ETR/2017/page_143.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 66.70409999787807,
+          "answered": false,
+          "gold_exe_ans": 4781374.0
+        },
+        {
+          "id": "C/2008/page_65.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.09839999105316,
+          "answered": false,
+          "gold_exe_ans": 0.80473
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.4,
+          "latency_ms": 51.632500006235205,
+          "answered": true,
+          "gold_exe_ans": 0.32068
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.877700001583435,
+          "answered": false,
+          "gold_exe_ans": -0.0777
+        },
+        {
+          "id": "AMT/2014/page_160.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 36.5447999938624,
+          "answered": false,
+          "gold_exe_ans": null
+        },
+        {
+          "id": "MAR/2004/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "raw_units",
+          "recall_at_5": 1.0,
+          "latency_ms": 70.10109999100678,
+          "answered": true,
+          "gold_exe_ans": 68.0
+        },
+        {
+          "id": "BLK/2017/page_121.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.17779998667538,
+          "answered": false,
+          "gold_exe_ans": 0.13621
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.611599990399554,
+          "answered": false,
+          "gold_exe_ans": 3.625
+        },
+        {
+          "id": "MRO/2006/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 49.19540000264533,
+          "answered": false,
+          "gold_exe_ans": null
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-5",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 40.13249999843538,
+          "answered": true,
+          "gold_exe_ans": 0.06593
+        },
+        {
+          "id": "GS/2014/page_165.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.6166000070516,
+          "answered": false,
+          "gold_exe_ans": 0.52056
+        },
+        {
+          "id": "MO/2014/page_39.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 61.0028999944916,
+          "answered": false,
+          "gold_exe_ans": 0.80583
+        },
+        {
+          "id": "PNC/2007/page_92.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 49.45769999176264,
+          "answered": false,
+          "gold_exe_ans": 7947.0
+        },
+        {
+          "id": "MMM/2007/page_84.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.50089999672491,
+          "answered": false,
+          "gold_exe_ans": 2.7438
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 89.5821000012802,
+          "answered": false,
+          "gold_exe_ans": 5.6
+        },
+        {
+          "id": "HWM/2018/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.81659999815747,
+          "answered": false,
+          "gold_exe_ans": 241.11
+        },
+        {
+          "id": "ANSS/2012/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.56749998929445,
+          "answered": false,
+          "gold_exe_ans": 9.3
+        },
+        {
+          "id": "CDW/2015/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.6666666666666666,
+          "latency_ms": 70.3776000009384,
+          "answered": false,
+          "gold_exe_ans": 1.26207
+        },
+        {
+          "id": "APD/2018/page_30.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 46.9403000024613,
+          "answered": false,
+          "gold_exe_ans": 0.14555
+        },
+        {
+          "id": "RSG/2018/page_135.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 51.538400002755225,
+          "answered": false,
+          "gold_exe_ans": 4.55556
+        },
+        {
+          "id": "GPN/2013/page_92.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 45.89090000081342,
+          "answered": false,
+          "gold_exe_ans": 0.19366
+        },
+        {
+          "id": "AMT/2003/page_102.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 74.48529999237508,
+          "answered": false,
+          "gold_exe_ans": 0.21838
+        },
+        {
+          "id": "UAA/2016/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 39.98299999511801,
+          "answered": false,
+          "gold_exe_ans": 0.17172
+        },
+        {
+          "id": "CMCSA/2008/page_36.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.72550000681076,
+          "answered": false,
+          "gold_exe_ans": 0.56754
+        },
+        {
+          "id": "AWK/2013/page_122.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 40.957300006994046,
+          "answered": false,
+          "gold_exe_ans": 22415.0
+        },
+        {
+          "id": "GS/2014/page_51.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 33.34749999339692,
+          "answered": false,
+          "gold_exe_ans": -0.06063
+        },
+        {
+          "id": "ETR/2013/page_21.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.93949999799952,
+          "answered": false,
+          "gold_exe_ans": -191.0
+        },
+        {
+          "id": "IP/2006/page_31.pdf-1",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.5,
+          "latency_ms": 44.18469998927321,
+          "answered": true,
+          "gold_exe_ans": 0.19391
+        },
+        {
+          "id": "V/2008/page_180.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.66419999720529,
+          "answered": false,
+          "gold_exe_ans": 3138.0
+        },
+        {
+          "id": "PPG/2006/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.342900006100535,
+          "answered": false,
+          "gold_exe_ans": 1.5
+        },
+        {
+          "id": "UPS/2010/page_52.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.44689999322873,
+          "answered": false,
+          "gold_exe_ans": 0.14922
+        },
+        {
+          "id": "UNP/2006/page_15.pdf-3",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.77469999983441,
+          "answered": true,
+          "gold_exe_ans": 0.52946
+        },
+        {
+          "id": "HOLX/2006/page_100.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 43.09880000073463,
+          "answered": false,
+          "gold_exe_ans": 0.22045
+        },
+        {
+          "id": "ETR/2017/page_143.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.6666666666666666,
+          "latency_ms": 56.820099998731166,
+          "answered": false,
+          "gold_exe_ans": 0.12853
+        },
+        {
+          "id": "ILMN/2003/page_58.pdf-3",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 74.13310000265483,
+          "answered": true,
+          "gold_exe_ans": -30.76
+        },
+        {
+          "id": "IP/2009/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 79.52829998976085,
+          "answered": false,
+          "gold_exe_ans": 0.40796
+        },
+        {
+          "id": "UNP/2016/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 79.54880000033882,
+          "answered": false,
+          "gold_exe_ans": 0.81238
+        },
+        {
+          "id": "HWM/2017/page_42.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.9479000037536,
+          "answered": false,
+          "gold_exe_ans": -0.96929
+        },
+        {
+          "id": "AON/2007/page_171.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 51.93790000339504,
+          "answered": false,
+          "gold_exe_ans": 284.0
+        },
+        {
+          "id": "ABMD/2006/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 42.84709999046754,
+          "answered": false,
+          "gold_exe_ans": 0.88928
+        },
+        {
+          "id": "RSG/2012/page_93.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 35.66389999468811,
+          "answered": false,
+          "gold_exe_ans": -2.8
+        },
+        {
+          "id": "C/2009/page_197.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.455800011055544,
+          "answered": false,
+          "gold_exe_ans": 0.10345
+        },
+        {
+          "id": "MRO/2006/page_93.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 67.35979999939445,
+          "answered": false,
+          "gold_exe_ans": 0.62329
+        },
+        {
+          "id": "IP/2006/page_35.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.017399995354936,
+          "answered": true,
+          "gold_exe_ans": 0.12702
+        },
+        {
+          "id": "DRE/2008/page_46.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.40040000737645,
+          "answered": false,
+          "gold_exe_ans": -0.3142
+        },
+        {
+          "id": "TMUS/2017/page_29.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 45.301399994059466,
+          "answered": false,
+          "gold_exe_ans": 82352.94118
+        },
+        {
+          "id": "AWK/2013/page_122.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 67.97109999752138,
+          "answered": false,
+          "gold_exe_ans": 0.00136
+        },
+        {
+          "id": "INTC/2015/page_41.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.224900003755465,
+          "answered": false,
+          "gold_exe_ans": 0.35908
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 46.56109999632463,
+          "answered": false,
+          "gold_exe_ans": 0.08083
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.99189998873044,
+          "answered": false,
+          "gold_exe_ans": -0.07394
+        },
+        {
+          "id": "ILMN/2008/page_86.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 66.05530000524595,
+          "answered": false,
+          "gold_exe_ans": 1.2
+        },
+        {
+          "id": "AON/2007/page_171.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.81409999669995,
+          "answered": false,
+          "gold_exe_ans": 166.0
+        },
+        {
+          "id": "STT/2006/page_95.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.6666666666666666,
+          "latency_ms": 51.120499992975965,
+          "answered": true,
+          "gold_exe_ans": 0.86784
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 71.43270000233315,
+          "answered": false,
+          "gold_exe_ans": 0.91156
+        },
+        {
+          "id": "ZBH/2008/page_57.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.4308000090532,
+          "answered": false,
+          "gold_exe_ans": 0.45103
+        },
+        {
+          "id": "MSI/2007/page_70.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.44469998776913,
+          "answered": false,
+          "gold_exe_ans": 6055.66667
+        },
+        {
+          "id": "C/2009/page_243.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 76.49239999591373,
+          "answered": false,
+          "gold_exe_ans": 1.5625
+        },
+        {
+          "id": "FIS/2012/page_48.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.02239999885205,
+          "answered": false,
+          "gold_exe_ans": 0.02652
+        },
+        {
+          "id": "DISH/2011/page_122.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 52.90029999741819,
+          "answered": false,
+          "gold_exe_ans": 1375.0
+        },
+        {
+          "id": "HOLX/2007/page_126.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.773399999248795,
+          "answered": false,
+          "gold_exe_ans": 0.03825
+        },
+        {
+          "id": "MS/2007/page_179.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 47.52089999965392,
+          "answered": false,
+          "gold_exe_ans": 0.14737
+        },
+        {
+          "id": "AMT/2014/page_160.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 47.87470000155736,
+          "answered": false,
+          "gold_exe_ans": 0.18186
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.05959999957122,
+          "answered": false,
+          "gold_exe_ans": -19.3
+        },
+        {
+          "id": "RSG/2015/page_98.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 39.45959999691695,
+          "answered": false,
+          "gold_exe_ans": -31.1
+        },
+        {
+          "id": "CB/2010/page_83.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.7699000017019,
+          "answered": false,
+          "gold_exe_ans": -26.0
+        },
+        {
+          "id": "EMR/2017/page_78.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.04749999474734,
+          "answered": false,
+          "gold_exe_ans": 8.6168
+        },
+        {
+          "id": "AMT/2010/page_99.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.635599986999296,
+          "answered": false,
+          "gold_exe_ans": 0.0134
+        },
+        {
+          "id": "UNP/2007/page_25.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 32.28109999326989,
+          "answered": false,
+          "gold_exe_ans": 2688.88889
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.54039999516681,
+          "answered": false,
+          "gold_exe_ans": -0.30435
+        },
+        {
+          "id": "AAL/2015/page_114.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 44.959899998502806,
+          "answered": false,
+          "gold_exe_ans": 0.74953
+        },
+        {
+          "id": "IP/2006/page_38.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 84.09969999047462,
+          "answered": false,
+          "gold_exe_ans": 0.1822
+        },
+        {
+          "id": "HIG/2004/page_140.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.78019999829121,
+          "answered": false,
+          "gold_exe_ans": 9.8
+        },
+        {
+          "id": "MO/2014/page_39.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.96070001088083,
+          "answered": false,
+          "gold_exe_ans": 0.54108
+        },
+        {
+          "id": "RSG/2009/page_140.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 68.75039999431465,
+          "answered": false,
+          "gold_exe_ans": -0.3282
+        },
+        {
+          "id": "C/2009/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 46.6821999871172,
+          "answered": false,
+          "gold_exe_ans": 0.28238
+        },
+        {
+          "id": "BLL/2006/page_67.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.91299999912735,
+          "answered": false,
+          "gold_exe_ans": 0.29841
+        },
+        {
+          "id": "DISCA/2011/page_49.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.83249999128748,
+          "answered": false,
+          "gold_exe_ans": 1.9667
+        },
+        {
+          "id": "KHC/2018/page_132.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.21110000438057,
+          "answered": false,
+          "gold_exe_ans": 6.0
+        },
+        {
+          "id": "GRMN/2008/page_85.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 50.56250000779983,
+          "answered": false,
+          "gold_exe_ans": 0.10222
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.61300000490155,
+          "answered": false,
+          "gold_exe_ans": 0.0346
+        },
+        {
+          "id": "UPS/2010/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.26729998667724,
+          "answered": false,
+          "gold_exe_ans": 0.05663
+        },
+        {
+          "id": "CDW/2015/page_70.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.76409999188036,
+          "answered": false,
+          "gold_exe_ans": -6.3
+        },
+        {
+          "id": "C/2008/page_22.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.1806999911787,
+          "answered": false,
+          "gold_exe_ans": 445.0
+        },
+        {
+          "id": "L/2009/page_84.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.896099986857735,
+          "answered": false,
+          "gold_exe_ans": -0.37001
+        },
+        {
+          "id": "SYY/2006/page_71.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.57120000291616,
+          "answered": false,
+          "gold_exe_ans": 0.08607
+        },
+        {
+          "id": "CB/2008/page_229.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 42.85830000299029,
+          "answered": false,
+          "gold_exe_ans": 77.0
+        },
+        {
+          "id": "SLB/2012/page_56.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.96259999542963,
+          "answered": false,
+          "gold_exe_ans": 1152.0
+        },
+        {
+          "id": "HOLX/2003/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 61.05750000278931,
+          "answered": false,
+          "gold_exe_ans": 28597891.58
+        },
+        {
+          "id": "ABMD/2008/page_86.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 66.56300000031479,
+          "answered": false,
+          "gold_exe_ans": 11.16667
+        },
+        {
+          "id": "HIG/2011/page_53.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 47.81239999283571,
+          "answered": false,
+          "gold_exe_ans": 0.18081
+        },
+        {
+          "id": "DG/2010/page_136.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.713499999721535,
+          "answered": false,
+          "gold_exe_ans": 10.0
+        },
+        {
+          "id": "HST/2018/page_135.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 43.685099997674115,
+          "answered": false,
+          "gold_exe_ans": 0.0
+        },
+        {
+          "id": "KHC/2018/page_132.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 53.062899998622015,
+          "answered": false,
+          "gold_exe_ans": 10.0
+        },
+        {
+          "id": "AAPL/2004/page_68.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 60.081200004788116,
+          "answered": false,
+          "gold_exe_ans": 2.7
+        },
+        {
+          "id": "K/2013/page_23.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 42.61979999137111,
+          "answered": false,
+          "gold_exe_ans": 0.00927
+        },
+        {
+          "id": "JPM/2012/page_140.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 43.99040000862442,
+          "answered": false,
+          "gold_exe_ans": 0.09996
+        },
+        {
+          "id": "ANET/2015/page_156.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 49.230100004933774,
+          "answered": false,
+          "gold_exe_ans": 0.0314
+        },
+        {
+          "id": "AMT/2016/page_49.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 80.66849999886472,
+          "answered": false,
+          "gold_exe_ans": 0.09302
+        },
+        {
+          "id": "STT/2009/page_127.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.419799999683164,
+          "answered": false,
+          "gold_exe_ans": 299999990.4
+        },
+        {
+          "id": "ADI/2019/page_29.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 78.78409999830183,
+          "answered": false,
+          "gold_exe_ans": 9015431.44
+        },
+        {
+          "id": "HOLX/2006/page_100.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.33610000263434,
+          "answered": false,
+          "gold_exe_ans": 0.0607
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 56.10519999754615,
+          "answered": false,
+          "gold_exe_ans": 0.04545
+        },
+        {
+          "id": "BLK/2014/page_120.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.25,
+          "latency_ms": 47.120799994445406,
+          "answered": false,
+          "gold_exe_ans": 349.0
+        },
+        {
+          "id": "ADI/2010/page_60.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 61.526699995738454,
+          "answered": false,
+          "gold_exe_ans": 0.10789
+        },
+        {
+          "id": "FIS/2017/page_64.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.15180000697728,
+          "answered": true,
+          "gold_exe_ans": 0.26923
+        },
+        {
+          "id": "RSG/2010/page_98.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 79.9068000051193,
+          "answered": false,
+          "gold_exe_ans": 3.39489
+        },
+        {
+          "id": "IP/2009/page_84.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.158799996599555,
+          "answered": false,
+          "gold_exe_ans": 0.05366
+        },
+        {
+          "id": "HWM/2018/page_96.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 79.03470000019297,
+          "answered": false,
+          "gold_exe_ans": 16.43
+        },
+        {
+          "id": "SNA/2018/page_31.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 49.4468999968376,
+          "answered": false,
+          "gold_exe_ans": 13435200.0
+        },
+        {
+          "id": "AAPL/2005/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 43.67630000342615,
+          "answered": true,
+          "gold_exe_ans": 0.02421
+        },
+        {
+          "id": "DVN/2014/page_87.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.46989999676589,
+          "answered": false,
+          "gold_exe_ans": 1.63657
+        },
+        {
+          "id": "CMCSA/2008/page_36.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.537999997497536,
+          "answered": false,
+          "gold_exe_ans": 0.18467
+        },
+        {
+          "id": "ETFC/2012/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 45.989700010977685,
+          "answered": false,
+          "gold_exe_ans": 1.15217
+        },
+        {
+          "id": "CB/2010/page_83.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 74.50699999753851,
+          "answered": false,
+          "gold_exe_ans": -0.55319
+        },
+        {
+          "id": "DRE/2008/page_46.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.50140000379179,
+          "answered": false,
+          "gold_exe_ans": 209703.0
+        },
+        {
+          "id": "C/2009/page_63.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.4513999907067,
+          "answered": false,
+          "gold_exe_ans": 0.56374
+        },
+        {
+          "id": "GIS/2015/page_62.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 77.83079998625908,
+          "answered": false,
+          "gold_exe_ans": -4.74026
+        },
+        {
+          "id": "ZBH/2009/page_58.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.84289999853354,
+          "answered": false,
+          "gold_exe_ans": 0.41467
+        },
+        {
+          "id": "K/2006/page_52.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 59.638899998390116,
+          "answered": false,
+          "gold_exe_ans": -1047.5
+        },
+        {
+          "id": "UAA/2016/page_42.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.59099999885075,
+          "answered": false,
+          "gold_exe_ans": 0.25431
+        },
+        {
+          "id": "UNP/2011/page_24.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.84019998786971,
+          "answered": false,
+          "gold_exe_ans": 0.14252
+        },
+        {
+          "id": "RSG/2013/page_123.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.267499994835816,
+          "answered": false,
+          "gold_exe_ans": 0.03957
+        },
+        {
+          "id": "ZBH/2009/page_58.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.572999998228624,
+          "answered": false,
+          "gold_exe_ans": 0.41467
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.060999995679595,
+          "answered": true,
+          "gold_exe_ans": 0.44176
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 76.97369999368675,
+          "answered": false,
+          "gold_exe_ans": 0.09716
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 50.66539999097586,
+          "answered": false,
+          "gold_exe_ans": 0.01197
+        },
+        {
+          "id": "ETR/2015/page_17.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.36359998991247,
+          "answered": false,
+          "gold_exe_ans": 0.62121
+        },
+        {
+          "id": "JPM/2018/page_90.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 79.38939999439754,
+          "answered": false,
+          "gold_exe_ans": 14.0
+        },
+        {
+          "id": "FIS/2017/page_64.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.92580000485759,
+          "answered": false,
+          "gold_exe_ans": 0.42889
+        },
+        {
+          "id": "ILMN/2008/page_82.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 49.07870000170078,
+          "answered": false,
+          "gold_exe_ans": 1e-05
+        },
+        {
+          "id": "CME/2017/page_40.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.033199994591996,
+          "answered": false,
+          "gold_exe_ans": 1.77919
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.6666666666666666,
+          "latency_ms": 41.314599991892464,
+          "answered": false,
+          "gold_exe_ans": 17447.0
+        },
+        {
+          "id": "HOLX/2006/page_71.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.86369999300223,
+          "answered": false,
+          "gold_exe_ans": 65464368.8
+        },
+        {
+          "id": "TMUS/2017/page_29.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.371199996443465,
+          "answered": false,
+          "gold_exe_ans": 83333.33333
+        },
+        {
+          "id": "ADI/2010/page_80.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.25,
+          "latency_ms": 54.32009999640286,
+          "answered": false,
+          "gold_exe_ans": 0.09405
+        },
+        {
+          "id": "CME/2017/page_40.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 51.2868000078015,
+          "answered": false,
+          "gold_exe_ans": 0.01577
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 68.95810000423808,
+          "answered": false,
+          "gold_exe_ans": -0.03383
+        },
+        {
+          "id": "PPG/2018/page_85.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.546599997906014,
+          "answered": true,
+          "gold_exe_ans": 0.5189
+        },
+        {
+          "id": "UPS/2012/page_32.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 99.62470000027679,
+          "answered": false,
+          "gold_exe_ans": -0.0561
+        },
+        {
+          "id": "APD/2018/page_121.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.06079999962822,
+          "answered": false,
+          "gold_exe_ans": -0.46341
+        },
+        {
+          "id": "PPG/2018/page_85.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 47.860200007562526,
+          "answered": true,
+          "gold_exe_ans": 0.11029
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.01160000474192,
+          "answered": true,
+          "gold_exe_ans": 0.0375
+        },
+        {
+          "id": "PNC/2007/page_92.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 100.31290000188164,
+          "answered": false,
+          "gold_exe_ans": 0.1875
+        },
+        {
+          "id": "AMT/2016/page_125.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.05050000990741,
+          "answered": false,
+          "gold_exe_ans": 79437.0
+        },
+        {
+          "id": "ADI/2010/page_80.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 49.36740000266582,
+          "answered": true,
+          "gold_exe_ans": 0.10253
+        },
+        {
+          "id": "CB/2008/page_229.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 69.25369999953546,
+          "answered": false,
+          "gold_exe_ans": 10.23538
+        },
+        {
+          "id": "STT/2011/page_69.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.55369999981485,
+          "answered": false,
+          "gold_exe_ans": 28000.0
+        },
+        {
+          "id": "ANSS/2012/page_93.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.239300003042445,
+          "answered": false,
+          "gold_exe_ans": 76787.0
+        },
+        {
+          "id": "ECL/2017/page_79.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 51.84289999306202,
+          "answered": false,
+          "gold_exe_ans": 0.70481
+        },
+        {
+          "id": "C/2008/page_65.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 53.64769999869168,
+          "answered": false,
+          "gold_exe_ans": -0.06793
+        },
+        {
+          "id": "HUM/2017/page_118.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.53700000885874,
+          "answered": false,
+          "gold_exe_ans": 81.66667
+        },
+        {
+          "id": "STT/2011/page_69.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.64460000721738,
+          "answered": false,
+          "gold_exe_ans": 0.53979
+        },
+        {
+          "id": "ANSS/2016/page_47.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 75.76039999548811,
+          "answered": false,
+          "gold_exe_ans": 0.2941
+        },
+        {
+          "id": "V/2008/page_180.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.252800007816404,
+          "answered": false,
+          "gold_exe_ans": 0.22006
+        },
+        {
+          "id": "AAL/2015/page_114.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 69.47910001326818,
+          "answered": false,
+          "gold_exe_ans": 0.65273
+        },
+        {
+          "id": "DRE/2005/page_30.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.74850000347942,
+          "answered": false,
+          "gold_exe_ans": 10626.0
+        },
+        {
+          "id": "STT/2006/page_95.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 48.88869999558665,
+          "answered": false,
+          "gold_exe_ans": 6.15385
+        },
+        {
+          "id": "GS/2014/page_74.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 50.805599996238016,
+          "answered": false,
+          "gold_exe_ans": 0.25279
+        },
+        {
+          "id": "IP/2006/page_38.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 90.47299998928793,
+          "answered": false,
+          "gold_exe_ans": 0.21864
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 62.13549998938106,
+          "answered": false,
+          "gold_exe_ans": -0.44583
+        },
+        {
+          "id": "PNC/2008/page_122.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 71.20920000306796,
+          "answered": false,
+          "gold_exe_ans": 0.11743
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.888300004880875,
+          "answered": false,
+          "gold_exe_ans": 42500.0
+        },
+        {
+          "id": "ECL/2017/page_69.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.31879999337252,
+          "answered": false,
+          "gold_exe_ans": 0.12284
+        },
+        {
+          "id": "GIS/2019/page_68.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 52.72300000069663,
+          "answered": false,
+          "gold_exe_ans": 0.01696
+        },
+        {
+          "id": "DRE/2012/page_40.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 44.916500002727844,
+          "answered": false,
+          "gold_exe_ans": -0.46798
+        },
+        {
+          "id": "BLK/2017/page_121.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.50429999595508,
+          "answered": false,
+          "gold_exe_ans": 0.00536
+        },
+        {
+          "id": "IP/2006/page_75.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 90.61099999235012,
+          "answered": false,
+          "gold_exe_ans": 0.05823
+        },
+        {
+          "id": "UNP/2007/page_25.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.2043999992311,
+          "answered": false,
+          "gold_exe_ans": -29.0
+        },
+        {
+          "id": "ADBE/2008/page_89.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.90870000561699,
+          "answered": false,
+          "gold_exe_ans": -0.30851
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-6",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.18510000768583,
+          "answered": true,
+          "gold_exe_ans": 0.93677
+        },
+        {
+          "id": "MMM/2007/page_23.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 45.44950000126846,
+          "answered": false,
+          "gold_exe_ans": 1.59091
+        },
+        {
+          "id": "C/2009/page_45.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.52489999879617,
+          "answered": false,
+          "gold_exe_ans": 0.29652
+        },
+        {
+          "id": "ABC/2005/page_49.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 67.23749999946449,
+          "answered": false,
+          "gold_exe_ans": 0.9
+        }
+      ]
+    },
+    {
+      "mode": "hybrid",
+      "rerank": false,
+      "n": 200,
+      "coverage": 0.04,
+      "execution_accuracy": 0.0,
+      "recall_at_5": 0.3539583333333334,
+      "mean_e2e_ms": 66.4625575003447,
+      "cases": [
+        {
+          "id": "DG/2005/page_44.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 75.33210000838153,
+          "answered": false,
+          "gold_exe_ans": -0.07937
+        },
+        {
+          "id": "UNP/2011/page_33.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.66849999257829,
+          "answered": false,
+          "gold_exe_ans": 0.761
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.69530000444502,
+          "answered": false,
+          "gold_exe_ans": 0.02385
+        },
+        {
+          "id": "GPN/2014/page_92.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 81.7632000107551,
+          "answered": false,
+          "gold_exe_ans": 365.4316
+        },
+        {
+          "id": "UNP/2015/page_56.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.25590000173543,
+          "answered": true,
+          "gold_exe_ans": 0.19974
+        },
+        {
+          "id": "MO/2014/page_39.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 96.35350000462495,
+          "answered": false,
+          "gold_exe_ans": 0.56549
+        },
+        {
+          "id": "GIS/2017/page_31.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 113.23450000782032,
+          "answered": false,
+          "gold_exe_ans": 1.43836
+        },
+        {
+          "id": "MAS/2012/page_26.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 76.25030000053812,
+          "answered": false,
+          "gold_exe_ans": 0.25926
+        },
+        {
+          "id": "RSG/2010/page_57.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.52009999763686,
+          "answered": false,
+          "gold_exe_ans": 1.33488
+        },
+        {
+          "id": "LKQ/2016/page_87.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 83.67500000167638,
+          "answered": false,
+          "gold_exe_ans": 0.13401
+        },
+        {
+          "id": "PPG/2012/page_29.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 53.86650000582449,
+          "answered": false,
+          "gold_exe_ans": 92.0
+        },
+        {
+          "id": "V/2014/page_126.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.20630000159144,
+          "answered": false,
+          "gold_exe_ans": 5.08
+        },
+        {
+          "id": "C/2015/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.028200007858686,
+          "answered": false,
+          "gold_exe_ans": -0.05114
+        },
+        {
+          "id": "CB/2008/page_229.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.81009999697562,
+          "answered": false,
+          "gold_exe_ans": 0.0977
+        },
+        {
+          "id": "PNC/2014/page_111.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 78.68910000252072,
+          "answered": false,
+          "gold_exe_ans": -85.0
+        },
+        {
+          "id": "AMAT/2018/page_33.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 81.08689999789931,
+          "answered": false,
+          "gold_exe_ans": -0.0333
+        },
+        {
+          "id": "MKTX/2012/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.263900000602,
+          "answered": false,
+          "gold_exe_ans": 0.19088
+        },
+        {
+          "id": "AMT/2016/page_125.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 61.51140001020394,
+          "answered": false,
+          "gold_exe_ans": 6.3
+        },
+        {
+          "id": "AMT/2016/page_49.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 70.86320000234991,
+          "answered": false,
+          "gold_exe_ans": 2792124.42484
+        },
+        {
+          "id": "HOLX/2009/page_127.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 62.559300000430085,
+          "answered": false,
+          "gold_exe_ans": 27.80639
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 69.11890000628773,
+          "answered": false,
+          "gold_exe_ans": 0.047
+        },
+        {
+          "id": "ZBH/2008/page_57.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.41210000170395,
+          "answered": false,
+          "gold_exe_ans": 0.14636
+        },
+        {
+          "id": "STT/2009/page_127.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 76.73099999374244,
+          "answered": false,
+          "gold_exe_ans": 2.18154
+        },
+        {
+          "id": "INTC/2015/page_41.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 71.10190000094008,
+          "answered": false,
+          "gold_exe_ans": 0.14464
+        },
+        {
+          "id": "ECL/2017/page_94.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 66.45189999835566,
+          "answered": false,
+          "gold_exe_ans": 0.213
+        },
+        {
+          "id": "PPG/2006/page_42.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 66.17229999392293,
+          "answered": false,
+          "gold_exe_ans": 1.11111
+        },
+        {
+          "id": "HIG/2011/page_53.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.76689998735674,
+          "answered": false,
+          "gold_exe_ans": 0.22464
+        },
+        {
+          "id": "ETR/2017/page_143.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 75.68850000097882,
+          "answered": false,
+          "gold_exe_ans": 4781374.0
+        },
+        {
+          "id": "C/2008/page_65.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 78.42299999902025,
+          "answered": false,
+          "gold_exe_ans": 0.80473
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.47220000054222,
+          "answered": false,
+          "gold_exe_ans": 0.32068
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 77.65140000265092,
+          "answered": false,
+          "gold_exe_ans": -0.0777
+        },
+        {
+          "id": "AMT/2014/page_160.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 56.92040000576526,
+          "answered": false,
+          "gold_exe_ans": null
+        },
+        {
+          "id": "MAR/2004/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 78.78579999669455,
+          "answered": false,
+          "gold_exe_ans": 68.0
+        },
+        {
+          "id": "BLK/2017/page_121.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 73.59019998693839,
+          "answered": false,
+          "gold_exe_ans": 0.13621
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 74.27820000157226,
+          "answered": false,
+          "gold_exe_ans": 3.625
+        },
+        {
+          "id": "MRO/2006/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.25500000477768,
+          "answered": false,
+          "gold_exe_ans": null
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-5",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 62.81369998760056,
+          "answered": false,
+          "gold_exe_ans": 0.06593
+        },
+        {
+          "id": "GS/2014/page_165.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 73.57480000064243,
+          "answered": false,
+          "gold_exe_ans": 0.52056
+        },
+        {
+          "id": "MO/2014/page_39.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 66.15879999299068,
+          "answered": false,
+          "gold_exe_ans": 0.80583
+        },
+        {
+          "id": "PNC/2007/page_92.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.96410001150798,
+          "answered": false,
+          "gold_exe_ans": 7947.0
+        },
+        {
+          "id": "MMM/2007/page_84.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.13570000464097,
+          "answered": false,
+          "gold_exe_ans": 2.7438
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 99.81699999480043,
+          "answered": false,
+          "gold_exe_ans": 5.6
+        },
+        {
+          "id": "HWM/2018/page_96.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 70.3159999975469,
+          "answered": false,
+          "gold_exe_ans": 241.11
+        },
+        {
+          "id": "ANSS/2012/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 72.21440000284929,
+          "answered": false,
+          "gold_exe_ans": 9.3
+        },
+        {
+          "id": "CDW/2015/page_93.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 81.12470000924077,
+          "answered": false,
+          "gold_exe_ans": 1.26207
+        },
+        {
+          "id": "APD/2018/page_30.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.4802000024356,
+          "answered": false,
+          "gold_exe_ans": 0.14555
+        },
+        {
+          "id": "RSG/2018/page_135.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 63.09609999880195,
+          "answered": false,
+          "gold_exe_ans": 4.55556
+        },
+        {
+          "id": "GPN/2013/page_92.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 61.16450000263285,
+          "answered": false,
+          "gold_exe_ans": 0.19366
+        },
+        {
+          "id": "AMT/2003/page_102.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 80.95299999695271,
+          "answered": false,
+          "gold_exe_ans": 0.21838
+        },
+        {
+          "id": "UAA/2016/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 56.756500009214506,
+          "answered": false,
+          "gold_exe_ans": 0.17172
+        },
+        {
+          "id": "CMCSA/2008/page_36.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 78.6249999946449,
+          "answered": false,
+          "gold_exe_ans": 0.56754
+        },
+        {
+          "id": "AWK/2013/page_122.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 50.18489999929443,
+          "answered": false,
+          "gold_exe_ans": 22415.0
+        },
+        {
+          "id": "GS/2014/page_51.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 45.935499991173856,
+          "answered": false,
+          "gold_exe_ans": -0.06063
+        },
+        {
+          "id": "ETR/2013/page_21.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.067899998510256,
+          "answered": false,
+          "gold_exe_ans": -191.0
+        },
+        {
+          "id": "IP/2006/page_31.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.28710000019055,
+          "answered": false,
+          "gold_exe_ans": 0.19391
+        },
+        {
+          "id": "V/2008/page_180.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.47500000346918,
+          "answered": false,
+          "gold_exe_ans": 3138.0
+        },
+        {
+          "id": "PPG/2006/page_42.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.01560000004247,
+          "answered": false,
+          "gold_exe_ans": 1.5
+        },
+        {
+          "id": "UPS/2010/page_52.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 83.35359999909997,
+          "answered": false,
+          "gold_exe_ans": 0.14922
+        },
+        {
+          "id": "UNP/2006/page_15.pdf-3",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.046700007864274,
+          "answered": true,
+          "gold_exe_ans": 0.52946
+        },
+        {
+          "id": "HOLX/2006/page_100.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.998899996164255,
+          "answered": false,
+          "gold_exe_ans": 0.22045
+        },
+        {
+          "id": "ETR/2017/page_143.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.98279999627266,
+          "answered": false,
+          "gold_exe_ans": 0.12853
+        },
+        {
+          "id": "ILMN/2003/page_58.pdf-3",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 93.53420000115875,
+          "answered": true,
+          "gold_exe_ans": -30.76
+        },
+        {
+          "id": "IP/2009/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 105.62889999710023,
+          "answered": false,
+          "gold_exe_ans": 0.40796
+        },
+        {
+          "id": "UNP/2016/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 93.256799998926,
+          "answered": false,
+          "gold_exe_ans": 0.81238
+        },
+        {
+          "id": "HWM/2017/page_42.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 77.50070000474807,
+          "answered": false,
+          "gold_exe_ans": -0.96929
+        },
+        {
+          "id": "AON/2007/page_171.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 71.57139999617357,
+          "answered": false,
+          "gold_exe_ans": 284.0
+        },
+        {
+          "id": "ABMD/2006/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.108900007326156,
+          "answered": false,
+          "gold_exe_ans": 0.88928
+        },
+        {
+          "id": "RSG/2012/page_93.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 49.3681999942055,
+          "answered": false,
+          "gold_exe_ans": -2.8
+        },
+        {
+          "id": "C/2009/page_197.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 66.23050000052899,
+          "answered": false,
+          "gold_exe_ans": 0.10345
+        },
+        {
+          "id": "MRO/2006/page_93.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 84.82360000198241,
+          "answered": false,
+          "gold_exe_ans": 0.62329
+        },
+        {
+          "id": "IP/2006/page_35.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 70.81619999371469,
+          "answered": false,
+          "gold_exe_ans": 0.12702
+        },
+        {
+          "id": "DRE/2008/page_46.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 65.75700000394136,
+          "answered": false,
+          "gold_exe_ans": -0.3142
+        },
+        {
+          "id": "TMUS/2017/page_29.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.39369999396149,
+          "answered": false,
+          "gold_exe_ans": 82352.94118
+        },
+        {
+          "id": "AWK/2013/page_122.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 77.3133000038797,
+          "answered": false,
+          "gold_exe_ans": 0.00136
+        },
+        {
+          "id": "INTC/2015/page_41.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.4657999954652,
+          "answered": false,
+          "gold_exe_ans": 0.35908
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 67.18630000250414,
+          "answered": false,
+          "gold_exe_ans": 0.08083
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 69.5763999974588,
+          "answered": false,
+          "gold_exe_ans": -0.07394
+        },
+        {
+          "id": "ILMN/2008/page_86.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 74.74950001051184,
+          "answered": false,
+          "gold_exe_ans": 1.2
+        },
+        {
+          "id": "AON/2007/page_171.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 64.34450000233483,
+          "answered": false,
+          "gold_exe_ans": 166.0
+        },
+        {
+          "id": "STT/2006/page_95.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.0235000011744,
+          "answered": true,
+          "gold_exe_ans": 0.86784
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 77.73269999597687,
+          "answered": false,
+          "gold_exe_ans": 0.91156
+        },
+        {
+          "id": "ZBH/2008/page_57.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.12539999594446,
+          "answered": false,
+          "gold_exe_ans": 0.45103
+        },
+        {
+          "id": "MSI/2007/page_70.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.27390000154264,
+          "answered": false,
+          "gold_exe_ans": 6055.66667
+        },
+        {
+          "id": "C/2009/page_243.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 86.31460000469815,
+          "answered": false,
+          "gold_exe_ans": 1.5625
+        },
+        {
+          "id": "FIS/2012/page_48.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.821800000965595,
+          "answered": false,
+          "gold_exe_ans": 0.02652
+        },
+        {
+          "id": "DISH/2011/page_122.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 72.70900000003166,
+          "answered": false,
+          "gold_exe_ans": 1375.0
+        },
+        {
+          "id": "HOLX/2007/page_126.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 69.9700999975903,
+          "answered": false,
+          "gold_exe_ans": 0.03825
+        },
+        {
+          "id": "MS/2007/page_179.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 54.6256999950856,
+          "answered": false,
+          "gold_exe_ans": 0.14737
+        },
+        {
+          "id": "AMT/2014/page_160.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.2050000046147,
+          "answered": false,
+          "gold_exe_ans": 0.18186
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.167599990265444,
+          "answered": false,
+          "gold_exe_ans": -19.3
+        },
+        {
+          "id": "RSG/2015/page_98.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.56170000031125,
+          "answered": false,
+          "gold_exe_ans": -31.1
+        },
+        {
+          "id": "CB/2010/page_83.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 81.45350000995677,
+          "answered": false,
+          "gold_exe_ans": -26.0
+        },
+        {
+          "id": "EMR/2017/page_78.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 74.63390000339132,
+          "answered": false,
+          "gold_exe_ans": 8.6168
+        },
+        {
+          "id": "AMT/2010/page_99.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.5247000074014,
+          "answered": false,
+          "gold_exe_ans": 0.0134
+        },
+        {
+          "id": "UNP/2007/page_25.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 43.793899996671826,
+          "answered": false,
+          "gold_exe_ans": 2688.88889
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 80.69879999675322,
+          "answered": false,
+          "gold_exe_ans": -0.30435
+        },
+        {
+          "id": "AAL/2015/page_114.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.60779999988154,
+          "answered": false,
+          "gold_exe_ans": 0.74953
+        },
+        {
+          "id": "IP/2006/page_38.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 101.53600000194274,
+          "answered": false,
+          "gold_exe_ans": 0.1822
+        },
+        {
+          "id": "HIG/2004/page_140.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 81.38400000461843,
+          "answered": false,
+          "gold_exe_ans": 9.8
+        },
+        {
+          "id": "MO/2014/page_39.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.42020000051707,
+          "answered": false,
+          "gold_exe_ans": 0.54108
+        },
+        {
+          "id": "RSG/2009/page_140.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 76.3096000009682,
+          "answered": false,
+          "gold_exe_ans": -0.3282
+        },
+        {
+          "id": "C/2009/page_45.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.1537000000244,
+          "answered": false,
+          "gold_exe_ans": 0.28238
+        },
+        {
+          "id": "BLL/2006/page_67.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.84530000993982,
+          "answered": false,
+          "gold_exe_ans": 0.29841
+        },
+        {
+          "id": "DISCA/2011/page_49.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 74.74809999985155,
+          "answered": false,
+          "gold_exe_ans": 1.9667
+        },
+        {
+          "id": "KHC/2018/page_132.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 63.29560000449419,
+          "answered": false,
+          "gold_exe_ans": 6.0
+        },
+        {
+          "id": "GRMN/2008/page_85.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.9526000051992,
+          "answered": false,
+          "gold_exe_ans": 0.10222
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 72.40360000287183,
+          "answered": false,
+          "gold_exe_ans": 0.0346
+        },
+        {
+          "id": "UPS/2010/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 79.0532999963034,
+          "answered": false,
+          "gold_exe_ans": 0.05663
+        },
+        {
+          "id": "CDW/2015/page_70.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.56760000844952,
+          "answered": false,
+          "gold_exe_ans": -6.3
+        },
+        {
+          "id": "C/2008/page_22.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 73.93189999856986,
+          "answered": false,
+          "gold_exe_ans": 445.0
+        },
+        {
+          "id": "L/2009/page_84.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.13520001317374,
+          "answered": false,
+          "gold_exe_ans": -0.37001
+        },
+        {
+          "id": "SYY/2006/page_71.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 74.1355000063777,
+          "answered": false,
+          "gold_exe_ans": 0.08607
+        },
+        {
+          "id": "CB/2008/page_229.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 48.366400005761534,
+          "answered": false,
+          "gold_exe_ans": 77.0
+        },
+        {
+          "id": "SLB/2012/page_56.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 62.101300005451776,
+          "answered": false,
+          "gold_exe_ans": 1152.0
+        },
+        {
+          "id": "HOLX/2003/page_52.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 71.0354000038933,
+          "answered": false,
+          "gold_exe_ans": 28597891.58
+        },
+        {
+          "id": "ABMD/2008/page_86.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 76.80100000288803,
+          "answered": false,
+          "gold_exe_ans": 11.16667
+        },
+        {
+          "id": "HIG/2011/page_53.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.09080000431277,
+          "answered": false,
+          "gold_exe_ans": 0.18081
+        },
+        {
+          "id": "DG/2010/page_136.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.74059999547899,
+          "answered": false,
+          "gold_exe_ans": 10.0
+        },
+        {
+          "id": "HST/2018/page_135.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.6122999927029,
+          "answered": false,
+          "gold_exe_ans": 0.0
+        },
+        {
+          "id": "KHC/2018/page_132.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.42039999354165,
+          "answered": false,
+          "gold_exe_ans": 10.0
+        },
+        {
+          "id": "AAPL/2004/page_68.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 65.64070000604261,
+          "answered": false,
+          "gold_exe_ans": 2.7
+        },
+        {
+          "id": "K/2013/page_23.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 53.260900007444434,
+          "answered": false,
+          "gold_exe_ans": 0.00927
+        },
+        {
+          "id": "JPM/2012/page_140.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.762300005881116,
+          "answered": false,
+          "gold_exe_ans": 0.09996
+        },
+        {
+          "id": "ANET/2015/page_156.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.20559999078978,
+          "answered": false,
+          "gold_exe_ans": 0.0314
+        },
+        {
+          "id": "AMT/2016/page_49.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 74.53060000261758,
+          "answered": false,
+          "gold_exe_ans": 0.09302
+        },
+        {
+          "id": "STT/2009/page_127.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 110.4578000085894,
+          "answered": false,
+          "gold_exe_ans": 299999990.4
+        },
+        {
+          "id": "ADI/2019/page_29.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 75.00830000208225,
+          "answered": false,
+          "gold_exe_ans": 9015431.44
+        },
+        {
+          "id": "HOLX/2006/page_100.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.07870000496041,
+          "answered": false,
+          "gold_exe_ans": 0.0607
+        },
+        {
+          "id": "VRTX/2006/page_111.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 54.08869999519084,
+          "answered": false,
+          "gold_exe_ans": 0.04545
+        },
+        {
+          "id": "BLK/2014/page_120.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.77899999904912,
+          "answered": false,
+          "gold_exe_ans": 349.0
+        },
+        {
+          "id": "ADI/2010/page_60.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 83.3857999969041,
+          "answered": false,
+          "gold_exe_ans": 0.10789
+        },
+        {
+          "id": "FIS/2017/page_64.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.63159999495838,
+          "answered": true,
+          "gold_exe_ans": 0.26923
+        },
+        {
+          "id": "RSG/2010/page_98.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 81.02689999213908,
+          "answered": false,
+          "gold_exe_ans": 3.39489
+        },
+        {
+          "id": "IP/2009/page_84.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.03610000596382,
+          "answered": false,
+          "gold_exe_ans": 0.05366
+        },
+        {
+          "id": "HWM/2018/page_96.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 87.87139999913052,
+          "answered": false,
+          "gold_exe_ans": 16.43
+        },
+        {
+          "id": "SNA/2018/page_31.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.52169999666512,
+          "answered": false,
+          "gold_exe_ans": 13435200.0
+        },
+        {
+          "id": "AAPL/2005/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.54449999949429,
+          "answered": true,
+          "gold_exe_ans": 0.02421
+        },
+        {
+          "id": "DVN/2014/page_87.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.58819999615662,
+          "answered": false,
+          "gold_exe_ans": 1.63657
+        },
+        {
+          "id": "CMCSA/2008/page_36.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.859199999365956,
+          "answered": false,
+          "gold_exe_ans": 0.18467
+        },
+        {
+          "id": "ETFC/2012/page_43.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.820999994874,
+          "answered": false,
+          "gold_exe_ans": 1.15217
+        },
+        {
+          "id": "CB/2010/page_83.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 90.10619999025948,
+          "answered": false,
+          "gold_exe_ans": -0.55319
+        },
+        {
+          "id": "DRE/2008/page_46.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 77.0362000039313,
+          "answered": false,
+          "gold_exe_ans": 209703.0
+        },
+        {
+          "id": "C/2009/page_63.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.80089999199845,
+          "answered": false,
+          "gold_exe_ans": 0.56374
+        },
+        {
+          "id": "GIS/2015/page_62.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 77.22000000649132,
+          "answered": false,
+          "gold_exe_ans": -4.74026
+        },
+        {
+          "id": "ZBH/2009/page_58.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.26470000890549,
+          "answered": false,
+          "gold_exe_ans": 0.41467
+        },
+        {
+          "id": "K/2006/page_52.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.99479999789037,
+          "answered": false,
+          "gold_exe_ans": -1047.5
+        },
+        {
+          "id": "UAA/2016/page_42.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 52.528899992466904,
+          "answered": false,
+          "gold_exe_ans": 0.25431
+        },
+        {
+          "id": "UNP/2011/page_24.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 60.42840000009164,
+          "answered": false,
+          "gold_exe_ans": 0.14252
+        },
+        {
+          "id": "RSG/2013/page_123.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 55.029600000125356,
+          "answered": false,
+          "gold_exe_ans": 0.03957
+        },
+        {
+          "id": "ZBH/2009/page_58.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 64.87219998962246,
+          "answered": false,
+          "gold_exe_ans": 0.41467
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.97470000491012,
+          "answered": false,
+          "gold_exe_ans": 0.44176
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 80.05570000386797,
+          "answered": false,
+          "gold_exe_ans": 0.09716
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 58.98789998900611,
+          "answered": false,
+          "gold_exe_ans": 0.01197
+        },
+        {
+          "id": "ETR/2015/page_17.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 61.77349999779835,
+          "answered": false,
+          "gold_exe_ans": 0.62121
+        },
+        {
+          "id": "JPM/2018/page_90.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 77.93869999295566,
+          "answered": false,
+          "gold_exe_ans": 14.0
+        },
+        {
+          "id": "FIS/2017/page_64.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.14249998831656,
+          "answered": false,
+          "gold_exe_ans": 0.42889
+        },
+        {
+          "id": "ILMN/2008/page_82.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 55.13569999311585,
+          "answered": false,
+          "gold_exe_ans": 1e-05
+        },
+        {
+          "id": "CME/2017/page_40.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 59.65270000160672,
+          "answered": false,
+          "gold_exe_ans": 1.77919
+        },
+        {
+          "id": "AWK/2014/page_121.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 46.924599999329075,
+          "answered": false,
+          "gold_exe_ans": 17447.0
+        },
+        {
+          "id": "HOLX/2006/page_71.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 63.65130000631325,
+          "answered": false,
+          "gold_exe_ans": 65464368.8
+        },
+        {
+          "id": "TMUS/2017/page_29.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.874999998603016,
+          "answered": false,
+          "gold_exe_ans": 83333.33333
+        },
+        {
+          "id": "ADI/2010/page_80.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.25,
+          "latency_ms": 65.72069998946972,
+          "answered": false,
+          "gold_exe_ans": 0.09405
+        },
+        {
+          "id": "CME/2017/page_40.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.3333333333333333,
+          "latency_ms": 52.09640000248328,
+          "answered": false,
+          "gold_exe_ans": 0.01577
+        },
+        {
+          "id": "LMT/2012/page_73.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 62.24590000056196,
+          "answered": false,
+          "gold_exe_ans": -0.03383
+        },
+        {
+          "id": "PPG/2018/page_85.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.84730000759009,
+          "answered": false,
+          "gold_exe_ans": 0.5189
+        },
+        {
+          "id": "UPS/2012/page_32.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 86.64910000516102,
+          "answered": false,
+          "gold_exe_ans": -0.0561
+        },
+        {
+          "id": "APD/2018/page_121.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 60.93940000573639,
+          "answered": false,
+          "gold_exe_ans": -0.46341
+        },
+        {
+          "id": "PPG/2018/page_85.pdf-2",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 45.57590000331402,
+          "answered": true,
+          "gold_exe_ans": 0.11029
+        },
+        {
+          "id": "MRO/2017/page_96.pdf-4",
+          "correct_execution": false,
+          "score_status": "percent_normalized",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.5917000049958,
+          "answered": true,
+          "gold_exe_ans": 0.0375
+        },
+        {
+          "id": "PNC/2007/page_92.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 85.08340000116732,
+          "answered": false,
+          "gold_exe_ans": 0.1875
+        },
+        {
+          "id": "AMT/2016/page_125.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.14679999335203,
+          "answered": false,
+          "gold_exe_ans": 79437.0
+        },
+        {
+          "id": "ADI/2010/page_80.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 43.308199994498864,
+          "answered": false,
+          "gold_exe_ans": 0.10253
+        },
+        {
+          "id": "CB/2008/page_229.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.14750000333879,
+          "answered": false,
+          "gold_exe_ans": 10.23538
+        },
+        {
+          "id": "STT/2011/page_69.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 52.30229999870062,
+          "answered": false,
+          "gold_exe_ans": 28000.0
+        },
+        {
+          "id": "ANSS/2012/page_93.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.29889999504667,
+          "answered": false,
+          "gold_exe_ans": 76787.0
+        },
+        {
+          "id": "ECL/2017/page_79.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.375,
+          "latency_ms": 52.12510000274051,
+          "answered": false,
+          "gold_exe_ans": 0.70481
+        },
+        {
+          "id": "C/2008/page_65.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.38349999208003,
+          "answered": false,
+          "gold_exe_ans": -0.06793
+        },
+        {
+          "id": "HUM/2017/page_118.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 43.53579999587964,
+          "answered": false,
+          "gold_exe_ans": 81.66667
+        },
+        {
+          "id": "STT/2011/page_69.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 47.61300000245683,
+          "answered": false,
+          "gold_exe_ans": 0.53979
+        },
+        {
+          "id": "ANSS/2016/page_47.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 65.71619999886025,
+          "answered": false,
+          "gold_exe_ans": 0.2941
+        },
+        {
+          "id": "V/2008/page_180.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 54.470400005811825,
+          "answered": false,
+          "gold_exe_ans": 0.22006
+        },
+        {
+          "id": "AAL/2015/page_114.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 68.65049999032635,
+          "answered": false,
+          "gold_exe_ans": 0.65273
+        },
+        {
+          "id": "DRE/2005/page_30.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.20199999632314,
+          "answered": false,
+          "gold_exe_ans": 10626.0
+        },
+        {
+          "id": "STT/2006/page_95.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 50.38770000101067,
+          "answered": false,
+          "gold_exe_ans": 6.15385
+        },
+        {
+          "id": "GS/2014/page_74.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 50.2013000077568,
+          "answered": false,
+          "gold_exe_ans": 0.25279
+        },
+        {
+          "id": "IP/2006/page_38.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 89.6640999999363,
+          "answered": false,
+          "gold_exe_ans": 0.21864
+        },
+        {
+          "id": "MRK/2013/page_125.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 59.546300006331876,
+          "answered": false,
+          "gold_exe_ans": -0.44583
+        },
+        {
+          "id": "PNC/2008/page_122.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 61.92700000246987,
+          "answered": false,
+          "gold_exe_ans": 0.11743
+        },
+        {
+          "id": "JPM/2015/page_137.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 51.17340000288095,
+          "answered": false,
+          "gold_exe_ans": 42500.0
+        },
+        {
+          "id": "ECL/2017/page_69.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 57.22199998854194,
+          "answered": false,
+          "gold_exe_ans": 0.12284
+        },
+        {
+          "id": "GIS/2019/page_68.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 52.37510000006296,
+          "answered": false,
+          "gold_exe_ans": 0.01696
+        },
+        {
+          "id": "DRE/2012/page_40.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 45.14740000013262,
+          "answered": false,
+          "gold_exe_ans": -0.46798
+        },
+        {
+          "id": "BLK/2017/page_121.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.5,
+          "latency_ms": 56.69480000506155,
+          "answered": false,
+          "gold_exe_ans": 0.00536
+        },
+        {
+          "id": "IP/2006/page_75.pdf-1",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 77.93759999913163,
+          "answered": false,
+          "gold_exe_ans": 0.05823
+        },
+        {
+          "id": "UNP/2007/page_25.pdf-3",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 56.0230999981286,
+          "answered": false,
+          "gold_exe_ans": -29.0
+        },
+        {
+          "id": "ADBE/2008/page_89.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 62.90140000055544,
+          "answered": false,
+          "gold_exe_ans": -0.30851
+        },
+        {
+          "id": "SLG/2011/page_91.pdf-6",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 47.6630000048317,
+          "answered": false,
+          "gold_exe_ans": 0.93677
+        },
+        {
+          "id": "MMM/2007/page_23.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 47.91100000147708,
+          "answered": false,
+          "gold_exe_ans": 1.59091
+        },
+        {
+          "id": "C/2009/page_45.pdf-2",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 0.0,
+          "latency_ms": 58.2974999997532,
+          "answered": false,
+          "gold_exe_ans": 0.29652
+        },
+        {
+          "id": "ABC/2005/page_49.pdf-4",
+          "correct_execution": false,
+          "score_status": "refused",
+          "recall_at_5": 1.0,
+          "latency_ms": 57.3902000032831,
+          "answered": false,
+          "gold_exe_ans": 0.9
+        }
+      ]
+    }
+  ]
+}

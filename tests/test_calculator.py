@@ -88,6 +88,26 @@ def test_mixed_currencies_are_rejected():
         execute([doc], {"operation": "subtract", "operands": refs()})
 
 
+def test_currency_symbol_applies_to_unmarked_year_in_same_row_only():
+    import copy
+    doc = copy.deepcopy(DOC)
+    doc["table"][1][2] = "100.0"
+    result = execute([doc], {"operation": "subtract", "operands": list(reversed(refs()))})
+    assert result["unit"] == "currency:$"
+    assert result["operands"][1]["unit_source"] == "same_row"
+
+
+def test_currency_symbol_does_not_cross_unrelated_columns():
+    import copy
+    doc = copy.deepcopy(DOC)
+    doc["table"] = [["Plan", "Share count", "Exercise price"], ["Approved", "1,708,928", "$113.49"]]
+    with pytest.raises(CalculationError, match="Mixed cell units"):
+        execute([doc], {"operation": "percentage", "operands": [
+            {"doc_id": DOC["doc_id"], "row": 1, "column": 1},
+            {"doc_id": DOC["doc_id"], "row": 1, "column": 2},
+        ]})
+
+
 def test_invalid_metadata_types_raise_calculation_errors():
     for ref in [
         {"doc_id": [], "row": 1, "column": 1},

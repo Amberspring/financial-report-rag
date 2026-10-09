@@ -1,0 +1,36 @@
+{
+  "scope": "Post-hoc historical global retrieval diagnosis; never a new model accuracy result",
+  "historical_outcomes": {
+    "wrong_answer": 27,
+    "refused": 71,
+    "correct": 2
+  },
+  "primary_observed_categories": {
+    "wrong_report": 5,
+    "target_report_not_in_table_prompt": 32,
+    "operation_mismatch": 19,
+    "invalid_or_unsupported_model_plan": 8,
+    "calculator_unit_conflict": 10,
+    "gold_evidence_not_retrieved": 16,
+    "multi_step_or_planner_refusal": 1,
+    "correct_historical": 2,
+    "target_report_not_retrieved": 4,
+    "operand_or_multistep_mismatch": 3
+  },
+  "query_names_target_company": 4,
+  "query_names_report_year": 64,
+  "target_report_in_top10": 96,
+  "gold_evidence_in_top5": 72,
+  "percent_normalized_diagnostic_matches": 2,
+  "limitations": [
+    "Gold labels and target document were used only after reading saved predictions.",
+    "Categories are observable triage, not a manual PDF or causal oracle verdict.",
+    "Percent normalization is a scoring diagnostic and does not alter the historical 2/100 result."
+  ],
+  "inputs_sha256": {
+    "data\\finqa-test-queries.json": "3eaae207f22330a81980d54df83670851e107a3d540612d032a295a2060ac7f9",
+    "data\\finqa-test-labels.json": "3a8798ca441e4f1c4b7c6a156ad3e8452de802a96bb2b53675cdf4e7f148cab6",
+    "results\\finqa-model-20261008.predictions.jsonl": "2bbbeafef797723a636c9d6e4c41c61c607a272e476fa1da638cab9b8ceb318d"
+  },
+  "ledger_sha256": "9a225e372c92565f3be64ac9f5392da81c54e7ca7fb4e1bd7428fc9aa40e46c5"
+}

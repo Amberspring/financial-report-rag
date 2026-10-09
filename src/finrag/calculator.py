@@ -42,6 +42,28 @@ def number(text):
     return value, unit
 
 
+def cell_unit(table, row, col):
+    value, unit = number(table[row][col])
+    if unit != "reported_units":
+        return value, unit, "cell"
+    # Financial tables often print a currency symbol only in the first year of a row.
+    if col >= len(table[0]) or not re.search(r"(?<!\d)(?:19|20)\d{2}(?!\d)", str(table[0][col])):
+        return value, unit, "cell"
+    row_units = set()
+    for column, cell in enumerate(table[row][1:], 1):
+        try:
+            _, candidate = number(cell)
+        except CalculationError:
+            continue
+        if candidate != "reported_units":
+            if column >= len(table[0]) or not re.search(r"(?<!\d)(?:19|20)\d{2}(?!\d)", str(table[0][column])):
+                return value, unit, "cell"
+            row_units.add(candidate)
+    if len(row_units) == 1 and next(iter(row_units)).startswith("currency:"):
+        return value, next(iter(row_units)), "same_row"
+    return value, unit, "cell"
+
+
 def execute(docs, plan):
     """Cells require document, row, column and optional label/year assertion. Constants forbidden."""
     if not isinstance(plan, dict):
@@ -90,7 +112,7 @@ def execute(docs, plan):
             and str(ref["expected_year"]) not in header + " " + label
         ):
             raise CalculationError("Period mismatch")
-        val, unit = number(table[row][col])
+        val, unit, unit_source = cell_unit(table, row, col)
         values.append(val)
         units.append(unit)
         trace.append(
@@ -106,6 +128,7 @@ def execute(docs, plan):
                 "quote": str(table[row][col]),
                 "value": str(val),
                 "unit": unit,
+                "unit_source": unit_source,
             }
         )
     if len({t["company"] for t in trace}) > 1 and not plan.get(

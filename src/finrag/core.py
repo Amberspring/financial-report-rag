@@ -235,21 +235,22 @@ class Retriever:
         faiss.normalize_L2(v)
         return v
 
-    def search(self, q, k=5, mode="hybrid", rerank=False):
+    def search(self, q, k=5, mode="hybrid", rerank=False, doc_ids=None):
         if mode not in ("dense", "bm25", "hybrid"):
             raise ValueError("Unknown retrieval mode")
         n = len(self.chunks)
-        candidate = min(n, max(20, k))
+        allowed = None if doc_ids is None else {i for i, chunk in enumerate(self.chunks) if chunk.doc_id in doc_ids}
+        candidate = n if allowed is not None else min(n, max(20, k))
         dense = []
         if mode != "bm25":
             v = self.vector(q)
             ds, di = self.index.search(v, candidate)
-            dense = [(int(i), float(s)) for i, s in zip(di[0], ds[0]) if i >= 0]
+            dense = [(int(i), float(s)) for i, s in zip(di[0], ds[0]) if i >= 0 and (allowed is None or int(i) in allowed)]
         bs = self.bm25.scores(q)
         sparse = [
             (int(i), float(bs[i]))
             for i in np.argsort(-bs, kind="stable")[:candidate]
-            if bs[i] > 0
+            if bs[i] > 0 and (allowed is None or int(i) in allowed)
         ]
         if mode == "dense":
             rank = dense

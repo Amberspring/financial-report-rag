@@ -119,6 +119,9 @@ def query(body: Query):
                 "refused": True,
                 "citations": [],
             }
+        if os.getenv("RAG_MODEL_URL") and os.getenv("RAG_MODEL"):
+            return ModelPlanner(os.environ["RAG_MODEL_URL"], os.environ["RAG_MODEL"]).answer(
+                r, docs, body.query, body.mode, bool(config.get("reranker")), scope_doc_id=body.doc_id)
         try:
             value = execute(docs, propose(body.query, selected[0]))
             return {

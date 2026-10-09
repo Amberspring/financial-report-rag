@@ -4,14 +4,26 @@ import os
 import time
 import httpx
 from .calculator import execute, CalculationError
+from .scope import report_ids
 
 
 class ModelPlanner:
     def __init__(self, url, model):
         self.url, self.model = url.rstrip("/"), model
 
-    def answer(self, retriever, docs, question, mode="bm25", rerank=False):
-        hits = retriever.search(question, 10, mode, rerank)
+    def answer(self, retriever, docs, question, mode="bm25", rerank=False, scope_doc_id=None):
+        result = {"refused": True, "answer": "Company and report year are ambiguous or missing.", "citations": [], "hits": []}
+        if scope_doc_id is not None:
+            # Only a caller-supplied report ID may select the given-report protocol.
+            selected = [d for d in docs if d["doc_id"] == scope_doc_id]
+            if len(selected) != 1:
+                return result
+            scoped_ids = {scope_doc_id}
+        else:
+            scoped_ids = report_ids(docs, question)
+            if not scoped_ids:
+                return result
+        hits = retriever.search(question, 10, mode, rerank, doc_ids=scoped_ids)
         allowed = {h["chunk"]["doc_id"]: set() for h in hits if h["chunk"]["kind"] == "table"}
         for h in hits:
             if h["chunk"]["kind"] == "table":
@@ -29,7 +41,8 @@ class ModelPlanner:
             tables.append(table)
             used += size
         allowed = {d["doc_id"]: allowed[d["doc_id"]] for d in tables}
-        result = {"refused": True, "answer": "No supported evidence-bound plan.", "citations": [], "hits": hits}
+        result = {"refused": True, "answer": "No supported evidence-bound plan.", "citations": [], "hits": hits,
+                  "scope": {"source": "caller_report_id" if scope_doc_id else "question_entity_year", "doc_ids": sorted(scoped_ids)}}
         if not tables:
             return result
         prompt = {"question": question, "retrieved_tables": tables}

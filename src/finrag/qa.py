@@ -1,10 +1,13 @@
 """Global retrieval -> narrow evidence-bound calculation, without a supplied gold document."""
 from .calculator import propose, execute, CalculationError
-import re
+from .scope import report_ids
 
 
 def numerical_answer(retriever, docs, question, mode="hybrid", rerank=False):
-    hits = retriever.search(question, 10, mode, rerank)
+    scoped_ids = report_ids(docs, question)
+    if not scoped_ids:
+        return {"answer": "Specify one company and report year.", "refused": True, "citations": [], "hits": []}
+    hits = retriever.search(question, 10, mode, rerank, doc_ids=scoped_ids)
     by_id = {d["doc_id"]: d for d in docs}
     # ponytail: lexical gate and narrow planner; use a separately evaluated model planner for broader FinQA coverage.
     candidates = []
@@ -12,10 +15,6 @@ def numerical_answer(retriever, docs, question, mode="hybrid", rerank=False):
     for doc_id in dict.fromkeys(h["chunk"]["doc_id"] for h in hits):
         doc = by_id.get(doc_id)
         if doc is None:
-            continue
-        company = doc["company"].casefold()
-        if company not in re.findall(r"[a-z0-9]+", question.casefold()):
-            reasons.append("An explicit matching company symbol is required")
             continue
         try:
             value = execute(docs, propose(question, doc))
