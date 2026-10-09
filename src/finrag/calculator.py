@@ -64,8 +64,26 @@ def cell_unit(table, row, col):
     return value, unit, "cell"
 
 
+def text_number(paragraph, quote):
+    """Accept one verbatim numeric token, including its currency or percent marker."""
+    if not isinstance(quote, str):
+        raise CalculationError("Text quote must be a string")
+    tokens = re.findall(
+        r"(?<![\w.($€£])(?:[$€£]\s*)?-?\d[\d,]*(?:\.\d+)?\s*%?(?![\w.)%])",
+        paragraph,
+    )
+    matches = [token for token in tokens if token.strip() == quote.strip()]
+    if len(matches) != 1:
+        raise CalculationError("Text quote must match one unique numeric token")
+    value, unit = number(matches[0])
+    # shortcut: prose scale is rejected until its PDF context and unit conversion are verified.
+    if re.search(r"\b(?:thousands?|millions?|billions?|trillions?)\b", paragraph, re.I):
+        raise CalculationError("Prose scale is not yet supported")
+    return value, unit
+
+
 def execute(docs, plan):
-    """Cells require document, row, column and optional label/year assertion. Constants forbidden."""
+    """Resolve table cells or verbatim text tokens; constants and unseen values are forbidden."""
     if not isinstance(plan, dict):
         raise CalculationError("Plan must be an object")
     lookup = {d["doc_id"]: d for d in docs}
@@ -78,41 +96,41 @@ def execute(docs, plan):
     for ref in refs:
         if not isinstance(ref, dict) or not isinstance(ref.get("doc_id"), str):
             raise CalculationError("Operand must have a string document ID")
-        if ref.get("expected_label") is not None and not isinstance(
-            ref["expected_label"], str
-        ):
-            raise CalculationError("Expected label must be a string")
-        if set(ref) - {"doc_id", "row", "column", "expected_label", "expected_year"}:
-            raise CalculationError("Unknown operand fields")
         d = lookup.get(ref.get("doc_id"))
         if not d:
             raise CalculationError("Unknown document")
-        row, col = ref.get("row"), ref.get("column")
-        if (
-            not isinstance(row, int)
-            or isinstance(row, bool)
-            or not isinstance(col, int)
-            or isinstance(col, bool)
-            or row <= 0
-            or col <= 0
-        ):
-            raise CalculationError("Cell indices must be positive integers")
-        table = d["table"]
-        if row >= len(table) or col >= len(table[row]):
-            raise CalculationError("Cell out of range")
-        label = str(table[row][0])
-        header = str(table[0][col]) if col < len(table[0]) else ""
-        if (
-            ref.get("expected_label")
-            and ref["expected_label"].casefold() not in label.casefold()
-        ):
-            raise CalculationError("Metric label mismatch")
-        if (
-            ref.get("expected_year")
-            and str(ref["expected_year"]) not in header + " " + label
-        ):
-            raise CalculationError("Period mismatch")
-        val, unit, unit_source = cell_unit(table, row, col)
+        if "text_index" in ref:
+            if set(ref) != {"doc_id", "text_index", "quote"}:
+                raise CalculationError("Unexpected text operand fields")
+            index = ref["text_index"]
+            paragraphs = d["pre_text"] + d["post_text"]
+            if not isinstance(index, int) or isinstance(index, bool) or not 0 <= index < len(paragraphs):
+                raise CalculationError("Text index out of range")
+            paragraph = paragraphs[index]
+            val, unit = text_number(paragraph, ref["quote"])
+            source = {"text_index": index, "quote": paragraph, "selected_number": ref["quote"],
+                      "unit_source": "text_token"}
+        else:
+            if ref.get("expected_label") is not None and not isinstance(ref["expected_label"], str):
+                raise CalculationError("Expected label must be a string")
+            if set(ref) - {"doc_id", "row", "column", "expected_label", "expected_year"}:
+                raise CalculationError("Unknown operand fields")
+            row, col = ref.get("row"), ref.get("column")
+            if (not isinstance(row, int) or isinstance(row, bool) or not isinstance(col, int)
+                    or isinstance(col, bool) or row <= 0 or col <= 0):
+                raise CalculationError("Cell indices must be positive integers")
+            table = d["table"]
+            if row >= len(table) or col >= len(table[row]):
+                raise CalculationError("Cell out of range")
+            label = str(table[row][0])
+            header = str(table[0][col]) if col < len(table[0]) else ""
+            if ref.get("expected_label") and ref["expected_label"].casefold() not in label.casefold():
+                raise CalculationError("Metric label mismatch")
+            if ref.get("expected_year") and str(ref["expected_year"]) not in header + " " + label:
+                raise CalculationError("Period mismatch")
+            val, unit, unit_source = cell_unit(table, row, col)
+            source = {"row": row, "column": col, "row_label": label, "column_header": header,
+                      "quote": str(table[row][col]), "unit_source": unit_source}
         values.append(val)
         units.append(unit)
         trace.append(
@@ -121,14 +139,9 @@ def execute(docs, plan):
                 "company": d["company"],
                 "report_year": d["report_year"],
                 "page": d["page"],
-                "row": row,
-                "column": col,
-                "row_label": label,
-                "column_header": header,
-                "quote": str(table[row][col]),
+                **source,
                 "value": str(val),
                 "unit": unit,
-                "unit_source": unit_source,
             }
         )
     if len({t["company"] for t in trace}) > 1 and not plan.get(
@@ -172,7 +185,7 @@ def execute(docs, plan):
         "unit": unit,
         "operation": op,
         "operands": trace,
-        "source_scale": "As reported by table; no implicit million/billion conversion",
+        "source_scale": "As reported by source; no implicit scale conversion",
         "mode": "deterministic_calculation",
         "refused": False,
         "citations": [
@@ -181,8 +194,8 @@ def execute(docs, plan):
                 "doc_id": t["doc_id"],
                 "page": t["page"],
                 "quote": t["quote"],
-                "row": t["row"],
-                "column": t["column"],
+                **({"text_index": t["text_index"], "selected_number": t["selected_number"]}
+                   if "text_index" in t else {"row": t["row"], "column": t["column"]}),
             }
             for i, t in enumerate(trace)
         ],

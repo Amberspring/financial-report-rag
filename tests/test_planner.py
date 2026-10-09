@@ -47,3 +47,31 @@ def test_model_plan_scopes_before_retrieval_and_allows_caller_report(monkeypatch
     assert planner.answer(r, docs, "ACME revenue")["refused"]
     assert planner.answer(r, docs, "OTHER report year 2022 revenue")["refused"]
     assert planner.answer(r, docs, "revenue", scope_doc_id="ACME/2024/p")["value"] == "100"
+
+
+def test_model_plan_uses_only_retrieved_prose_tokens(monkeypatch):
+    docs = [{"doc_id": "a", "company": "ACME", "report_year": "2024", "page": 7,
+             "pre_text": ["Revenue rose from $100 in 2023 to $120 in 2024.", "Unretrieved profit was $999."],
+             "post_text": [], "table": []}]
+    chunks = chunk_blocks(blocks_from_documents(docs))
+    class FirstTextOnly:
+        def search(self, *args, **kwargs):
+            return [{"chunk": vars(chunks[0])}]
+    plan = {"operation": "growth", "operands": [
+        {"doc_id": "a", "text_index": 0, "quote": "$120"},
+        {"doc_id": "a", "text_index": 0, "quote": "$100"},
+    ]}
+    original = httpx.Client
+    def respond(request):
+        prompt = json.loads(json.loads(request.content)["messages"][1]["content"])
+        assert len(prompt["retrieved_text"]) == 1 and not prompt["retrieved_tables"]
+        return httpx.Response(200, json={"choices": [{"finish_reason": "stop", "message": {"content": json.dumps(plan)}}]})
+    monkeypatch.setattr(httpx, "Client", lambda **kw: original(transport=httpx.MockTransport(respond)))
+    planner = ModelPlanner("http://fixture/v1", "fixture")
+    assert planner.answer(FirstTextOnly(), docs, "ACME report year 2024 revenue growth")["value"] == "20.0"
+    plan["operands"][0] = {"doc_id": "a", "text_index": 1, "quote": "$999"}
+    assert planner.answer(FirstTextOnly(), docs, "ACME report year 2024 revenue growth")["refused"]
+    docs[0]["pre_text"] = ["Revenue was $100. " + "unrelated " * 80 + "Profit was $999."]
+    chunks = chunk_blocks(blocks_from_documents(docs), size=100, overlap=0)
+    plan["operands"][0] = {"doc_id": "a", "text_index": 0, "quote": "$999"}
+    assert planner.answer(FirstTextOnly(), docs, "ACME report year 2024 revenue growth")["refused"]

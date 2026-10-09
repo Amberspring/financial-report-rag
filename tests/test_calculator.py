@@ -115,3 +115,22 @@ def test_invalid_metadata_types_raise_calculation_errors():
     ]:
         with pytest.raises(CalculationError):
             execute([DOC], {"operation": "sum", "operands": [ref]})
+
+
+def test_prose_numbers_require_verbatim_unique_unscaled_evidence():
+    doc = {**DOC, "pre_text": ["Revenue rose from $100 in 2023 to $120 in 2024."], "post_text": []}
+    plan = {"operation": "growth", "operands": [
+        {"doc_id": doc["doc_id"], "text_index": 0, "quote": "$120"},
+        {"doc_id": doc["doc_id"], "text_index": 0, "quote": "$100"},
+    ]}
+    result = execute([doc], plan)
+    assert result["value"] == "20.0" and result["citations"][0]["selected_number"] == "$120"
+    for bad_quote in ("120", "$12", "$999"):
+        plan["operands"][0]["quote"] = bad_quote
+        with pytest.raises(CalculationError):
+            execute([doc], plan)
+    plan["operands"][0]["quote"] = "$120"
+    with pytest.raises(CalculationError, match="scale"):
+        execute([{**doc, "pre_text": [doc["pre_text"][0] + " Values in millions."]}], plan)
+    with pytest.raises(CalculationError):
+        execute([{**doc, "pre_text": ["Revenue declined by ($120) in 2024 and $100 in 2023."]}], plan)
