@@ -1,0 +1,19 @@
+{
+  "status": "verified_against_official_source",
+  "documents_verified": 131,
+  "sources": [
+    {
+      "split": "dev",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/dev.json",
+      "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51",
+      "records_verified": 40
+    },
+    {
+      "split": "test",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/main/dataset/test.json",
+      "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+      "records_verified": 100
+    }
+  ],
+  "limitation": "FinQA transcriptions verified; original PDF page numbering and correctness of authors' labels not independently certified"
+}

@@ -88,6 +88,26 @@ def test_mixed_currencies_are_rejected():
         execute([doc], {"operation": "subtract", "operands": refs()})
 
 
+def test_currency_symbol_applies_to_unmarked_year_in_same_row_only():
+    import copy
+    doc = copy.deepcopy(DOC)
+    doc["table"][1][2] = "100.0"
+    result = execute([doc], {"operation": "subtract", "operands": list(reversed(refs()))})
+    assert result["unit"] == "currency:$"
+    assert result["operands"][1]["unit_source"] == "same_row"
+
+
+def test_currency_symbol_does_not_cross_unrelated_columns():
+    import copy
+    doc = copy.deepcopy(DOC)
+    doc["table"] = [["Plan", "Share count", "Exercise price"], ["Approved", "1,708,928", "$113.49"]]
+    with pytest.raises(CalculationError, match="Mixed cell units"):
+        execute([doc], {"operation": "percentage", "operands": [
+            {"doc_id": DOC["doc_id"], "row": 1, "column": 1},
+            {"doc_id": DOC["doc_id"], "row": 1, "column": 2},
+        ]})
+
+
 def test_invalid_metadata_types_raise_calculation_errors():
     for ref in [
         {"doc_id": [], "row": 1, "column": 1},
@@ -95,3 +115,24 @@ def test_invalid_metadata_types_raise_calculation_errors():
     ]:
         with pytest.raises(CalculationError):
             execute([DOC], {"operation": "sum", "operands": [ref]})
+
+
+def test_prose_numbers_require_verbatim_unique_unscaled_evidence():
+    doc = {**DOC, "pre_text": ["Revenue rose from $100 in 2023 to $120 in 2024."], "post_text": []}
+    plan = {"operation": "growth", "operands": [
+        {"doc_id": doc["doc_id"], "text_index": 0, "quote": "$120"},
+        {"doc_id": doc["doc_id"], "text_index": 0, "quote": "$100"},
+    ]}
+    result = execute([doc], plan)
+    assert result["value"] == "20.0" and result["citations"][0]["selected_number"] == "$120"
+    for bad_quote in ("120", "$12", "$999"):
+        plan["operands"][0]["quote"] = bad_quote
+        with pytest.raises(CalculationError):
+            execute([doc], plan)
+    plan["operands"][0]["quote"] = "$120"
+    with pytest.raises(CalculationError, match="scale"):
+        execute([{**doc, "pre_text": [doc["pre_text"][0] + " Values in millions."]}], plan)
+    with pytest.raises(CalculationError):
+        execute([{**doc, "pre_text": ["Revenue declined by ($120) in 2024 and $100 in 2023."]}], plan)
+    with pytest.raises(CalculationError):
+        execute([{**doc, "pre_text": ["Revenue declined by ($ 120) in 2024 and $100 in 2023."]}], plan)

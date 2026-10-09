@@ -1,0 +1,104 @@
+{
+  "scope": "Saved-plan CPU replay; not a new model run or accuracy result",
+  "counts": {
+    "still_refused: Mixed cell units": 12
+  },
+  "cases": [
+    {
+      "id": "JPM/2010/page_273.pdf-2",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 68.9
+    },
+    {
+      "id": "MS/2013/page_132.pdf-1",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.18025
+    },
+    {
+      "id": "IPG/2017/page_92.pdf-3",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.29434
+    },
+    {
+      "id": "GS/2017/page_86.pdf-1",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.4
+    },
+    {
+      "id": "ETR/2004/page_212.pdf-3",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": -42.4
+    },
+    {
+      "id": "CDNS/2018/page_66.pdf-2",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.25199
+    },
+    {
+      "id": "FBHS/2017/page_22.pdf-1",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 4.90575
+    },
+    {
+      "id": "CME/2010/page_69.pdf-4",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.56067
+    },
+    {
+      "id": "JPM/2009/page_175.pdf-1",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 257839.0
+    },
+    {
+      "id": "TFX/2017/page_78.pdf-1",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.32012
+    },
+    {
+      "id": "SNA/2013/page_84.pdf-3",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.02726
+    },
+    {
+      "id": "AAL/2013/page_172.pdf-3",
+      "historical_reason": "Mixed cell units",
+      "replay_outcome": "still_refused: Mixed cell units",
+      "new_value": null,
+      "new_unit": null,
+      "gold_exe_ans_posthoc_only": 0.15653
+    }
+  ]
+}

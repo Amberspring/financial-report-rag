@@ -1,0 +1,32 @@
+"""Global retrieval -> narrow evidence-bound calculation, without a supplied gold document."""
+from .calculator import propose, execute, CalculationError
+from .scope import report_ids
+
+
+def numerical_answer(retriever, docs, question, mode="hybrid", rerank=False):
+    scoped_ids = report_ids(docs, question)
+    if not scoped_ids:
+        return {"answer": "Specify one company and report year.", "refused": True, "citations": [], "hits": []}
+    hits = retriever.search(question, 10, mode, rerank, doc_ids=scoped_ids)
+    by_id = {d["doc_id"]: d for d in docs}
+    # ponytail: lexical gate and narrow planner; use a separately evaluated model planner for broader FinQA coverage.
+    candidates = []
+    reasons = []
+    for doc_id in dict.fromkeys(h["chunk"]["doc_id"] for h in hits):
+        doc = by_id.get(doc_id)
+        if doc is None:
+            continue
+        try:
+            value = execute(docs, propose(question, doc))
+            # Every selected cell must belong to a retrieved table, never fetch unseen operands.
+            tables = [h for h in hits if h["chunk"]["doc_id"] == doc_id and h["chunk"]["kind"] == "table"]
+            if not tables or not all(any("table_" + str(o["row"]) in h["chunk"]["evidence_keys"] for h in tables) for o in value["operands"]):
+                raise CalculationError("Required table evidence was not retrieved")
+            candidates.append(value)
+        except CalculationError as e:
+            reasons.append(str(e))
+    if len(candidates) != 1:
+        return {"answer": "Unsupported or ambiguous evidence: require one retrieved, company-matched table.",
+                "refused": True, "citations": [], "hits": hits, "reasons": reasons}
+    value = candidates[0]
+    return {**value, "answer": value["value"] + " " + value["unit"], "hits": hits}
