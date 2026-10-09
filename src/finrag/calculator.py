@@ -68,14 +68,17 @@ def text_number(paragraph, quote):
     """Accept one verbatim numeric token, including its currency or percent marker."""
     if not isinstance(quote, str):
         raise CalculationError("Text quote must be a string")
-    tokens = re.findall(
+    matches = re.finditer(
         r"(?<![\w.($€£])(?:[$€£]\s*)?-?\d[\d,]*(?:\.\d+)?\s*%?(?![\w.)%])",
         paragraph,
     )
-    matches = [token for token in tokens if token.strip() == quote.strip()]
-    if len(matches) != 1:
+    tokens = [m.group().strip() for m in matches
+              if not re.search(r"[($€£-]\s*$", paragraph[:m.start()])
+              and not re.match(r"\s*\)", paragraph[m.end():])]
+    selected = [token for token in tokens if token == quote.strip()]
+    if len(selected) != 1:
         raise CalculationError("Text quote must match one unique numeric token")
-    value, unit = number(matches[0])
+    value, unit = number(selected[0])
     # shortcut: prose scale is rejected until its PDF context and unit conversion are verified.
     if re.search(r"\b(?:thousands?|millions?|billions?|trillions?)\b", paragraph, re.I):
         raise CalculationError("Prose scale is not yet supported")

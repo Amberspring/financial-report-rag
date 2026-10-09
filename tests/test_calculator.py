@@ -134,3 +134,5 @@ def test_prose_numbers_require_verbatim_unique_unscaled_evidence():
         execute([{**doc, "pre_text": [doc["pre_text"][0] + " Values in millions."]}], plan)
     with pytest.raises(CalculationError):
         execute([{**doc, "pre_text": ["Revenue declined by ($120) in 2024 and $100 in 2023."]}], plan)
+    with pytest.raises(CalculationError):
+        execute([{**doc, "pre_text": ["Revenue declined by ($ 120) in 2024 and $100 in 2023."]}], plan)
