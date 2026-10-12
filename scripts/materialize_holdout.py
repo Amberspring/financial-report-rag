@@ -21,6 +21,8 @@ def main():
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
     args = parser.parse_args()
+    if args.output_dir.exists():
+        raise FileExistsError("Use a new output directory to preserve materialized holdouts")
     manifest = json.loads(args.manifest.read_text(encoding="utf-8"))
     if hashlib.sha256(args.source.read_bytes()).hexdigest() != manifest["source_sha256"]:
         raise ValueError("Source SHA-256 mismatch")

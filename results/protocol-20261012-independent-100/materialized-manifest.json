@@ -1,0 +1,13 @@
+{
+  "source_sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc",
+  "frozen_queries_sha256": "0574ec43ec4e2b62457a24631730c258aa6b1738fe92d3c89b2e5a89aec0a07d",
+  "files_sha256": {
+    "documents.json": "8bad7eff0e1828df0f0d941c21c9d246bcc9b23690975b80e29d51a78a97c55c",
+    "queries-A.json": "0d3229ad60cd6c683520bb4c8b06bc01dbe0b0c5be1ffc6902ccb7c37298dce3",
+    "queries-B-proxy.json": "01853ee27638bb53763fe9f397319444ba603a7a5ae5a6a8994c5b546704edd9",
+    "labels-scoring-only.json": "06975310c8d28b6c9e20f06062bee4530ac38cef1e7c3e210a838a7e0fae2329"
+  },
+  "documents": 55,
+  "questions": 100,
+  "warning": "Protocol B proxy uses selected FinQA page transcriptions, not complete annual-report PDFs or independently reviewed business gold."
+}
