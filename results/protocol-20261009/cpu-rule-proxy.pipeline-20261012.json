@@ -1,0 +1,74 @@
+{
+  "scope": "post-hoc diagnosis of frozen global CPU rule predictions",
+  "input_sha256": {
+    "predictions": "937438e47de6f0d8300677e5511fde16304c303f92beab2790b3b257b8a6e351",
+    "queries": "af956183b26f0ddb141ed15f2fb8f36e5a032f44ad8db923584b0e6a505730fc",
+    "labels": "4d960391f72d40cf7083de49373c62705ce4432e45a544d0be3698ed8476854f"
+  },
+  "limitations": "Gold evidence keys proxy evidence selection, not operand values, unit correctness or independent PDF verification. No model quality gain is implied.",
+  "modes": [
+    {
+      "mode": "bm25",
+      "rerank": false,
+      "n": 200,
+      "counts": {
+        "target_report_top1": 200,
+        "target_report_top10": 200,
+        "gold_evidence_all_top5": 154,
+        "gold_evidence_selected_proxy": 3,
+        "answered": 17,
+        "correct": 0,
+        "wrong_answer": 17
+      },
+      "report_top1_rate": 1.0,
+      "report_top10_rate": 1.0,
+      "gold_evidence_all_top5_rate": 0.77,
+      "selected_gold_evidence_proxy_rate": 0.015,
+      "answer_coverage": 0.085,
+      "end_to_end_accuracy": 0.0,
+      "accuracy_given_answer": 0.0
+    },
+    {
+      "mode": "dense",
+      "rerank": false,
+      "n": 200,
+      "counts": {
+        "target_report_top1": 196,
+        "target_report_top10": 200,
+        "gold_evidence_all_top5": 51,
+        "gold_evidence_selected_proxy": 0,
+        "answered": 1,
+        "correct": 0,
+        "wrong_answer": 1
+      },
+      "report_top1_rate": 0.98,
+      "report_top10_rate": 1.0,
+      "gold_evidence_all_top5_rate": 0.255,
+      "selected_gold_evidence_proxy_rate": 0.0,
+      "answer_coverage": 0.005,
+      "end_to_end_accuracy": 0.0,
+      "accuracy_given_answer": 0.0
+    },
+    {
+      "mode": "hybrid",
+      "rerank": false,
+      "n": 200,
+      "counts": {
+        "target_report_top1": 197,
+        "target_report_top10": 200,
+        "gold_evidence_all_top5": 63,
+        "gold_evidence_selected_proxy": 1,
+        "answered": 8,
+        "correct": 0,
+        "wrong_answer": 8
+      },
+      "report_top1_rate": 0.985,
+      "report_top10_rate": 1.0,
+      "gold_evidence_all_top5_rate": 0.315,
+      "selected_gold_evidence_proxy_rate": 0.005,
+      "answer_coverage": 0.04,
+      "end_to_end_accuracy": 0.0,
+      "accuracy_given_answer": 0.0
+    }
+  ]
+}
