@@ -78,7 +78,7 @@ def main():
               "limitations": "Gold evidence keys proxy evidence selection, not operand values, unit correctness or independent PDF verification. No model quality gain is implied.",
               "modes": diagnose(raw, queries, labels)}
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    output.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps(report["modes"]))
 
 

@@ -1,6 +1,6 @@
 # 冻结 200 题 CPU 规则基线的分阶段归因
 
-输入是已经落盘的 `results/protocol-20261009/cpu-rule-proxy.predictions.jsonl`，不是重新预测。诊断脚本在读取全部原始预测后才读标签，输出 `results/protocol-20261009/cpu-rule-proxy.pipeline-20261012.json`，其中固定记录三个输入 SHA-256；历史 100 题的 2 对、27 错、71 拒和本次 200 题的 0 对均未改写。
+输入是已经落盘的 `results/protocol-20261009/cpu-rule-proxy.predictions.jsonl`，不是重新预测。诊断脚本在读取全部原始预测后才读标签，输出 `results/protocol-20261009/cpu-rule-proxy.pipeline-20261012-v2.json`，其中固定记录三个输入 SHA-256；历史 100 题的 2 对、27 错、71 拒和本次 200 题的 0 对均未改写。首版诊断 JSON 因 Windows 换行差异单独归档于本机，本版固定 LF 字节输出。
 
 | 模式 | 目标页 Top1 | 金标证据全部在 Top5 | 已回答 | 答对 |
 | --- | ---: | ---: | ---: | ---: |
